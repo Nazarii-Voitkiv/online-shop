@@ -15,7 +15,4 @@ public class UserDTO {
     private String password;
 
     private UserRole userRole;
-
-    public UserDTO(Long id, String email, String name, UserRole userRole) {
-    }
 }
