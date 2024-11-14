@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx run onlineshop-frontend:serve",
+    "startTime": "2024-11-14T18:37:20.057Z",
+    "endTime": "2024-11-14T18:37:32.939Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "onlineshop-frontend:serve:development",
+      "target": "serve",
+      "projectName": "onlineshop-frontend",
+      "hash": "17269213870914443837",
+      "startTime": "2024-11-14T18:37:20.070Z",
+      "endTime": "2024-11-14T18:37:32.938Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

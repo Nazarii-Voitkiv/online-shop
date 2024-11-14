@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+tslib_1.__exportStar(require("./add-cypress-workaround"), exports);
+tslib_1.__exportStar(require("./add-remote-entry"), exports);
+tslib_1.__exportStar(require("./add-remote-to-host"), exports);
+tslib_1.__exportStar(require("./change-build-target"), exports);
+tslib_1.__exportStar(require("./fix-bootstrap"), exports);
+tslib_1.__exportStar(require("./generate-config"), exports);
+tslib_1.__exportStar(require("./get-remotes-with-ports"), exports);
+tslib_1.__exportStar(require("./move-angular-plugin-to-dependencies"), exports);
+tslib_1.__exportStar(require("./normalize-options"), exports);
+tslib_1.__exportStar(require("./update-tsconfig"), exports);
+tslib_1.__exportStar(require("./setup-host-if-dynamic"), exports);
+tslib_1.__exportStar(require("./setup-serve-target"), exports);
+tslib_1.__exportStar(require("./update-host-app-routes"), exports);
+tslib_1.__exportStar(require("./remove-dead-code-from-remote"), exports);
+tslib_1.__exportStar(require("./setup-tspath-for-remote"), exports);

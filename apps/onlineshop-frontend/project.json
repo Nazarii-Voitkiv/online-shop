@@ -1,0 +1,94 @@
+{
+  "name": "onlineshop-frontend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "onlineshop",
+  "sourceRoot": "apps/onlineshop-frontend/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/onlineshop-frontend",
+        "index": "apps/onlineshop-frontend/src/index.html",
+        "browser": "apps/onlineshop-frontend/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/onlineshop-frontend/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/onlineshop-frontend/public"
+          }
+        ],
+        "styles": ["apps/onlineshop-frontend/src/styles.scss"],
+        "scripts": [],
+        "server": "apps/onlineshop-frontend/src/main.server.ts",
+        "prerender": true,
+        "ssr": {
+          "entry": "apps/onlineshop-frontend/server.ts"
+        }
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "onlineshop-frontend:build:production"
+        },
+        "development": {
+          "buildTarget": "onlineshop-frontend:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "onlineshop-frontend:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/onlineshop-frontend/jest.config.ts"
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "onlineshop-frontend:build",
+        "staticFilePath": "dist/apps/onlineshop-frontend/browser",
+        "spa": true
+      }
+    }
+  }
+}

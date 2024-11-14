@@ -1,0 +1,79 @@
+{
+  "hash": "5d127a6f",
+  "configHash": "8202622f",
+  "lockfileHash": "fc90872e",
+  "browserHash": "2bb41363",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "ba0d7ee7",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "376f6c12",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "12577563",
+      "needsInterop": false
+    },
+    "@angular/platform-server": {
+      "src": "../../../../../../node_modules/@angular/platform-server/fesm2022/platform-server.mjs",
+      "file": "@angular_platform-server.js",
+      "fileHash": "4c340715",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "09514f67",
+      "needsInterop": false
+    },
+    "@fortawesome/angular-fontawesome": {
+      "src": "../../../../../../node_modules/@fortawesome/angular-fontawesome/fesm2022/angular-fontawesome.mjs",
+      "file": "@fortawesome_angular-fontawesome.js",
+      "fileHash": "7c6d3046",
+      "needsInterop": false
+    },
+    "@fortawesome/free-brands-svg-icons": {
+      "src": "../../../../../../node_modules/@fortawesome/free-brands-svg-icons/index.mjs",
+      "file": "@fortawesome_free-brands-svg-icons.js",
+      "fileHash": "c2dd681d",
+      "needsInterop": false
+    },
+    "@fortawesome/free-regular-svg-icons": {
+      "src": "../../../../../../node_modules/@fortawesome/free-regular-svg-icons/index.mjs",
+      "file": "@fortawesome_free-regular-svg-icons.js",
+      "fileHash": "12225d90",
+      "needsInterop": false
+    },
+    "@fortawesome/free-solid-svg-icons": {
+      "src": "../../../../../../node_modules/@fortawesome/free-solid-svg-icons/index.mjs",
+      "file": "@fortawesome_free-solid-svg-icons.js",
+      "fileHash": "09dd555b",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "xhr2-ISERFGGE": {
+      "file": "xhr2-ISERFGGE.js"
+    },
+    "chunk-6CA7AKPI": {
+      "file": "chunk-6CA7AKPI.js"
+    },
+    "chunk-FILZT7QM": {
+      "file": "chunk-FILZT7QM.js"
+    },
+    "chunk-O3ZTNZHN": {
+      "file": "chunk-O3ZTNZHN.js"
+    },
+    "chunk-NQ4HTGF6": {
+      "file": "chunk-NQ4HTGF6.js"
+    }
+  }
+}
