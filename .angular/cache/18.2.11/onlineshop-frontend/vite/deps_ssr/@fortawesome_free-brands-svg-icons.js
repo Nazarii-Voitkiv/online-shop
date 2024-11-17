@@ -1,5 +1,5 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
-import "./chunk-NQ4HTGF6.js";
+import "./chunk-LV3DCXXS.js";
 
 // node_modules/@fortawesome/free-brands-svg-icons/index.mjs
 var prefix = "fab";

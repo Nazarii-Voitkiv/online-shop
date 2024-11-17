@@ -43,7 +43,7 @@ public class KindeService {
     private Optional<String> getToken() {
         try {
             ResponseEntity<KindeAccessToken> accessToken = restClient.post()
-                    .uri(URI.create("/oauth/token"))
+                    .uri(apiUrl + "/oauth/token")
                     .body("grant_type=client_credentials&audience=" + URLEncoder.encode(audience, StandardCharsets.UTF_8))
                     .accept(MediaType.APPLICATION_JSON)
                     .contentType(MediaType.APPLICATION_FORM_URLENCODED)

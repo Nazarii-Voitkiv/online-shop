@@ -51,8 +51,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: https://codecake.kinde.com
-          jwk-set-uri: https://codecake.kinde.com/.well-known/jwks
+          issuer-uri: https://nazariivoitkiv.kinde.com
+          jwk-set-uri: https://nazariivoitkiv.kinde.com/.well-known/jwks
           audiences: http://localhost:8080/api
   devtools:
     restart:
