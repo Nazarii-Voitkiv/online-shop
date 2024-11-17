@@ -78,10 +78,10 @@ application:
     allow-credentials: false
     max-age: 300
   kinde:
-    api: https://codecake.kinde.com
+    api: https://nazariivoitkiv.kinde.com
     client-id: ${KINDE_CLIENT_ID}
     client-secret: ${KINDE_CLIENT_SECRET}
-    audience: https://codecake.kinde.com/api
-  stripe:
-    api-key: ${STRIPE_API_KEY}
-    webhook-secret: ${STRIPE_WEBHOOK_SECRET}
+    audience: https://nazariivoitkiv.kinde.com/api
+#  stripe:
+#    api-key: ${STRIPE_API_KEY}
+#    webhook-secret: ${STRIPE_WEBHOOK_SECRET}

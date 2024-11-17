@@ -2613,3 +2613,543 @@ Failed to process project graph. Run "nx reset" to fix this. Please report the i
 [NX Daemon Server] - 2024-11-15T15:33:47.814Z - [SYNC]: project graph hash is the same, not collecting task sync generators
 [NX Daemon Server] - 2024-11-15T15:33:47.814Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
 [NX Daemon Server] - 2024-11-15T15:33:47.814Z - Time taken for 'total execution time for createProjectGraph()' 42.77829200029373ms
+[NX Daemon Server] - 2024-11-15T15:39:00.635Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:43:12.801Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/AutorityName.java was created or restored
+[NX Daemon Server] - 2024-11-15T15:43:12.802Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:43:12.905Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T15:43:12.905Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/AutorityName.java
+[NX Daemon Server] - 2024-11-15T15:43:12.905Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T15:43:12.923Z - Time taken for 'hash changed files from watcher' 1.176374999806285ms
+[NX Daemon Server] - 2024-11-15T15:43:12.957Z - Time taken for 'build-project-configs' 43.67991599999368ms
+[NX Daemon Server] - 2024-11-15T15:43:12.965Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 11.158207999542356ms
+[NX Daemon Server] - 2024-11-15T15:43:12.993Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T15:43:12.993Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T15:43:12.993Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T15:43:12.993Z - Time taken for 'total execution time for createProjectGraph()' 32.85537499934435ms
+[NX Daemon Server] - 2024-11-15T15:44:41.722Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserAddress.java was created or restored
+[NX Daemon Server] - 2024-11-15T15:44:41.723Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:44:41.827Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T15:44:41.828Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserAddress.java
+[NX Daemon Server] - 2024-11-15T15:44:41.828Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T15:44:41.835Z - Time taken for 'hash changed files from watcher' 0.5295420009642839ms
+[NX Daemon Server] - 2024-11-15T15:44:41.878Z - Time taken for 'build-project-configs' 41.36404199898243ms
+[NX Daemon Server] - 2024-11-15T15:44:41.886Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 11.819792000576854ms
+[NX Daemon Server] - 2024-11-15T15:44:41.917Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T15:44:41.918Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T15:44:41.918Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T15:44:41.918Z - Time taken for 'total execution time for createProjectGraph()' 37.91641699895263ms
+[NX Daemon Server] - 2024-11-15T15:47:40.146Z - [WATCHER]: 0 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-11-15T15:47:40.147Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:47:40.350Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T15:47:40.350Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserAddress.java,apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/AutorityName.java,apps/onlineshop-backend/pom.xml
+[NX Daemon Server] - 2024-11-15T15:47:40.350Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T15:47:40.361Z - Time taken for 'hash changed files from watcher' 0.8631669990718365ms
+[NX Daemon Server] - 2024-11-15T15:47:40.394Z - Time taken for 'build-project-configs' 36.15045899897814ms
+[NX Daemon Server] - 2024-11-15T15:47:40.432Z - Time taken for 'nx/js/dependencies-and-lockfile:createDependencies' 40.19654200039804ms
+[NX Daemon Server] - 2024-11-15T15:47:40.442Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T15:47:40.442Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T15:47:40.442Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T15:47:40.442Z - Time taken for 'total execution time for createProjectGraph()' 44.72275000065565ms
+[NX Daemon Server] - 2024-11-15T15:48:28.884Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserAddressToUpdate.java was created or restored
+[NX Daemon Server] - 2024-11-15T15:48:28.886Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:48:28.994Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T15:48:28.994Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserAddressToUpdate.java
+[NX Daemon Server] - 2024-11-15T15:48:28.994Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T15:48:29.009Z - Time taken for 'hash changed files from watcher' 6.424999998882413ms
+[NX Daemon Server] - 2024-11-15T15:48:29.048Z - Time taken for 'build-project-configs' 44.51437500119209ms
+[NX Daemon Server] - 2024-11-15T15:48:29.055Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 10.517000000923872ms
+[NX Daemon Server] - 2024-11-15T15:48:29.084Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T15:48:29.084Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T15:48:29.084Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T15:48:29.084Z - Time taken for 'total execution time for createProjectGraph()' 33.61495799943805ms
+[NX Daemon Server] - 2024-11-15T15:50:45.120Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-11-15T15:50:45.122Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:50:45.325Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T15:50:45.325Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserAddress.java,apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserAddressToUpdate.java
+[NX Daemon Server] - 2024-11-15T15:50:45.326Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T15:50:45.339Z - Time taken for 'hash changed files from watcher' 1.0062500014901161ms
+[NX Daemon Server] - 2024-11-15T15:50:45.381Z - Time taken for 'build-project-configs' 45.98466700129211ms
+[NX Daemon Server] - 2024-11-15T15:50:45.388Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 10.796166000887752ms
+[NX Daemon Server] - 2024-11-15T15:50:45.426Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T15:50:45.426Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T15:50:45.426Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T15:50:45.426Z - Time taken for 'total execution time for createProjectGraph()' 36.98375000059605ms
+[NX Daemon Server] - 2024-11-15T15:50:45.597Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:51:11.606Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserEmail.java was created or restored
+[NX Daemon Server] - 2024-11-15T15:51:11.608Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:51:11.713Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T15:51:11.714Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserEmail.java
+[NX Daemon Server] - 2024-11-15T15:51:11.714Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T15:51:11.726Z - Time taken for 'hash changed files from watcher' 1.001833001151681ms
+[NX Daemon Server] - 2024-11-15T15:51:11.764Z - Time taken for 'build-project-configs' 42.854416999965906ms
+[NX Daemon Server] - 2024-11-15T15:51:11.770Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 8.460833000019193ms
+[NX Daemon Server] - 2024-11-15T15:51:11.799Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T15:51:11.799Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T15:51:11.799Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T15:51:11.799Z - Time taken for 'total execution time for createProjectGraph()' 32.113582998514175ms
+[NX Daemon Server] - 2024-11-15T15:52:37.496Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:52:37.501Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserFirstName.java was created or restored
+[NX Daemon Server] - 2024-11-15T15:52:37.606Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T15:52:37.607Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserFirstName.java
+[NX Daemon Server] - 2024-11-15T15:52:37.607Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T15:52:37.619Z - Time taken for 'hash changed files from watcher' 1.2474589999765158ms
+[NX Daemon Server] - 2024-11-15T15:52:37.650Z - Time taken for 'build-project-configs' 35.10999999940395ms
+[NX Daemon Server] - 2024-11-15T15:52:37.655Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 8.025458000600338ms
+[NX Daemon Server] - 2024-11-15T15:52:37.682Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T15:52:37.683Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T15:52:37.683Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T15:52:37.683Z - Time taken for 'total execution time for createProjectGraph()' 29.41899999976158ms
+[NX Daemon Server] - 2024-11-15T15:53:01.997Z - [WATCHER]: 0 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-11-15T15:53:01.999Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:53:02.203Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T15:53:02.203Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserAddressToUpdate.java,apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserFirstName.java,apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserEmail.java
+[NX Daemon Server] - 2024-11-15T15:53:02.203Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T15:53:02.220Z - Time taken for 'hash changed files from watcher' 1.4878330007195473ms
+[NX Daemon Server] - 2024-11-15T15:53:02.260Z - Time taken for 'build-project-configs' 45.51183300092816ms
+[NX Daemon Server] - 2024-11-15T15:53:02.267Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 12.083875000476837ms
+[NX Daemon Server] - 2024-11-15T15:53:02.293Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T15:53:02.293Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T15:53:02.293Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T15:53:02.294Z - Time taken for 'total execution time for createProjectGraph()' 31.22170799970627ms
+[NX Daemon Server] - 2024-11-15T15:53:25.032Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserFirstName.java was modified
+[NX Daemon Server] - 2024-11-15T15:53:25.033Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:53:25.438Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T15:53:25.438Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserFirstName.java
+[NX Daemon Server] - 2024-11-15T15:53:25.438Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T15:53:25.453Z - Time taken for 'hash changed files from watcher' 0.5449589993804693ms
+[NX Daemon Server] - 2024-11-15T15:53:25.499Z - Time taken for 'build-project-configs' 48.86591700091958ms
+[NX Daemon Server] - 2024-11-15T15:53:25.510Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 18.31937500089407ms
+[NX Daemon Server] - 2024-11-15T15:53:25.563Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T15:53:25.563Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T15:53:25.564Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T15:53:25.564Z - Time taken for 'total execution time for createProjectGraph()' 56.009499998763204ms
+[NX Daemon Server] - 2024-11-15T15:53:44.352Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserFirstName.java was modified
+[NX Daemon Server] - 2024-11-15T15:53:44.353Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:53:45.157Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T15:53:45.158Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserFirstName.java
+[NX Daemon Server] - 2024-11-15T15:53:45.158Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T15:53:45.166Z - Time taken for 'hash changed files from watcher' 0.7637910004705191ms
+[NX Daemon Server] - 2024-11-15T15:53:45.211Z - Time taken for 'build-project-configs' 44.0447500012815ms
+[NX Daemon Server] - 2024-11-15T15:53:45.216Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 8.689708000048995ms
+[NX Daemon Server] - 2024-11-15T15:53:45.244Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T15:53:45.244Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T15:53:45.244Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T15:53:45.244Z - Time taken for 'total execution time for createProjectGraph()' 32.897749999538064ms
+[NX Daemon Server] - 2024-11-15T15:54:01.646Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/ImageUrl.java was created or restored
+[NX Daemon Server] - 2024-11-15T15:54:01.647Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:54:01.749Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T15:54:01.749Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/ImageUrl.java
+[NX Daemon Server] - 2024-11-15T15:54:01.749Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T15:54:01.754Z - Time taken for 'hash changed files from watcher' 0.36841699853539467ms
+[NX Daemon Server] - 2024-11-15T15:54:01.781Z - Time taken for 'build-project-configs' 25.779959000647068ms
+[NX Daemon Server] - 2024-11-15T15:54:01.785Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 6.446917001157999ms
+[NX Daemon Server] - 2024-11-15T15:54:01.807Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T15:54:01.807Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T15:54:01.807Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T15:54:01.807Z - Time taken for 'total execution time for createProjectGraph()' 23.09795800037682ms
+[NX Daemon Server] - 2024-11-15T15:54:17.312Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2024-11-15T15:54:17.315Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:54:17.417Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T15:54:17.417Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserImageUrl.java
+[NX Daemon Server] - 2024-11-15T15:54:17.418Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/ImageUrl.java
+[NX Daemon Server] - 2024-11-15T15:54:17.425Z - Time taken for 'hash changed files from watcher' 0.4907499998807907ms
+[NX Daemon Server] - 2024-11-15T15:54:17.454Z - Time taken for 'build-project-configs' 29.008040999993682ms
+[NX Daemon Server] - 2024-11-15T15:54:17.460Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 8.914292000234127ms
+[NX Daemon Server] - 2024-11-15T15:54:17.491Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T15:54:17.491Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T15:54:17.491Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T15:54:17.491Z - Time taken for 'total execution time for createProjectGraph()' 35.69500000029802ms
+[NX Daemon Server] - 2024-11-15T15:54:35.816Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserImageUrl.java was modified
+[NX Daemon Server] - 2024-11-15T15:54:35.817Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:54:36.020Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T15:54:36.021Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserImageUrl.java
+[NX Daemon Server] - 2024-11-15T15:54:36.021Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T15:54:36.030Z - Time taken for 'hash changed files from watcher' 0.7442499995231628ms
+[NX Daemon Server] - 2024-11-15T15:54:36.063Z - Time taken for 'build-project-configs' 31.985500000417233ms
+[NX Daemon Server] - 2024-11-15T15:54:36.070Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 12.017625000327826ms
+[NX Daemon Server] - 2024-11-15T15:54:36.107Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T15:54:36.108Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T15:54:36.108Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T15:54:36.108Z - Time taken for 'total execution time for createProjectGraph()' 40.006583001464605ms
+[NX Daemon Server] - 2024-11-15T15:54:36.167Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:55:04.075Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:55:04.085Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserLastName.java was modified
+[NX Daemon Server] - 2024-11-15T15:55:04.489Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T15:55:04.489Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserLastName.java
+[NX Daemon Server] - 2024-11-15T15:55:04.489Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T15:55:04.499Z - Time taken for 'hash changed files from watcher' 0.6038750000298023ms
+[NX Daemon Server] - 2024-11-15T15:55:04.536Z - Time taken for 'build-project-configs' 39.66512499935925ms
+[NX Daemon Server] - 2024-11-15T15:55:04.541Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 8.094707999378443ms
+[NX Daemon Server] - 2024-11-15T15:55:04.577Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T15:55:04.578Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T15:55:04.578Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T15:55:04.578Z - Time taken for 'total execution time for createProjectGraph()' 38.548750000074506ms
+[NX Daemon Server] - 2024-11-15T15:55:30.421Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserPublicId.java was created or restored
+[NX Daemon Server] - 2024-11-15T15:55:30.430Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:55:30.534Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T15:55:30.534Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserPublicId.java
+[NX Daemon Server] - 2024-11-15T15:55:30.534Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T15:55:30.565Z - Time taken for 'hash changed files from watcher' 1.7831670008599758ms
+[NX Daemon Server] - 2024-11-15T15:55:30.599Z - Time taken for 'build-project-configs' 51.46212499961257ms
+[NX Daemon Server] - 2024-11-15T15:55:30.606Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 8.969208000227809ms
+[NX Daemon Server] - 2024-11-15T15:55:30.635Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T15:55:30.635Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T15:55:30.636Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T15:55:30.636Z - Time taken for 'total execution time for createProjectGraph()' 32.62562499940395ms
+[NX Daemon Server] - 2024-11-15T15:56:32.348Z - [WATCHER]: 0 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-11-15T15:56:32.350Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:56:32.554Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T15:56:32.554Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserPublicId.java,apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserImageUrl.java,apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserLastName.java
+[NX Daemon Server] - 2024-11-15T15:56:32.554Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T15:56:32.571Z - Time taken for 'hash changed files from watcher' 0.9254999998956919ms
+[NX Daemon Server] - 2024-11-15T15:56:32.609Z - Time taken for 'build-project-configs' 45.305916000157595ms
+[NX Daemon Server] - 2024-11-15T15:56:32.616Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 10.920791998505592ms
+[NX Daemon Server] - 2024-11-15T15:56:32.658Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T15:56:32.659Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T15:56:32.659Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T15:56:32.659Z - Time taken for 'total execution time for createProjectGraph()' 46.451124999672174ms
+[NX Daemon Server] - 2024-11-15T15:56:32.705Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:58:36.460Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java was created or restored
+[NX Daemon Server] - 2024-11-15T15:58:36.464Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T15:58:36.566Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T15:58:36.566Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java
+[NX Daemon Server] - 2024-11-15T15:58:36.566Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T15:58:36.581Z - Time taken for 'hash changed files from watcher' 0.6810420006513596ms
+[NX Daemon Server] - 2024-11-15T15:58:36.610Z - Time taken for 'build-project-configs' 36.51583299972117ms
+[NX Daemon Server] - 2024-11-15T15:58:36.620Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 13.37270899862051ms
+[NX Daemon Server] - 2024-11-15T15:58:36.640Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T15:58:36.641Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T15:58:36.641Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T15:58:36.641Z - Time taken for 'total execution time for createProjectGraph()' 27.178040999919176ms
+[NX Daemon Server] - 2024-11-15T16:00:58.768Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-11-15T16:00:58.771Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:00:58.978Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:00:58.980Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserAddressToUpdate.java,apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java
+[NX Daemon Server] - 2024-11-15T16:00:58.980Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:00:58.990Z - Time taken for 'hash changed files from watcher' 0.8619169984012842ms
+[NX Daemon Server] - 2024-11-15T16:00:59.041Z - Time taken for 'build-project-configs' 48.857457999140024ms
+[NX Daemon Server] - 2024-11-15T16:00:59.050Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 12.581459000706673ms
+[NX Daemon Server] - 2024-11-15T16:00:59.086Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:00:59.086Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:00:59.086Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:00:59.086Z - Time taken for 'total execution time for createProjectGraph()' 44.789540998637676ms
+[NX Daemon Server] - 2024-11-15T16:03:53.801Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/Authority.java was created or restored
+[NX Daemon Server] - 2024-11-15T16:03:53.802Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:03:53.905Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:03:53.905Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/Authority.java
+[NX Daemon Server] - 2024-11-15T16:03:53.906Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:03:53.916Z - Time taken for 'hash changed files from watcher' 0.8234580010175705ms
+[NX Daemon Server] - 2024-11-15T16:03:53.947Z - Time taken for 'build-project-configs' 33.30395800061524ms
+[NX Daemon Server] - 2024-11-15T16:03:53.952Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 7.730000000447035ms
+[NX Daemon Server] - 2024-11-15T16:03:53.976Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:03:53.977Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:03:53.977Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:03:53.977Z - Time taken for 'total execution time for createProjectGraph()' 26.676249999552965ms
+[NX Daemon Server] - 2024-11-15T16:04:06.423Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-11-15T16:04:06.427Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:04:06.632Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:04:06.633Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/Authority.java,apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java
+[NX Daemon Server] - 2024-11-15T16:04:06.633Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:04:06.644Z - Time taken for 'hash changed files from watcher' 1.0380419995635748ms
+[NX Daemon Server] - 2024-11-15T16:04:06.681Z - Time taken for 'build-project-configs' 40.20924999937415ms
+[NX Daemon Server] - 2024-11-15T16:04:06.687Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 9.45554200001061ms
+[NX Daemon Server] - 2024-11-15T16:04:06.721Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:04:06.721Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:04:06.721Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:04:06.721Z - Time taken for 'total execution time for createProjectGraph()' 38.140541000291705ms
+[NX Daemon Server] - 2024-11-15T16:04:06.797Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:05:22.861Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/Authority.java was modified
+[NX Daemon Server] - 2024-11-15T16:05:22.862Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:05:23.266Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:05:23.266Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/Authority.java
+[NX Daemon Server] - 2024-11-15T16:05:23.266Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:05:23.277Z - Time taken for 'hash changed files from watcher' 0.8431670013815165ms
+[NX Daemon Server] - 2024-11-15T16:05:23.307Z - Time taken for 'build-project-configs' 34.16733399964869ms
+[NX Daemon Server] - 2024-11-15T16:05:23.312Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 7.546499999240041ms
+[NX Daemon Server] - 2024-11-15T16:05:23.341Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:05:23.342Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:05:23.342Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:05:23.342Z - Time taken for 'total execution time for createProjectGraph()' 31.900500001385808ms
+[NX Daemon Server] - 2024-11-15T16:10:40.078Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-11-15T16:10:40.079Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:10:40.467Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:10:40.883Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:10:40.883Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/Authority.java,apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java
+[NX Daemon Server] - 2024-11-15T16:10:40.883Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:10:40.900Z - Time taken for 'hash changed files from watcher' 1.028040999546647ms
+[NX Daemon Server] - 2024-11-15T16:10:40.924Z - Time taken for 'build-project-configs' 33.97275000065565ms
+[NX Daemon Server] - 2024-11-15T16:10:40.929Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 7.480458999052644ms
+[NX Daemon Server] - 2024-11-15T16:10:40.954Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:10:40.954Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:10:40.954Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:10:40.954Z - Time taken for 'total execution time for createProjectGraph()' 25.94941700063646ms
+[NX Daemon Server] - 2024-11-15T16:13:02.435Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java was modified
+[NX Daemon Server] - 2024-11-15T16:13:02.436Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:13:03.925Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:13:03.980Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:13:04.039Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:13:04.039Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java
+[NX Daemon Server] - 2024-11-15T16:13:04.039Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:13:04.048Z - Time taken for 'hash changed files from watcher' 0.44195800088346004ms
+[NX Daemon Server] - 2024-11-15T16:13:04.089Z - Time taken for 'build-project-configs' 42.09750000014901ms
+[NX Daemon Server] - 2024-11-15T16:13:04.097Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 11.03820899873972ms
+[NX Daemon Server] - 2024-11-15T16:13:04.125Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:13:04.125Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:13:04.125Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:13:04.126Z - Time taken for 'total execution time for createProjectGraph()' 33.935750000178814ms
+[NX Daemon Server] - 2024-11-15T16:13:04.951Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:13:16.378Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java was modified
+[NX Daemon Server] - 2024-11-15T16:13:16.380Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:13:19.584Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:13:19.584Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java
+[NX Daemon Server] - 2024-11-15T16:13:19.584Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:13:19.595Z - Time taken for 'hash changed files from watcher' 1.2118749991059303ms
+[NX Daemon Server] - 2024-11-15T16:13:19.633Z - Time taken for 'build-project-configs' 39.25583400018513ms
+[NX Daemon Server] - 2024-11-15T16:13:19.639Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 9.847208000719547ms
+[NX Daemon Server] - 2024-11-15T16:13:19.662Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:13:19.663Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:13:19.663Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:13:19.664Z - Time taken for 'total execution time for createProjectGraph()' 28.253040999174118ms
+[NX Daemon Server] - 2024-11-15T16:15:24.048Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/AutorityName.java was modified
+[NX Daemon Server] - 2024-11-15T16:15:24.053Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:15:30.459Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:15:30.459Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/AutorityName.java
+[NX Daemon Server] - 2024-11-15T16:15:30.459Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:15:30.481Z - Time taken for 'hash changed files from watcher' 1.479000000283122ms
+[NX Daemon Server] - 2024-11-15T16:15:30.517Z - Time taken for 'build-project-configs' 48.510874999687076ms
+[NX Daemon Server] - 2024-11-15T16:15:30.522Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 8.449625000357628ms
+[NX Daemon Server] - 2024-11-15T16:15:30.548Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:15:30.548Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:15:30.548Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:15:30.548Z - Time taken for 'total execution time for createProjectGraph()' 29.606541000306606ms
+[NX Daemon Server] - 2024-11-15T16:15:46.283Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/AutorityName.java was modified
+[NX Daemon Server] - 2024-11-15T16:15:46.284Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:15:46.707Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:15:52.690Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:15:52.690Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/AutorityName.java
+[NX Daemon Server] - 2024-11-15T16:15:52.690Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:15:52.706Z - Time taken for 'hash changed files from watcher' 1.2469159997999668ms
+[NX Daemon Server] - 2024-11-15T16:15:52.743Z - Time taken for 'build-project-configs' 43.26295799948275ms
+[NX Daemon Server] - 2024-11-15T16:15:52.748Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 8.89049999974668ms
+[NX Daemon Server] - 2024-11-15T16:15:52.772Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:15:52.772Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:15:52.773Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:15:52.773Z - Time taken for 'total execution time for createProjectGraph()' 28.639833001419902ms
+[NX Daemon Server] - 2024-11-15T16:18:00.072Z - [WATCHER]: 0 file(s) created or restored, 1 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2024-11-15T16:18:00.073Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:18:06.479Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:18:06.480Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/AuthorityName.java
+[NX Daemon Server] - 2024-11-15T16:18:06.480Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/AutorityName.java
+[NX Daemon Server] - 2024-11-15T16:18:06.494Z - Time taken for 'hash changed files from watcher' 1.3422500006854534ms
+[NX Daemon Server] - 2024-11-15T16:18:06.540Z - Time taken for 'build-project-configs' 48.13491600006819ms
+[NX Daemon Server] - 2024-11-15T16:18:06.547Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 11.649916000664234ms
+[NX Daemon Server] - 2024-11-15T16:18:06.577Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:18:06.577Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:18:06.577Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:18:06.577Z - Time taken for 'total execution time for createProjectGraph()' 36.38399999961257ms
+[NX Daemon Server] - 2024-11-15T16:21:45.703Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/Authority.java was modified
+[NX Daemon Server] - 2024-11-15T16:21:45.707Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:21:45.770Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:21:46.991Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:21:52.112Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:21:52.112Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/Authority.java
+[NX Daemon Server] - 2024-11-15T16:21:52.112Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:21:52.127Z - Time taken for 'hash changed files from watcher' 1.0532910004258156ms
+[NX Daemon Server] - 2024-11-15T16:21:52.165Z - Time taken for 'build-project-configs' 44.85391700081527ms
+[NX Daemon Server] - 2024-11-15T16:21:52.178Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 16.033500000834465ms
+[NX Daemon Server] - 2024-11-15T16:21:52.203Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:21:52.204Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:21:52.204Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:21:52.204Z - Time taken for 'total execution time for createProjectGraph()' 36.991582999005914ms
+[NX Daemon Server] - 2024-11-15T16:21:57.694Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/Authority.java was modified
+[NX Daemon Server] - 2024-11-15T16:21:57.695Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:21:58.804Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:21:58.989Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:22:04.106Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:22:04.106Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/Authority.java
+[NX Daemon Server] - 2024-11-15T16:22:04.107Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:22:04.143Z - Time taken for 'hash changed files from watcher' 0.709374999627471ms
+[NX Daemon Server] - 2024-11-15T16:22:04.181Z - Time taken for 'build-project-configs' 35.44749999977648ms
+[NX Daemon Server] - 2024-11-15T16:22:04.189Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 12.770250000059605ms
+[NX Daemon Server] - 2024-11-15T16:22:04.224Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:22:04.224Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:22:04.224Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:22:04.224Z - Time taken for 'total execution time for createProjectGraph()' 39.051792001351714ms
+[NX Daemon Server] - 2024-11-15T16:22:35.197Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:22:35.992Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:22:36.137Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:24:43.973Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java was modified
+[NX Daemon Server] - 2024-11-15T16:24:43.975Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:24:50.386Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:24:50.387Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java
+[NX Daemon Server] - 2024-11-15T16:24:50.387Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:24:50.412Z - Time taken for 'hash changed files from watcher' 3.813874999061227ms
+[NX Daemon Server] - 2024-11-15T16:24:50.451Z - Time taken for 'build-project-configs' 48.95758300088346ms
+[NX Daemon Server] - 2024-11-15T16:24:50.456Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 7.183207999914885ms
+[NX Daemon Server] - 2024-11-15T16:24:50.484Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:24:50.484Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:24:50.484Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:24:50.484Z - Time taken for 'total execution time for createProjectGraph()' 30.50716600008309ms
+[NX Daemon Server] - 2024-11-15T16:32:21.584Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java was modified
+[NX Daemon Server] - 2024-11-15T16:32:21.589Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:32:21.902Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:32:27.994Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:32:27.995Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java
+[NX Daemon Server] - 2024-11-15T16:32:27.995Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:32:28.005Z - Time taken for 'hash changed files from watcher' 1.3181670010089874ms
+[NX Daemon Server] - 2024-11-15T16:32:28.043Z - Time taken for 'build-project-configs' 38.8626669999212ms
+[NX Daemon Server] - 2024-11-15T16:32:28.049Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 9.298042001202703ms
+[NX Daemon Server] - 2024-11-15T16:32:28.071Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:32:28.071Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:32:28.071Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:32:28.071Z - Time taken for 'total execution time for createProjectGraph()' 26.819291999563575ms
+[NX Daemon Server] - 2024-11-15T16:36:11.982Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java was modified
+[NX Daemon Server] - 2024-11-15T16:36:11.983Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:36:18.388Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:36:18.388Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java
+[NX Daemon Server] - 2024-11-15T16:36:18.388Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:36:18.401Z - Time taken for 'hash changed files from watcher' 0.8200000002980232ms
+[NX Daemon Server] - 2024-11-15T16:36:18.435Z - Time taken for 'build-project-configs' 37.60920799896121ms
+[NX Daemon Server] - 2024-11-15T16:36:18.442Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 10.662541000172496ms
+[NX Daemon Server] - 2024-11-15T16:36:18.466Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:36:18.466Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:36:18.466Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:36:18.466Z - Time taken for 'total execution time for createProjectGraph()' 30.782375000417233ms
+[NX Daemon Server] - 2024-11-15T16:36:55.169Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java was modified
+[NX Daemon Server] - 2024-11-15T16:36:55.170Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:36:55.566Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:36:56.544Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:36:56.741Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:37:01.577Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:37:01.578Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java
+[NX Daemon Server] - 2024-11-15T16:37:01.578Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:37:01.590Z - Time taken for 'hash changed files from watcher' 1.1842090003192425ms
+[NX Daemon Server] - 2024-11-15T16:37:01.642Z - Time taken for 'build-project-configs' 53.23145899921656ms
+[NX Daemon Server] - 2024-11-15T16:37:01.652Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 13.590416999533772ms
+[NX Daemon Server] - 2024-11-15T16:37:01.695Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:37:01.695Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:37:01.695Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:37:01.695Z - Time taken for 'total execution time for createProjectGraph()' 46.095542000606656ms
+[NX Daemon Server] - 2024-11-15T16:38:19.930Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java was modified
+[NX Daemon Server] - 2024-11-15T16:38:19.932Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:38:20.283Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:38:26.336Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:38:26.336Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java
+[NX Daemon Server] - 2024-11-15T16:38:26.336Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:38:26.345Z - Time taken for 'hash changed files from watcher' 1.007499998435378ms
+[NX Daemon Server] - 2024-11-15T16:38:26.384Z - Time taken for 'build-project-configs' 38.667915999889374ms
+[NX Daemon Server] - 2024-11-15T16:38:26.390Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 9.64266699925065ms
+[NX Daemon Server] - 2024-11-15T16:38:26.417Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:38:26.417Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:38:26.418Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:38:26.418Z - Time taken for 'total execution time for createProjectGraph()' 32.02066699974239ms
+[NX Daemon Server] - 2024-11-15T16:41:33.342Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java was modified
+[NX Daemon Server] - 2024-11-15T16:41:33.345Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:41:39.752Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:41:39.752Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java
+[NX Daemon Server] - 2024-11-15T16:41:39.752Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:41:39.763Z - Time taken for 'hash changed files from watcher' 1.2474999986588955ms
+[NX Daemon Server] - 2024-11-15T16:41:39.799Z - Time taken for 'build-project-configs' 37.254292000085115ms
+[NX Daemon Server] - 2024-11-15T16:41:39.805Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 9.416458001360297ms
+[NX Daemon Server] - 2024-11-15T16:41:39.828Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:41:39.828Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:41:39.829Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:41:39.829Z - Time taken for 'total execution time for createProjectGraph()' 28.706666000187397ms
+[NX Daemon Server] - 2024-11-15T16:43:58.074Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java was modified
+[NX Daemon Server] - 2024-11-15T16:43:58.075Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:43:58.432Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:44:04.477Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:44:04.477Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java
+[NX Daemon Server] - 2024-11-15T16:44:04.477Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:44:04.483Z - Time taken for 'hash changed files from watcher' 0.5572909992188215ms
+[NX Daemon Server] - 2024-11-15T16:44:04.518Z - Time taken for 'build-project-configs' 33.259083999320865ms
+[NX Daemon Server] - 2024-11-15T16:44:04.523Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 8.255249999463558ms
+[NX Daemon Server] - 2024-11-15T16:44:04.550Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:44:04.551Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:44:04.551Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:44:04.551Z - Time taken for 'total execution time for createProjectGraph()' 30.881916999816895ms
+[NX Daemon Server] - 2024-11-15T16:45:39.061Z - [WATCHER]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java was modified
+[NX Daemon Server] - 2024-11-15T16:45:39.062Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-15T16:45:45.468Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-15T16:45:45.469Z - [REQUEST]: apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java
+[NX Daemon Server] - 2024-11-15T16:45:45.469Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-15T16:45:45.474Z - Time taken for 'hash changed files from watcher' 0.7896660007536411ms
+[NX Daemon Server] - 2024-11-15T16:45:45.506Z - Time taken for 'build-project-configs' 30.03979199938476ms
+[NX Daemon Server] - 2024-11-15T16:45:45.513Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 10.601749999448657ms
+[NX Daemon Server] - 2024-11-15T16:45:45.541Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-15T16:45:45.542Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-11-15T16:45:45.542Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-15T16:45:45.542Z - Time taken for 'total execution time for createProjectGraph()' 32.15620799921453ms
+[NX Daemon Server] - 2024-11-15T16:46:15.617Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T00:59:43.167Z - Started listening on: /var/folders/_q/s_ft8bdj163f_1cpq62jnvxh0000gn/T/368d30ba8febc06ea676/d.sock
+[NX Daemon Server] - 2024-11-17T00:59:43.171Z - [WATCHER]: Subscribed to changes within: /Users/nazarii/IdeaProjects/online-shop (native)
+[NX Daemon Server] - 2024-11-17T00:59:43.172Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T00:59:43.173Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-11-17T00:59:43.174Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T00:59:43.175Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-11-17T00:59:43.228Z - [WATCHER]: Processing file changes in outputs
+(node:9093) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[NX Daemon Server] - 2024-11-17T00:59:43.570Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-17T00:59:43.571Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-17T00:59:43.571Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-17T00:59:43.577Z - Time taken for 'loadNxPlugins' 394.08775ms
+[NX Daemon Server] - 2024-11-17T00:59:43.618Z - Time taken for 'build-project-configs' 25.90141600000004ms
+[NX Daemon Server] - 2024-11-17T00:59:43.645Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 29.323292000000038ms
+[NX Daemon Server] - 2024-11-17T00:59:43.669Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-17T00:59:43.670Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-11-17T00:59:43.670Z - Time taken for 'total for creating and serializing project graph' 494.527083ms
+[NX Daemon Server] - 2024-11-17T00:59:43.672Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-11-17T00:59:43.672Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 495. Response time: 2.
+[NX Daemon Server] - 2024-11-17T00:59:43.734Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2024-11-17T00:59:43.734Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2024-11-17T00:59:43.734Z - Handled HASH_TASKS. Handling time: 14. Response time: 0.
+[NX Daemon Server] - 2024-11-17T00:59:43.765Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX Daemon Server] - 2024-11-17T00:59:43.765Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX Daemon Server] - 2024-11-17T00:59:43.765Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 24. Response time: 0.
+[NX Daemon Server] - 2024-11-17T00:59:46.560Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T00:59:46.688Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T00:59:47.540Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T00:59:47.608Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T00:59:47.670Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T00:59:47.737Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T00:59:47.791Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T00:59:47.843Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T00:59:47.912Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T00:59:47.978Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T00:59:48.235Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T01:00:30.940Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T01:03:40.838Z - [WATCHER]: apps/onlineshop-backend/project.json was modified
+[NX Daemon Server] - 2024-11-17T01:03:40.841Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T01:03:40.946Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-17T01:03:40.946Z - [REQUEST]: apps/onlineshop-backend/project.json
+[NX Daemon Server] - 2024-11-17T01:03:40.946Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-17T01:03:40.963Z - Time taken for 'hash changed files from watcher' 2.2478330000012647ms
+[NX Daemon Server] - 2024-11-17T01:03:41.032Z - Time taken for 'build-project-configs' 68.87933399999747ms
+[NX Daemon Server] - 2024-11-17T01:03:41.038Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 10.21312499998021ms
+[NX Daemon Server] - 2024-11-17T01:03:41.133Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-17T01:03:41.135Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-11-17T01:03:41.135Z - Time taken for 'total execution time for createProjectGraph()' 75.80741700000362ms
+[NX Daemon Server] - 2024-11-17T01:04:03.008Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T01:04:25.856Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-11-17T01:04:25.858Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2024-11-17T01:04:25.859Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-11-17T01:04:25.862Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-11-17T01:04:25.862Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-11-17T01:04:25.863Z - Time taken for 'total for creating and serializing project graph' 0.5218330000061542ms
+[NX Daemon Server] - 2024-11-17T01:04:25.866Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-11-17T01:04:25.866Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 4.
+[NX Daemon Server] - 2024-11-17T01:04:25.933Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2024-11-17T01:04:25.933Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2024-11-17T01:04:25.933Z - Handled HASH_TASKS. Handling time: 14. Response time: 0.
+[NX Daemon Server] - 2024-11-17T01:04:25.942Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX Daemon Server] - 2024-11-17T01:04:25.942Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX Daemon Server] - 2024-11-17T01:04:25.942Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-11-17T01:04:28.643Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T01:05:18.398Z - [WATCHER]: .gitignore was modified
+[NX Daemon Server] - 2024-11-17T01:05:18.402Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T01:05:18.402Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T01:05:18.403Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-17T01:05:18.403Z - [WATCHER]: Stopping the watcher for /Users/nazarii/IdeaProjects/online-shop (sources)
+[NX Daemon Server] - 2024-11-17T01:05:18.403Z - [WATCHER]: Stopping the watcher for /Users/nazarii/IdeaProjects/online-shop (outputs)
+[NX Daemon Server] - 2024-11-17T01:05:18.411Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"

@@ -251,14 +251,13 @@
             "parallelism": true
           },
           "serve": {
-            "executor": "@nxrocks/nx-spring-boot:serve",
+            "executor": "@nxrocks/nx-spring-boot:run",
             "options": {
               "root": "apps/onlineshop-backend",
-              "runFromParentModule": false
+              "args": [
+                "-Dspring-boot.run.profiles=local"
+              ]
             },
-            "dependsOn": [
-              "^install"
-            ],
             "configurations": {},
             "parallelism": true
           },

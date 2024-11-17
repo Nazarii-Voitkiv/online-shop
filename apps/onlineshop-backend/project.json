@@ -4,12 +4,14 @@
   "sourceRoot": "onlineshop-backend/src",
   "tags": [],
   "targets": {
-    "executor": "@nxrocks/nx-spring-boot:run",
-    "options": {
-      "root": "apps/onlineshop-backend",
-      "args": [
-        "-Dspring-boot.run.profiles=local"
-      ]
+    "serve": {
+      "executor": "@nxrocks/nx-spring-boot:run",
+      "options": {
+        "root": "apps/onlineshop-backend",
+        "args": [
+          "-Dspring-boot.run.profiles=local"
+        ]
+      }
     }
   }
 }
