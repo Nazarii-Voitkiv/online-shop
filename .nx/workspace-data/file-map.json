@@ -25,7 +25,7 @@
     "nonProjectFiles": [
       {
         "file": ".DS_Store",
-        "hash": "15864747072677461397"
+        "hash": "11384886928628735940"
       },
       {
         "file": ".angular/cache/18.2.11/onlineshop-frontend/.tsbuildinfo",
@@ -261,7 +261,7 @@
       },
       {
         "file": ".gitignore",
-        "hash": "13117984693027047402"
+        "hash": "7873282537648399096"
       },
       {
         "file": ".mvn/wrapper/maven-wrapper.properties",
@@ -270,6 +270,10 @@
       {
         "file": "README.md",
         "hash": "17456684707920018909"
+      },
+      {
+        "file": "apps/.DS_Store",
+        "hash": "14548321487824438079"
       },
       {
         "file": "eslint.config.js",
@@ -301,199 +305,11 @@
       }
     ],
     "projectFileMap": {
-      "onlineshop-frontend": [
-        {
-          "file": "apps/onlineshop-frontend/eslint.config.js",
-          "hash": "12883900717377691005",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "apps/onlineshop-frontend/jest.config.ts",
-          "hash": "12818464813938643287"
-        },
-        {
-          "file": "apps/onlineshop-frontend/project.json",
-          "hash": "10926838934222590400"
-        },
-        {
-          "file": "apps/onlineshop-frontend/public/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "apps/onlineshop-frontend/server.ts",
-          "hash": "8086175766969307244",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/ssr",
-            "npm:express"
-          ]
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/app/app.component.html",
-          "hash": "2268028467739130855"
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/app/app.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/app/app.component.spec.ts",
-          "hash": "12701245073822843456",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/app/app.component.ts",
-          "hash": "11832556136198864475",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "npm:@fortawesome/angular-fontawesome"
-          ]
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/app/app.config.server.ts",
-          "hash": "472700109066692288",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/platform-server"
-          ]
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/app/app.config.ts",
-          "hash": "2958330198811694491",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "npm:@angular/platform-browser"
-          ]
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/app/app.routes.ts",
-          "hash": "6185150965714414910",
-          "deps": [
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/app/layout/footer/footer.component.html",
-          "hash": "7091543318291050508"
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/app/layout/footer/footer.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/app/layout/footer/footer.component.spec.ts",
-          "hash": "5850760657800237085",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/app/layout/footer/footer.component.ts",
-          "hash": "1287155987204952989",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:@fortawesome/angular-fontawesome"
-          ]
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/app/layout/navbar/navbar.component.html",
-          "hash": "1418078072769916389"
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/app/layout/navbar/navbar.component.scss",
-          "hash": "206095468236459619"
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/app/layout/navbar/navbar.component.spec.ts",
-          "hash": "11611426068913683136",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/app/layout/navbar/navbar.component.ts",
-          "hash": "4015062473198779541",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:@angular/router",
-            "npm:@fortawesome/angular-fontawesome"
-          ]
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/app/shared/font-awesome-icons.ts",
-          "hash": "16879350142184217037",
-          "deps": [
-            "npm:@fortawesome/angular-fontawesome",
-            "npm:@fortawesome/free-solid-svg-icons",
-            "npm:@fortawesome/free-brands-svg-icons",
-            "npm:@fortawesome/free-regular-svg-icons"
-          ]
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/index.html",
-          "hash": "10921609293651519946"
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/main.server.ts",
-          "hash": "11653607448136507287",
-          "deps": [
-            "npm:@angular/platform-browser"
-          ]
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/main.ts",
-          "hash": "16635586463787978962",
-          "deps": [
-            "npm:@angular/platform-browser"
-          ]
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/styles.scss",
-          "hash": "17788899824995975898"
-        },
-        {
-          "file": "apps/onlineshop-frontend/src/test-setup.ts",
-          "hash": "12935735732682149507",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "apps/onlineshop-frontend/tailwind.config.js",
-          "hash": "12733601662613312770",
-          "deps": [
-            "npm:@nx/angular",
-            "npm:@tailwindcss/typography",
-            "npm:daisyui"
-          ]
-        },
-        {
-          "file": "apps/onlineshop-frontend/tsconfig.app.json",
-          "hash": "564685728328269220"
-        },
-        {
-          "file": "apps/onlineshop-frontend/tsconfig.editor.json",
-          "hash": "1055794200401717100"
-        },
-        {
-          "file": "apps/onlineshop-frontend/tsconfig.json",
-          "hash": "6424220500541951295"
-        },
-        {
-          "file": "apps/onlineshop-frontend/tsconfig.spec.json",
-          "hash": "2927375835638640771"
-        }
-      ],
       "onlineshop-backend": [
+        {
+          "file": "apps/onlineshop-backend/.DS_Store",
+          "hash": "426977317465535624"
+        },
         {
           "file": "apps/onlineshop-backend/.gitattributes",
           "hash": "6003687593561338678"
@@ -765,6 +581,198 @@
         {
           "file": "apps/onlineshop-backend/src/test/java/com/example/onlineshop/OnlineshopBackendApplicationTests.java",
           "hash": "592673799900571395"
+        }
+      ],
+      "onlineshop-frontend": [
+        {
+          "file": "apps/onlineshop-frontend/eslint.config.js",
+          "hash": "12883900717377691005",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "apps/onlineshop-frontend/jest.config.ts",
+          "hash": "12818464813938643287"
+        },
+        {
+          "file": "apps/onlineshop-frontend/project.json",
+          "hash": "10926838934222590400"
+        },
+        {
+          "file": "apps/onlineshop-frontend/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/onlineshop-frontend/server.ts",
+          "hash": "8086175766969307244",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/ssr",
+            "npm:express"
+          ]
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/app/app.component.html",
+          "hash": "2268028467739130855"
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/app/app.component.spec.ts",
+          "hash": "12701245073822843456",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/app/app.component.ts",
+          "hash": "11832556136198864475",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@fortawesome/angular-fontawesome"
+          ]
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/app/app.config.server.ts",
+          "hash": "472700109066692288",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-server"
+          ]
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/app/app.config.ts",
+          "hash": "2958330198811694491",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/app/app.routes.ts",
+          "hash": "6185150965714414910",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/app/layout/footer/footer.component.html",
+          "hash": "7091543318291050508"
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/app/layout/footer/footer.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/app/layout/footer/footer.component.spec.ts",
+          "hash": "5850760657800237085",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/app/layout/footer/footer.component.ts",
+          "hash": "1287155987204952989",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@fortawesome/angular-fontawesome"
+          ]
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/app/layout/navbar/navbar.component.html",
+          "hash": "1418078072769916389"
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/app/layout/navbar/navbar.component.scss",
+          "hash": "206095468236459619"
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/app/layout/navbar/navbar.component.spec.ts",
+          "hash": "11611426068913683136",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/app/layout/navbar/navbar.component.ts",
+          "hash": "4015062473198779541",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:@fortawesome/angular-fontawesome"
+          ]
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/app/shared/font-awesome-icons.ts",
+          "hash": "16879350142184217037",
+          "deps": [
+            "npm:@fortawesome/angular-fontawesome",
+            "npm:@fortawesome/free-solid-svg-icons",
+            "npm:@fortawesome/free-brands-svg-icons",
+            "npm:@fortawesome/free-regular-svg-icons"
+          ]
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/index.html",
+          "hash": "10921609293651519946"
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/main.server.ts",
+          "hash": "11653607448136507287",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/main.ts",
+          "hash": "16635586463787978962",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/styles.scss",
+          "hash": "17788899824995975898"
+        },
+        {
+          "file": "apps/onlineshop-frontend/src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "apps/onlineshop-frontend/tailwind.config.js",
+          "hash": "12733601662613312770",
+          "deps": [
+            "npm:@nx/angular",
+            "npm:@tailwindcss/typography",
+            "npm:daisyui"
+          ]
+        },
+        {
+          "file": "apps/onlineshop-frontend/tsconfig.app.json",
+          "hash": "564685728328269220"
+        },
+        {
+          "file": "apps/onlineshop-frontend/tsconfig.editor.json",
+          "hash": "1055794200401717100"
+        },
+        {
+          "file": "apps/onlineshop-frontend/tsconfig.json",
+          "hash": "6424220500541951295"
+        },
+        {
+          "file": "apps/onlineshop-frontend/tsconfig.spec.json",
+          "hash": "2927375835638640771"
         }
       ]
     }

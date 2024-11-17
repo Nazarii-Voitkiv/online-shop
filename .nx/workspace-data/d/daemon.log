@@ -3153,3 +3153,187 @@ Failed to process project graph. Run "nx reset" to fix this. Please report the i
 [NX Daemon Server] - 2024-11-17T01:05:18.403Z - [WATCHER]: Stopping the watcher for /Users/nazarii/IdeaProjects/online-shop (sources)
 [NX Daemon Server] - 2024-11-17T01:05:18.403Z - [WATCHER]: Stopping the watcher for /Users/nazarii/IdeaProjects/online-shop (outputs)
 [NX Daemon Server] - 2024-11-17T01:05:18.411Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
+[NX Daemon Server] - 2024-11-17T01:13:44.638Z - Started listening on: /var/folders/_q/s_ft8bdj163f_1cpq62jnvxh0000gn/T/368d30ba8febc06ea676/d.sock
+[NX Daemon Server] - 2024-11-17T01:13:44.645Z - [WATCHER]: Subscribed to changes within: /Users/nazarii/IdeaProjects/online-shop (native)
+[NX Daemon Server] - 2024-11-17T01:13:44.650Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T01:13:44.652Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-11-17T01:13:44.654Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T01:13:44.658Z - [REQUEST]: Client Request for Project Graph Received
+(node:10238) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[NX Daemon Server] - 2024-11-17T01:13:46.140Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-17T01:13:46.141Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-17T01:13:46.141Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-17T01:13:46.156Z - Time taken for 'loadNxPlugins' 1469.3155ms
+[NX Daemon Server] - 2024-11-17T01:13:46.245Z - Time taken for 'build-project-configs' 53.15454099999988ms
+[NX Daemon Server] - 2024-11-17T01:13:46.259Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 17.990125000000035ms
+[NX Daemon Server] - 2024-11-17T01:13:46.332Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-17T01:13:46.334Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-11-17T01:13:46.334Z - Time taken for 'total for creating and serializing project graph' 1675.989833ms
+[NX Daemon Server] - 2024-11-17T01:13:46.351Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-11-17T01:13:46.351Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1676. Response time: 17.
+[NX Daemon Server] - 2024-11-17T01:13:46.368Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-11-17T01:13:46.369Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-11-17T01:13:46.369Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 2. Response time: 1.
+[NX Daemon Server] - 2024-11-17T01:13:46.375Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-17T01:13:46.709Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T01:13:46.709Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-17T01:13:46.709Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T01:13:46.711Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-11-17T01:13:46.711Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-11-17T01:13:46.713Z - Time taken for 'total for creating and serializing project graph' 0.4912080000003698ms
+[NX Daemon Server] - 2024-11-17T01:13:46.718Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-11-17T01:13:46.719Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 8.
+[NX Daemon Server] - 2024-11-17T01:13:46.727Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-11-17T01:13:46.728Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-11-17T01:13:46.728Z - Time taken for 'total for creating and serializing project graph' 0.42929199999980483ms
+[NX Daemon Server] - 2024-11-17T01:13:46.737Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-11-17T01:13:46.737Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 9.
+[NX Daemon Server] - 2024-11-17T01:13:46.749Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-11-17T01:14:11.913Z - [WATCHER]: apps/onlineshop-backend/.gitignore was deleted
+[NX Daemon Server] - 2024-11-17T01:14:11.917Z - [REQUEST]: Responding to the client. File watch changed
+Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+    at _write (node:internal/streams/writable:491:11)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at /Users/nazarii/IdeaProjects/online-shop/node_modules/nx/src/daemon/server/shutdown-utils.js:73:16
+    at new Promise (<anonymous>)
+    at respondToClient (/Users/nazarii/IdeaProjects/online-shop/node_modules/nx/src/daemon/server/shutdown-utils.js:69:12)
+    at handleResult (/Users/nazarii/IdeaProjects/online-shop/node_modules/nx/src/daemon/server/server.js:178:52)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at async /Users/nazarii/IdeaProjects/online-shop/node_modules/nx/src/daemon/server/file-watching/file-watcher-sockets.js:27:9
+    at async /Users/nazarii/IdeaProjects/online-shop/node_modules/nx/src/utils/promised-based-queue.js:19:21 {
+  code: 'ERR_STREAM_DESTROYED'
+}
+[NX Daemon Server] - 2024-11-17T01:14:11.920Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-11-17T01:14:11.920Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2024-11-17T01:14:11.920Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T01:14:11.920Z - Time taken for 'changed-projects' 0.44024999999965075ms
+[NX Daemon Server] - 2024-11-17T01:14:11.920Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T01:14:11.920Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-17T01:14:11.920Z - [WATCHER]: Stopping the watcher for /Users/nazarii/IdeaProjects/online-shop (sources)
+[NX Daemon Server] - 2024-11-17T01:14:11.920Z - [WATCHER]: Stopping the watcher for /Users/nazarii/IdeaProjects/online-shop (outputs)
+[NX Daemon Server] - 2024-11-17T01:14:11.921Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
+[NX Daemon Server] - 2024-11-17T01:14:12.405Z - Started listening on: /var/folders/_q/s_ft8bdj163f_1cpq62jnvxh0000gn/T/368d30ba8febc06ea676/d.sock
+[NX Daemon Server] - 2024-11-17T01:14:12.409Z - [WATCHER]: Subscribed to changes within: /Users/nazarii/IdeaProjects/online-shop (native)
+[NX Daemon Server] - 2024-11-17T01:14:12.411Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T01:14:12.412Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-11-17T01:14:12.414Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T01:14:12.416Z - [REQUEST]: Client Request for Project Graph Received
+(node:10265) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[NX Daemon Server] - 2024-11-17T01:14:13.227Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-17T01:14:13.227Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-17T01:14:13.227Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-17T01:14:13.235Z - Time taken for 'loadNxPlugins' 808.822375ms
+[NX Daemon Server] - 2024-11-17T01:14:13.285Z - Time taken for 'build-project-configs' 33.39504099999999ms
+[NX Daemon Server] - 2024-11-17T01:14:13.292Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 9.749250000000075ms
+[NX Daemon Server] - 2024-11-17T01:14:13.324Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-17T01:14:13.325Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-11-17T01:14:13.326Z - Time taken for 'total for creating and serializing project graph' 909.6415ms
+[NX Daemon Server] - 2024-11-17T01:14:13.330Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-11-17T01:14:13.330Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 909. Response time: 5.
+[NX Daemon Server] - 2024-11-17T01:14:13.339Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-11-17T01:14:13.340Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-11-17T01:14:13.340Z - Time taken for 'total for creating and serializing project graph' 0.2934580000001006ms
+[NX Daemon Server] - 2024-11-17T01:14:13.342Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-11-17T01:14:13.342Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 2.
+[NX Daemon Server] - 2024-11-17T01:14:13.347Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-11-17T01:14:15.955Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T01:14:15.957Z - [WATCHER]: 1 file(s) created or restored, 1 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-11-17T01:14:15.958Z - [REQUEST]: Responding to the client. File watch changed
+Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+    at _write (node:internal/streams/writable:491:11)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at /Users/nazarii/IdeaProjects/online-shop/node_modules/nx/src/daemon/server/shutdown-utils.js:73:16
+    at new Promise (<anonymous>)
+    at respondToClient (/Users/nazarii/IdeaProjects/online-shop/node_modules/nx/src/daemon/server/shutdown-utils.js:69:12)
+    at handleResult (/Users/nazarii/IdeaProjects/online-shop/node_modules/nx/src/daemon/server/server.js:178:52)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at async /Users/nazarii/IdeaProjects/online-shop/node_modules/nx/src/daemon/server/file-watching/file-watcher-sockets.js:27:9
+    at async /Users/nazarii/IdeaProjects/online-shop/node_modules/nx/src/utils/promised-based-queue.js:19:21 {
+  code: 'ERR_STREAM_DESTROYED'
+}
+[NX Daemon Server] - 2024-11-17T01:14:15.959Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-11-17T01:14:15.959Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-11-17T01:14:15.959Z - Time taken for 'changed-projects' 0.09112500000037471ms
+[NX Daemon Server] - 2024-11-17T01:14:15.959Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T01:14:15.959Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-17T01:14:15.960Z - [WATCHER]: Stopping the watcher for /Users/nazarii/IdeaProjects/online-shop (sources)
+[NX Daemon Server] - 2024-11-17T01:14:15.960Z - [WATCHER]: Stopping the watcher for /Users/nazarii/IdeaProjects/online-shop (sources)
+[NX Daemon Server] - 2024-11-17T01:14:15.960Z - [WATCHER]: Stopping the watcher for /Users/nazarii/IdeaProjects/online-shop (outputs)
+[NX Daemon Server] - 2024-11-17T01:14:15.960Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
+[NX Daemon Server] - 2024-11-17T01:14:24.456Z - Started listening on: /var/folders/_q/s_ft8bdj163f_1cpq62jnvxh0000gn/T/368d30ba8febc06ea676/d.sock
+[NX Daemon Server] - 2024-11-17T01:14:24.458Z - [WATCHER]: Subscribed to changes within: /Users/nazarii/IdeaProjects/online-shop (native)
+[NX Daemon Server] - 2024-11-17T01:14:24.461Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T01:14:24.462Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-11-17T01:14:24.463Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T01:14:24.464Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-11-17T01:14:24.518Z - [WATCHER]: Processing file changes in outputs
+(node:10287) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[NX Daemon Server] - 2024-11-17T01:14:24.861Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-17T01:14:24.861Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-17T01:14:24.862Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-17T01:14:24.868Z - Time taken for 'loadNxPlugins' 395.91529199999997ms
+[NX Daemon Server] - 2024-11-17T01:14:24.915Z - Time taken for 'build-project-configs' 30.739832999999976ms
+[NX Daemon Server] - 2024-11-17T01:14:24.919Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 6.841542000000004ms
+[NX Daemon Server] - 2024-11-17T01:14:24.944Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-17T01:14:24.945Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-11-17T01:14:24.946Z - Time taken for 'total for creating and serializing project graph' 481.0738339999999ms
+[NX Daemon Server] - 2024-11-17T01:14:24.950Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-11-17T01:14:24.950Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 481. Response time: 5.
+[NX Daemon Server] - 2024-11-17T01:14:24.957Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-11-17T01:14:24.957Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-11-17T01:14:24.957Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-11-17T01:14:24.957Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-17T01:14:25.017Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T01:14:25.017Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-11-17T01:14:25.017Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T01:14:25.018Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-11-17T01:14:25.018Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-11-17T01:14:25.019Z - Time taken for 'total for creating and serializing project graph' 0.1569170000000213ms
+[NX Daemon Server] - 2024-11-17T01:14:25.019Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-11-17T01:14:25.020Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2024-11-17T01:14:25.024Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-11-17T01:14:25.024Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-11-17T01:14:25.024Z - Time taken for 'total for creating and serializing project graph' 0.1333750000000009ms
+[NX Daemon Server] - 2024-11-17T01:14:25.026Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-11-17T01:14:25.026Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2024-11-17T01:14:25.029Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-11-17T01:14:58.909Z - [WATCHER]: apps/onlineshop-backend/.gitignore was created or restored
+[NX Daemon Server] - 2024-11-17T01:14:58.910Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T01:14:58.911Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T01:14:58.911Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-17T01:14:58.911Z - [WATCHER]: Stopping the watcher for /Users/nazarii/IdeaProjects/online-shop (sources)
+[NX Daemon Server] - 2024-11-17T01:14:58.911Z - [WATCHER]: Stopping the watcher for /Users/nazarii/IdeaProjects/online-shop (outputs)
+[NX Daemon Server] - 2024-11-17T01:14:58.913Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
+[NX Daemon Server] - 2024-11-17T01:14:59.294Z - Started listening on: /var/folders/_q/s_ft8bdj163f_1cpq62jnvxh0000gn/T/368d30ba8febc06ea676/d.sock
+[NX Daemon Server] - 2024-11-17T01:14:59.298Z - [WATCHER]: Subscribed to changes within: /Users/nazarii/IdeaProjects/online-shop (native)
+[NX Daemon Server] - 2024-11-17T01:14:59.303Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T01:14:59.304Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-11-17T01:14:59.305Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-17T01:14:59.306Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-11-17T01:14:59.356Z - [WATCHER]: Processing file changes in outputs
+(node:10337) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[NX Daemon Server] - 2024-11-17T01:15:00.045Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-17T01:15:00.046Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-17T01:15:00.046Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-17T01:15:00.065Z - Time taken for 'loadNxPlugins' 737.171625ms
+[NX Daemon Server] - 2024-11-17T01:15:00.160Z - Time taken for 'build-project-configs' 66.32958300000007ms
+[NX Daemon Server] - 2024-11-17T01:15:00.178Z - Time taken for '@nxrocks/nx-spring-boot:createDependencies' 22.52862499999992ms
+[NX Daemon Server] - 2024-11-17T01:15:00.258Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-17T01:15:00.259Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-11-17T01:15:00.260Z - Time taken for 'total for creating and serializing project graph' 952.614459ms
+[NX Daemon Server] - 2024-11-17T01:15:00.262Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-11-17T01:15:00.262Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 953. Response time: 3.
+[NX Daemon Server] - 2024-11-17T01:15:00.270Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-11-17T01:15:00.270Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-11-17T01:15:00.271Z - Time taken for 'total for creating and serializing project graph' 0.26529200000004494ms
+[NX Daemon Server] - 2024-11-17T01:15:00.274Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-11-17T01:15:00.274Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 4.
+[NX Daemon Server] - 2024-11-17T01:15:00.281Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-11-17T01:16:58.297Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-11-17T01:17:00.079Z - [WATCHER]: Processing file changes in outputs
