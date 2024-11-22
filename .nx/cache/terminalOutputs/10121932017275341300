@@ -1,0 +1,53 @@
+Executing command: ./mvnw spring-boot:run -Dspring-boot.run.profiles=local
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------------< [0;36mcom.example:onlineshop[0;1m >-----------------------[m
+[[1;34mINFO[m] [1mBuilding onlineshop-backend 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m]   from pom.xml
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot:3.3.5:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36monlineshop[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mresources:3.3.1:resources[m [1m(default-resources)[m @ [36monlineshop[0;1m ---[m
+[[1;34mINFO[m] Copying 2 resources from src/main/resources to target/classes
+[[1;34mINFO[m] Copying 6 resources from src/main/resources to target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mcompiler:3.13.0:compile[m [1m(default-compile)[m @ [36monlineshop[0;1m ---[m
+[[1;34mINFO[m] Recompiling the module because of [1mchanged source code[m.
+[[1;34mINFO[m] Compiling 121 source files with javac [debug parameters release 21] to target/classes
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] /Users/nazarii/IdeaProjects/online-shop/apps/onlineshop-backend/src/main/java/fr/codecake/ecom/wire/security/primary/CorsFilterConfiguration.java:[1,1] reached end of file while parsing
+[[1;34mINFO[m] 1 error
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  2.054 s
+[[1;34mINFO[m] Finished at: 2024-11-18T02:52:06+01:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile[m [1m(default-compile)[m on project [36monlineshop[m: [1;31mCompilation failure[m
+[[1;31mERROR[m] [1;31m/Users/nazarii/IdeaProjects/online-shop/apps/onlineshop-backend/src/main/java/fr/codecake/ecom/wire/security/primary/CorsFilterConfiguration.java:[1,1] reached end of file while parsing[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[0m[0m[1m[31mFailed to execute command: ./mvnw spring-boot:run -Dspring-boot.run.profiles=local[39m[22m
+[1m[31mError: Command failed: ./mvnw spring-boot:run -Dspring-boot.run.profiles=local[39m[22m
+[1m[31m    at genericNodeError (node:internal/errors:983:15)[39m[22m
+[1m[31m    at wrappedFn (node:internal/errors:537:14)[39m[22m
+[1m[31m    at checkExecSyncError (node:child_process:888:11)[39m[22m
+[1m[31m    at execSync (node:child_process:960:15)[39m[22m
+[1m[31m    at runBuilderCommand (/Users/nazarii/IdeaProjects/online-shop/node_modules/@nxrocks/common-jvm/src/lib/utils/utils.js:52:38)[39m[22m
+[1m[31m    at runBootPluginCommand (/Users/nazarii/IdeaProjects/online-shop/node_modules/@nxrocks/nx-spring-boot/src/utils/boot-utils.js:22:47)[39m[22m
+[1m[31m    at runExecutor (/Users/nazarii/IdeaProjects/online-shop/node_modules/@nxrocks/nx-spring-boot/src/executors/run/executor.js:8:50)[39m[22m
+[1m[31m    at runExecutorInternal (/Users/nazarii/IdeaProjects/online-shop/node_modules/nx/src/command-line/run/run.js:98:19)[39m[22m
+[1m[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m[22m
+[1m[31m    at async /Users/nazarii/IdeaProjects/online-shop/node_modules/nx/src/command-line/run/run.js:176:44[39m[22m
+[1m[31m    at async handleErrors (/Users/nazarii/IdeaProjects/online-shop/node_modules/nx/src/utils/handle-errors.js:8:24)[39m[22m
+[1m[31m    at async process.<anonymous> (/Users/nazarii/IdeaProjects/online-shop/node_modules/nx/bin/run-executor.js:59:28)[39m[22m

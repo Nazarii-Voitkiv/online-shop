@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx run onlineshop-backend:serve",
-    "startTime": "2024-11-17T14:02:19.457Z",
-    "endTime": "2024-11-17T14:02:25.938Z",
+    "startTime": "2024-11-21T22:47:54.814Z",
+    "endTime": "2024-11-21T22:47:58.038Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "onlineshop-backend:serve",
       "target": "serve",
       "projectName": "onlineshop-backend",
-      "hash": "15408944179081194539",
-      "startTime": "2024-11-17T14:02:19.474Z",
-      "endTime": "2024-11-17T14:02:25.937Z",
+      "hash": "14264082018203942404",
+      "startTime": "2024-11-21T22:47:54.821Z",
+      "endTime": "2024-11-21T22:47:58.037Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1

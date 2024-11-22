@@ -24,143 +24,263 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/@angular_platform-browser.js",
-        "hash": "12005858338538527651"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "7873282537648399096"
-      },
-      {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/chunk-RLQYMCCG.js",
-        "hash": "3112093679011518441"
-      },
-      {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/@angular_core.js.map",
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@angular_common_http.js.map",
         "hash": "9947606979680686569"
       },
       {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/@fortawesome_free-solid-svg-icons.js.map",
-        "hash": "215838025755161085"
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-7VDYRVFC.js.map",
+        "hash": "2269105538248380228"
       },
       {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/@angular_common.js.map",
-        "hash": "9947606979680686569"
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/ACWU3NT2-VYEVDMCM.js.map",
+        "hash": "7880648360381766162"
       },
       {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@ng-web-apis_universal.js",
+        "hash": "13747378217966604218"
       },
       {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/@fortawesome_angular-fontawesome.js.map",
-        "hash": "932770600247815965"
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@angular_core.js",
+        "hash": "1035364483666285563"
       },
       {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/@fortawesome_free-regular-svg-icons.js",
-        "hash": "1759025219879386969"
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@angular_common_http.js",
+        "hash": "18042848421731254480"
       },
       {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/package.json",
-        "hash": "8630294688235076505"
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@tanstack_angular-query-experimental.js.map",
+        "hash": "17259591960243632443"
       },
       {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/@angular_router.js",
-        "hash": "4178105442776621227"
-      },
-      {
-        "file": "apps/.DS_Store",
-        "hash": "14548321487824438079"
-      },
-      {
-        "file": ".mvn/wrapper/maven-wrapper.properties",
-        "hash": "7720921598456675219"
-      },
-      {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/@angular_core.js",
-        "hash": "374130146017464804"
-      },
-      {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/@angular_platform-browser.js.map",
-        "hash": "9947606979680686569"
-      },
-      {
-        "file": "README.md",
-        "hash": "17456684707920018909"
-      },
-      {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/@fortawesome_free-regular-svg-icons.js.map",
-        "hash": "10718611198164527005"
-      },
-      {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/@fortawesome_free-brands-svg-icons.js",
-        "hash": "1208998352290070422"
-      },
-      {
-        "file": "package.json",
-        "hash": "14862264494399865416"
-      },
-      {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/chunk-RLQYMCCG.js.map",
-        "hash": "858390967128546872"
-      },
-      {
-        "file": "eslint.config.js",
-        "hash": "2478217381773231556"
-      },
-      {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/chunk-RKRURVMC.js.map",
-        "hash": "9813191056563381842"
-      },
-      {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/chunk-RKRURVMC.js",
-        "hash": "5757443290799583975"
-      },
-      {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/@fortawesome_angular-fontawesome.js",
-        "hash": "2616159301906116371"
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-EWFCY476.js",
+        "hash": "3962307745120159192"
       },
       {
         "file": "tsconfig.base.json",
         "hash": "16936441711144470533"
       },
       {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/@fortawesome_free-brands-svg-icons.js.map",
-        "hash": "17901373491241630401"
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@tanstack_angular-query-experimental.js.map",
+        "hash": "13571663197429801020"
       },
       {
-        "file": ".DS_Store",
-        "hash": "11384886928628735940"
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-ZCSU7L3E.js",
+        "hash": "18327539060888316566"
       },
       {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/@angular_common.js",
-        "hash": "207142711563674758"
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@angular_common.js.map",
+        "hash": "9947606979680686569"
       },
       {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/chunk-WDMUDEB6.js",
-        "hash": "6404267885737011678"
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-WHJPS7FY.js",
+        "hash": "81195332334216611"
       },
       {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/@fortawesome_free-solid-svg-icons.js",
-        "hash": "10364638557525977162"
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-ZL3KHTLZ.js",
+        "hash": "3547809197937230765"
       },
       {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/@angular_router.js.map",
-        "hash": "11514204191108920794"
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/xhr2-6E56N3JL.js",
+        "hash": "13299406953711832293"
       },
       {
-        "file": "jest.config.ts",
-        "hash": "3494843969422251966"
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/ACWU3NT2-VYEVDMCM.js",
+        "hash": "4337967435025815644"
       },
       {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/chunk-ZCKB6RUH.js.map",
-        "hash": "3809319072861454665"
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@angular_router.js.map",
+        "hash": "9947606979680686569"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-ZL3KHTLZ.js.map",
+        "hash": "16389673451464202143"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/7QLFAFLW-DH3MLMTM.js",
+        "hash": "5837635455378167174"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@angular_platform-browser.js",
+        "hash": "8198405958113589537"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@fortawesome_free-solid-svg-icons.js",
+        "hash": "5589718602534353858"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@fortawesome_free-regular-svg-icons.js",
+        "hash": "2107909428753202845"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-WHJPS7FY.js.map",
+        "hash": "13966799595415485874"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@fortawesome_free-brands-svg-icons.js.map",
+        "hash": "14219232689881577341"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-EWFCY476.js.map",
+        "hash": "5004865851384720191"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/7QLFAFLW-YCSCM2GD.js",
+        "hash": "12350756038211316200"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@angular_common.js",
+        "hash": "14968000446518258470"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@fortawesome_free-regular-svg-icons.js.map",
+        "hash": "10718611198164527005"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@fortawesome_free-regular-svg-icons.js",
+        "hash": "13578675950266607122"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-ZSY7TSMJ.js.map",
+        "hash": "15627567513603610943"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/dev-GRCE5DV6.js",
+        "hash": "13666450172442593178"
       },
       {
         "file": ".gitattributes",
         "hash": "6003687593561338678"
       },
       {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/chunk-WDMUDEB6.js.map",
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@angular_core.js.map",
+        "hash": "9947606979680686569"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/dev-GRCE5DV6.js.map",
+        "hash": "17374178085369601307"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "7873282537648399096"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-7VDYRVFC.js",
+        "hash": "16690119359801548102"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@angular_platform-browser.js",
+        "hash": "2346962918064771011"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-D3EDJPAT.js",
+        "hash": "4642211050073281906"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-LV3DCXXS.js",
+        "hash": "4900910780719682595"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/rxjs.js",
+        "hash": "16535465306890723326"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-BJWEDLTQ.js.map",
+        "hash": "9947606979680686569"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/.tsbuildinfo",
+        "hash": "15522877053239905581"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@tanstack_angular-query-experimental.js",
+        "hash": "3687222115672406489"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/7QLFAFLW-YCSCM2GD.js.map",
+        "hash": "6841059327923400718"
+      },
+      {
+        "file": "eslint.config.js",
+        "hash": "2478217381773231556"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/ACWU3NT2-37W7JPNU.js.map",
+        "hash": "12398153397129232357"
+      },
+      {
+        "file": ".mvn/wrapper/maven-wrapper.properties",
+        "hash": "7720921598456675219"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/rxjs.js",
+        "hash": "15149084454791965530"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/angular-auth-oidc-client.js",
+        "hash": "9279662117002235417"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@fortawesome_free-solid-svg-icons.js.map",
+        "hash": "12681669606708032609"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/xhr2-6E56N3JL.js.map",
+        "hash": "14876816803582843697"
+      },
+      {
+        "file": ".DS_Store",
+        "hash": "11384886928628735940"
+      },
+      {
+        "file": "apps/.DS_Store",
+        "hash": "16725859710507304632"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-3FC4Q4IP.js",
+        "hash": "3678899761202225472"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/rxjs.js.map",
+        "hash": "9947606979680686569"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-5MJBDJO7.js",
+        "hash": "2189912489121249827"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@fortawesome_free-brands-svg-icons.js.map",
+        "hash": "17901373491241630401"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-ZCSU7L3E.js.map",
+        "hash": "18401650634073028427"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@angular_common_http.js",
+        "hash": "223387801129085757"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@angular_router.js.map",
+        "hash": "9947606979680686569"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/angular-auth-oidc-client.js.map",
+        "hash": "14633303997300236084"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@fortawesome_free-brands-svg-icons.js",
+        "hash": "9027780260594956227"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/angular-auth-oidc-client.js",
+        "hash": "9710053365357001077"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-LV3DCXXS.js.map",
         "hash": "9947606979680686569"
       },
       {
@@ -168,19 +288,501 @@
         "hash": "6647949363389808819"
       },
       {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/.tsbuildinfo",
-        "hash": "15522877053239905581"
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@angular_common.js.map",
+        "hash": "9947606979680686569"
       },
       {
-        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_temp_8f7a45d3/chunk-ZCKB6RUH.js",
-        "hash": "10667178991310088111"
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-6FZTRR6V.js.map",
+        "hash": "3809319072861454665"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-3FC4Q4IP.js.map",
+        "hash": "6435274265928154063"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-BJWEDLTQ.js",
+        "hash": "9448669345869117839"
+      },
+      {
+        "file": "README.md",
+        "hash": "17456684707920018909"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@angular_core.js",
+        "hash": "15981443480266887225"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@angular_router.js",
+        "hash": "9480124196676108448"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/ACWU3NT2-37W7JPNU.js",
+        "hash": "7504967593160852224"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@angular_common_http.js.map",
+        "hash": "9947606979680686569"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-ZJVVXY7H.js.map",
+        "hash": "6635497458395669767"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/angular-auth-oidc-client.js.map",
+        "hash": "13533563451580629922"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-5MJBDJO7.js.map",
+        "hash": "16919782986939644929"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/dev-JMWIKTX6.js",
+        "hash": "13587858490824434331"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-D3EDJPAT.js.map",
+        "hash": "14140656311146846063"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/rxjs.js.map",
+        "hash": "9947606979680686569"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-6CUFB56J.js",
+        "hash": "8026998336467781780"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@fortawesome_free-solid-svg-icons.js",
+        "hash": "17154574225380477353"
       },
       {
         "file": "nx.json",
         "hash": "4546449642935827340"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@tanstack_angular-query-experimental.js",
+        "hash": "8333973261766709286"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/_metadata.json",
+        "hash": "1377678565145350310"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-ZJVVXY7H.js",
+        "hash": "38713942187015629"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@angular_common.js",
+        "hash": "2722462152511115592"
+      },
+      {
+        "file": "package.json",
+        "hash": "14862264494399865416"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@fortawesome_free-solid-svg-icons.js.map",
+        "hash": "215838025755161085"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-AJNGMGJC.js.map",
+        "hash": "6500282652321884771"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@angular_platform-server.js",
+        "hash": "4416969680925564916"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@fortawesome_angular-fontawesome.js",
+        "hash": "5192241743391374092"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/_metadata.json",
+        "hash": "12982698406731607156"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-ZSY7TSMJ.js",
+        "hash": "13183798722624893018"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@fortawesome_free-regular-svg-icons.js.map",
+        "hash": "6850830308592578146"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/dev-JMWIKTX6.js.map",
+        "hash": "5445603966279341187"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-AWFOP73G.js",
+        "hash": "675939615436528961"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-QNQLTKJ5.js",
+        "hash": "7122362782066833066"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-6FZTRR6V.js",
+        "hash": "1615442310440597311"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/package.json",
+        "hash": "8630294688235076505"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-AJNGMGJC.js",
+        "hash": "7593191439047093873"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@fortawesome_free-brands-svg-icons.js",
+        "hash": "6140854667388065414"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@fortawesome_angular-fontawesome.js.map",
+        "hash": "5603951272734135806"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@angular_platform-browser.js.map",
+        "hash": "9947606979680686569"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-AWFOP73G.js.map",
+        "hash": "5686961709153360306"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@angular_platform-browser.js.map",
+        "hash": "9947606979680686569"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@angular_platform-server.js.map",
+        "hash": "8743708418694849489"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@angular_router.js",
+        "hash": "5926944898501886967"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@fortawesome_angular-fontawesome.js.map",
+        "hash": "8033327926131401884"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/chunk-6CUFB56J.js.map",
+        "hash": "14247935817799171262"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@fortawesome_angular-fontawesome.js",
+        "hash": "14004100520695880562"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/7QLFAFLW-DH3MLMTM.js.map",
+        "hash": "7030197778112399035"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/package.json",
+        "hash": "8630294688235076505"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps/@angular_core.js.map",
+        "hash": "9947606979680686569"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-QNQLTKJ5.js.map",
+        "hash": "9827384844553500503"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-TSOILODS.js",
+        "hash": "14085889194598837418"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/@ng-web-apis_universal.js.map",
+        "hash": "14164180757789971395"
+      },
+      {
+        "file": ".angular/cache/18.2.11/onlineshop-frontend/vite/deps_ssr/chunk-TSOILODS.js.map",
+        "hash": "1825879276648070936"
       }
     ],
     "projectFileMap": {
+      "onlineshop-backend": [
+        {
+          "file": "apps/onlineshop-backend/.DS_Store",
+          "hash": "7413338066379666723"
+        },
+        {
+          "file": "apps/onlineshop-backend/.gitattributes",
+          "hash": "6003687593561338678"
+        },
+        {
+          "file": "apps/onlineshop-backend/.gitignore",
+          "hash": "15369637531366141343"
+        },
+        {
+          "file": "apps/onlineshop-backend/.mvn/wrapper/maven-wrapper.properties",
+          "hash": "7720921598456675219"
+        },
+        {
+          "file": "apps/onlineshop-backend/compose.yaml",
+          "hash": "11530964953390062056"
+        },
+        {
+          "file": "apps/onlineshop-backend/mvnw",
+          "hash": "15069388377727069083"
+        },
+        {
+          "file": "apps/onlineshop-backend/mvnw.cmd",
+          "hash": "13144227073390459929"
+        },
+        {
+          "file": "apps/onlineshop-backend/pom.xml",
+          "hash": "11676505153506220359"
+        },
+        {
+          "file": "apps/onlineshop-backend/project.json",
+          "hash": "12421752366319729020"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/OnlineshopBackendApplication.java",
+          "hash": "11066694322888983410"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/application/UsersApplicationService.java",
+          "hash": "17665920320680668740"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/Authority.java",
+          "hash": "4804590108375311658"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java",
+          "hash": "7666454374413210377"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/repository/UserRepository.java",
+          "hash": "5560417282860546381"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/service/UserReader.java",
+          "hash": "3776545632020881445"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/service/UserSynchronizer.java",
+          "hash": "15785250301493924713"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/AuthorityName.java",
+          "hash": "11610018267412785803"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserAddress.java",
+          "hash": "2890310752783422935"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserAddressToUpdate.java",
+          "hash": "11705934223588009631"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserEmail.java",
+          "hash": "5402902196352267241"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserFirstname.java",
+          "hash": "3606787121366910078"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserImageUrl.java",
+          "hash": "7298625800861728278"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserLastname.java",
+          "hash": "7260230917383935360"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserPublicId.java",
+          "hash": "9996045256540806716"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/primary/RestAuthority.java",
+          "hash": "15700690744773819624"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/primary/RestUser.java",
+          "hash": "16150744822181271246"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/primary/UsersResource.java",
+          "hash": "1601519476645046722"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/secondary/entity/AuthorityEntity.java",
+          "hash": "7187503834904843752"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/secondary/entity/UserEntity.java",
+          "hash": "12154108776213446936"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/secondary/repository/JpaUserRepository.java",
+          "hash": "11238506190396394752"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/secondary/repository/SpringDataUserRepository.java",
+          "hash": "3489980398591567303"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/secondary/service/kinde/KindeAccessToken.java",
+          "hash": "15269948775184953210"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/secondary/service/kinde/KindeService.java",
+          "hash": "15461158292402201892"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/application/AuthenticatedUser.java",
+          "hash": "15368807351520709277"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/application/AuthenticationException.java",
+          "hash": "5757832465838909242"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/application/NotAuthenticatedUserException.java",
+          "hash": "4567616109439445987"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/application/UnknownAuthenticationException.java",
+          "hash": "10370072237896607165"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/domain/Role.java",
+          "hash": "9366040477605027789"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/domain/Roles.java",
+          "hash": "14725545446949790578"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/domain/Username.java",
+          "hash": "17735589495499780730"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/infrastructure/primary/KindeJwtAuthenticationConverter.java",
+          "hash": "8849083776865014181"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/infrastructure/primary/SecurityConfiguration.java",
+          "hash": "13492255309084767397"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/Assert.java",
+          "hash": "17802536050839114502"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/AssertionErrorType.java",
+          "hash": "13567999421734272265"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/AssertionException.java",
+          "hash": "888364616550091893"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/MissingMandatoryValueException.java",
+          "hash": "3613726216200571828"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/NotAColorException.java",
+          "hash": "5934458552140514721"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/NotAfterTimeException.java",
+          "hash": "5668103597103744435"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/NotBeforeTimeException.java",
+          "hash": "14800292161049049571"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/NullElementInCollectionException.java",
+          "hash": "8605176234078523812"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/NumberValueTooHighException.java",
+          "hash": "4424557052820639609"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/NumberValueTooLowException.java",
+          "hash": "7958087518255897283"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/StringTooLongException.java",
+          "hash": "4177989158202332299"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/StringTooShortException.java",
+          "hash": "14143401162206249991"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/TooManyElementsException.java",
+          "hash": "6579082221959161055"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/infrastructure/primary/BeanValidationErrorsHandler.java",
+          "hash": "16175377546235174104"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/jpa/AbstractAuditingEntity.java",
+          "hash": "3246690953141419264"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/wire/postgresql/infrastructure/DatabaseConfiguration.java",
+          "hash": "16958451802399026060"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/wire/security/primary/CorsFilterConfiguration.java",
+          "hash": "17573921878092451209"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/wire/security/primary/CorsProperties.java",
+          "hash": "16874172031051759593"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/resources/application-local.yml",
+          "hash": "13152398757182459833"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/resources/application.yml",
+          "hash": "17580033487778932946"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/resources/db/changelog/00000000000001_user.xml",
+          "hash": "10618835286075025715"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/resources/db/changelog/00000000000002_product_category.xml",
+          "hash": "13101303910860803828"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/resources/db/changelog/00000000000003_product.xml",
+          "hash": "14721450338263207577"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/resources/db/changelog/00000000000004_order.xml",
+          "hash": "17657547789565014228"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/resources/db/changelog/master.xml",
+          "hash": "14166920926509160395"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/main/resources/db/data/authority.csv",
+          "hash": "11997263253237822955"
+        },
+        {
+          "file": "apps/onlineshop-backend/src/test/java/com/example/onlineshop/OnlineshopBackendApplicationTests.java",
+          "hash": "592673799900571395"
+        }
+      ],
       "onlineshop-frontend": [
         {
           "file": "apps/onlineshop-frontend/eslint.config.js",
@@ -426,284 +1028,6 @@
         {
           "file": "apps/onlineshop-frontend/tsconfig.spec.json",
           "hash": "2927375835638640771"
-        }
-      ],
-      "onlineshop-backend": [
-        {
-          "file": "apps/onlineshop-backend/.DS_Store",
-          "hash": "7413338066379666723"
-        },
-        {
-          "file": "apps/onlineshop-backend/.gitattributes",
-          "hash": "6003687593561338678"
-        },
-        {
-          "file": "apps/onlineshop-backend/.gitignore",
-          "hash": "15369637531366141343"
-        },
-        {
-          "file": "apps/onlineshop-backend/.mvn/wrapper/maven-wrapper.properties",
-          "hash": "7720921598456675219"
-        },
-        {
-          "file": "apps/onlineshop-backend/compose.yaml",
-          "hash": "11530964953390062056"
-        },
-        {
-          "file": "apps/onlineshop-backend/mvnw",
-          "hash": "15069388377727069083"
-        },
-        {
-          "file": "apps/onlineshop-backend/mvnw.cmd",
-          "hash": "13144227073390459929"
-        },
-        {
-          "file": "apps/onlineshop-backend/pom.xml",
-          "hash": "11676505153506220359"
-        },
-        {
-          "file": "apps/onlineshop-backend/project.json",
-          "hash": "12421752366319729020"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/OnlineshopBackendApplication.java",
-          "hash": "11066694322888983410"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/application/UsersApplicationService.java",
-          "hash": "1855974421572568794"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/Authority.java",
-          "hash": "4804590108375311658"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/aggregate/User.java",
-          "hash": "6652619385927062667"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/repository/UserRepository.java",
-          "hash": "12815718892339737971"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/service/UserReader.java",
-          "hash": "14139342671157537357"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/service/UserSynchronizer.java",
-          "hash": "11891078915536887724"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/AuthorityName.java",
-          "hash": "11610018267412785803"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserAddress.java",
-          "hash": "2890310752783422935"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserAddressToUpdate.java",
-          "hash": "10254593974085822824"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserEmail.java",
-          "hash": "5402902196352267241"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserFirstName.java",
-          "hash": "2401148388124834121"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserImageUrl.java",
-          "hash": "7298625800861728278"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserLastName.java",
-          "hash": "973362275984002084"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/domain/user/vo/UserPublicId.java",
-          "hash": "9996045256540806716"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/primary/RestAuthority.java",
-          "hash": "14552498728797339375"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/primary/RestUser.java",
-          "hash": "6510291712028463229"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/primary/UsersResource.java",
-          "hash": "1601519476645046722"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/secondary/entity/AuthorityEntity.java",
-          "hash": "7187503834904843752"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/secondary/entity/UserEntity.java",
-          "hash": "12154108776213446936"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/secondary/repository/JpaUserRepository.java",
-          "hash": "11238506190396394752"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/secondary/repository/SpringDataUserRepository.java",
-          "hash": "3489980398591567303"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/secondary/service/kinde/KindeAccessToken.java",
-          "hash": "15269948775184953210"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/order/infrastructure/secondary/service/kinde/KindeService.java",
-          "hash": "15461158292402201892"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/application/AuthenticatedUser.java",
-          "hash": "15368807351520709277"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/application/AuthenticationException.java",
-          "hash": "5757832465838909242"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/application/NotAuthenticatedUserException.java",
-          "hash": "4567616109439445987"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/application/UnknownAuthenticationException.java",
-          "hash": "10370072237896607165"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/domain/Role.java",
-          "hash": "9366040477605027789"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/domain/Roles.java",
-          "hash": "14725545446949790578"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/domain/Username.java",
-          "hash": "17735589495499780730"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/infrastructure/primary/KindeJwtAuthenticationConverter.java",
-          "hash": "8849083776865014181"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/authentication/infrastructure/primary/SecurityConfiguration.java",
-          "hash": "13492255309084767397"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/Assert.java",
-          "hash": "17802536050839114502"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/AssertionErrorType.java",
-          "hash": "13567999421734272265"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/AssertionException.java",
-          "hash": "888364616550091893"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/MissingMandatoryValueException.java",
-          "hash": "3613726216200571828"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/NotAColorException.java",
-          "hash": "5934458552140514721"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/NotAfterTimeException.java",
-          "hash": "5668103597103744435"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/NotBeforeTimeException.java",
-          "hash": "14800292161049049571"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/NullElementInCollectionException.java",
-          "hash": "8605176234078523812"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/NumberValueTooHighException.java",
-          "hash": "4424557052820639609"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/NumberValueTooLowException.java",
-          "hash": "7958087518255897283"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/StringTooLongException.java",
-          "hash": "4177989158202332299"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/StringTooShortException.java",
-          "hash": "14143401162206249991"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/domain/TooManyElementsException.java",
-          "hash": "6579082221959161055"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/error/infrastructure/primary/BeanValidationErrorsHandler.java",
-          "hash": "16175377546235174104"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/shared/jpa/AbstractAuditingEntity.java",
-          "hash": "3246690953141419264"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/wire/postgresql/infrastructure/DatabaseConfiguration.java",
-          "hash": "16958451802399026060"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/wire/security/primary/CorsFilterConfiguration.java",
-          "hash": "17573921878092451209"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/java/com/example/onlineshop/wire/security/primary/CorsProperties.java",
-          "hash": "16874172031051759593"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/resources/application-local.yml",
-          "hash": "13152398757182459833"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/resources/application.yml",
-          "hash": "3455350259296114287"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/resources/db/changelog/00000000000001_user.xml",
-          "hash": "10618835286075025715"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/resources/db/changelog/00000000000002_product_category.xml",
-          "hash": "13101303910860803828"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/resources/db/changelog/00000000000003_product.xml",
-          "hash": "14721450338263207577"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/resources/db/changelog/00000000000004_order.xml",
-          "hash": "17657547789565014228"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/resources/db/changelog/master.xml",
-          "hash": "14166920926509160395"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/main/resources/db/data/authority.csv",
-          "hash": "11997263253237822955"
-        },
-        {
-          "file": "apps/onlineshop-backend/src/test/java/com/example/onlineshop/OnlineshopBackendApplicationTests.java",
-          "hash": "592673799900571395"
         }
       ]
     }
