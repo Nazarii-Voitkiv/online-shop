@@ -1,8 +1,0 @@
-
-[0m[7m[1m[31m NX [39m[22m[27m[0m  [31mThe /Users/nazarii/IdeaProjects/online-shop/apps/onlineshop-frontend/src/environments/environment.production.ts path in file replacements does not exist.[39m
-
-Error: The /Users/nazarii/IdeaProjects/online-shop/apps/onlineshop-frontend/src/environments/environment.production.ts path in file replacements does not exist.
-    at normalizeOptions (/Users/nazarii/IdeaProjects/online-shop/node_modules/@angular/build/src/builders/application/options.js:74:23)
-    at async buildApplicationInternal (/Users/nazarii/IdeaProjects/online-shop/node_modules/@angular/build/src/builders/application/index.js:46:31)
-    at async serveWithVite (/Users/nazarii/IdeaProjects/online-shop/node_modules/@angular/build/src/builders/dev-server/vite-server.js:127:22)
-
