@@ -8,6 +8,8 @@ import com.example.online_shop.service.user.UserService;
 import com.example.online_shop.utils.JwtUtil;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletResponse;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.*;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -37,8 +39,11 @@ public class AuthenticationController {
     @Autowired
     private JwtUtil jwtUtil;
 
+    public static final String TOKEN_PREFIX = "Bearer ";
+    public static final String HEADER_STRING = "Authorization";
+
     @PostMapping("/authenticate")
-    private AuthenticationResponse createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest, HttpServletResponse response) throws BadCredentialsException, DisabledException, UsernameNotFoundException, IOException, ServletException {
+    private void createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest, HttpServletResponse response) throws BadCredentialsException, DisabledException, UsernameNotFoundException, IOException, ServletException, JSONException {
 
         try {
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authenticationRequest.getUsername(), authenticationRequest.getPassword()));
@@ -46,12 +51,22 @@ public class AuthenticationController {
             throw new BadCredentialsException("Invalid username or password.", e);
         } catch (DisabledException e) {
             response.sendError(HttpServletResponse.SC_NOT_ACCEPTABLE, "User is not activated.");
-            return null;
+            return;
         }
 
         final UserDetails userDetails = userDetailsService.loadUserByUsername(authenticationRequest.getUsername());
         User user = userRepository.findFirstByEmail(authenticationRequest.getUsername());
         final String jwt = jwtUtil.generateToken(authenticationRequest.getUsername());
-        return new AuthenticationResponse(jwt);
+//        return new AuthenticationResponse(jwt);
+
+        response.getWriter().write(new JSONObject()
+                .put("userId",user.getId())
+                .put("userRole", user.getUserRole())
+                .toString()
+        );
+
+        response.addHeader("Access-Control-Expose-Headers", "Authorization");
+        response.addHeader("Access-Control-Allow-Headers", "Authorization,X-PINGGOTHER,Origin,X-Requested-With,Content-Type,Accept,X-Custom-Header");
+        response.addHeader(HEADER_STRING, TOKEN_PREFIX + jwt);
     }
 }

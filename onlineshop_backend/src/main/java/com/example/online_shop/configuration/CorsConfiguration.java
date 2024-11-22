@@ -17,6 +17,7 @@ public class CorsConfiguration {
                 corsRegistry
                         .addMapping("/**")
                         .allowedOrigins("http://localhost:4200")
+                        .allowedHeaders("Authorization", "Content-Type", "Accept")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
             }

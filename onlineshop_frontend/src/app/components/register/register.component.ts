@@ -11,7 +11,6 @@ import {AuthService} from "../../services/auth-service/auth.service";
     RouterLink, // Для маршрутизації
     ReactiveFormsModule,
     NgIf,
-    // Для роботи з реактивними формами
   ],
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'] // Виправлено: styleUrl → styleUrls

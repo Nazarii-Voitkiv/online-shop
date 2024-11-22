@@ -1,0 +1,57 @@
+<div class="relative flex flex-col justify-center h-screen overflow-hidden">
+    <div class="w-full p-6 m-auto bg-white rounded-md shadow-md lg:max-w-md">
+        <h1 class="text-3xl font-semibold text-center text-black-700">Login</h1>
+
+        <!-- Форма -->
+        <form class="space-y-4" [formGroup]="validateForm">
+            <!-- Поле Username -->
+            <div>
+                <label class="label">
+                    <span class="text-base label-text">Username</span>
+                </label>
+                <input
+                        type="text"
+                        placeholder="Enter Email"
+                        class="w-full input input-bordered input-primary"
+                        formControlName="username"
+                />
+                <div *ngIf="validateForm.get('username')?.invalid && validateForm.get('username')?.dirty">
+                    <span class="text-red-500 text-sm">Username is required.</span>
+                </div>
+            </div>
+
+            <!-- Поле Password -->
+            <div>
+                <label class="label">
+                    <span class="text-base label-text">Password</span>
+                </label>
+                <input
+                        type="password"
+                        placeholder="Enter Password"
+                        class="w-full input input-bordered input-primary"
+                        formControlName="password"
+                />
+                <div *ngIf="validateForm.get('password')?.invalid && validateForm.get('password')?.dirty">
+                    <span class="text-red-500 text-sm">Password is required.</span>
+                </div>
+            </div>
+
+            <!-- Кнопка входу -->
+            <div>
+                <button
+                        class="btn btn-block btn-primary"
+                        [disabled]="validateForm.invalid"
+                        (click)="login()"
+                >
+                    Login
+                </button>
+            </div>
+
+            <!-- Посилання на реєстрацію -->
+            <span>
+        Don't have an account?
+        <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline" routerLink="/register">Register</a>
+      </span>
+        </form>
+    </div>
+</div>
