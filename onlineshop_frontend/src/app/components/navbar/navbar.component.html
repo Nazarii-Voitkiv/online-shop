@@ -8,7 +8,7 @@
   </div>
   <div class="navbar-center flex">
     <div class="menu menu-sm sm:menu-lg menu-horizontal px-1">
-      <li><a href="/public">Home</a> </li>
+      <li><a href="/">Home</a> </li>
       <li>
         <details #productsMenu>
           <summary>Products</summary>
@@ -18,10 +18,11 @@
         </details>
       </li>
       <li>
-        <details #adminMenu>
+        <details *ngIf="isAdminLoggedIn" #adminMenu>
           <summary>Admin</summary>
           <ul class="z-30">
-            <li><a href="/products">All</a> </li>
+              <li><a routerLink="/admin/dashboard">Dashboard</a> </li>
+              <li><a routerLink="/admin/category">Category</a> </li>
           </ul>
         </details>
       </li>
@@ -34,8 +35,9 @@
       </div>
       <ul class="dropdown-content menu menu-lg bg-base-100 rounded-box z-10 w-52 p-2 shadow">
         <li>
-          <button class="link" routerLink="/login">Login</button>
-          <button class="link" routerLink="/register">Register</button>
+            <button *ngIf="!isUserLoggedIn && !isAdminLoggedIn" class="link" routerLink="/login">Login</button>
+            <button *ngIf="!isUserLoggedIn && !isAdminLoggedIn" class="link" routerLink="/register">Register</button>
+            <button *ngIf="isUserLoggedIn || isAdminLoggedIn" class="link" (click)="logout()">Log out</button>
         </li>
       </ul>
     </div>

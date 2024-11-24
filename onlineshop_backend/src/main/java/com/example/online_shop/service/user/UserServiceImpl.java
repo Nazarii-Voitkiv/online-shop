@@ -5,6 +5,7 @@ import com.example.online_shop.dto.UserDTO;
 import com.example.online_shop.entities.User;
 import com.example.online_shop.enums.UserRole;
 import com.example.online_shop.repository.UserRepository;
+import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -14,6 +15,19 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepository;
+
+    @PostConstruct
+    public void createAdminAccount() {
+        User adminAccount = userRepository.findByUserRole(UserRole.ADMIN);
+        if (adminAccount == null) {
+            User user = new User();
+            user.setUserRole(UserRole.ADMIN);
+            user.setEmail("admin@test.com");
+            user.setPassword(new BCryptPasswordEncoder().encode("admin"));
+            user.setName("admin");
+            userRepository.save(user);
+        }
+    }
 
     @Override
     public UserDTO createUser(SignupDTO signupDTO) {

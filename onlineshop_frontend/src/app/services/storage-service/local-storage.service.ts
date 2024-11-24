@@ -25,4 +25,48 @@ export class LocalStorageService {
     window.localStorage.removeItem(TOKEN);
     window.localStorage.setItem(TOKEN, token);
   }
+
+  static getToken(): string {
+    return <string>localStorage.getItem(TOKEN);
+  }
+
+  static hasToken(): boolean {
+    if(this.getToken() === null) {
+      return false;
+    }
+    return true;
+  }
+
+  private static getUserRole(): string {
+    const role = localStorage.getItem(USERROLE);
+    return role ? role : '';
+  }
+
+  private static getUser() {
+    return JSON.parse(<string>localStorage.getItem(USERID));
+  }
+
+  static isUserLoggedIn(): boolean {
+    if (!this.hasToken()) {
+      return false;
+    }
+
+    const role: string = this.getUserRole();
+    return role === "USER";
+  }
+
+  static isAdminLoggedIn(): boolean {
+    if (!this.hasToken()) {
+      return false;
+    }
+
+    const role: string = this.getUserRole();
+    return role === "ADMIN";
+  }
+
+  static signOut() {
+    window.localStorage.removeItem(USERID);
+    window.localStorage.removeItem(USERROLE);
+    window.localStorage.removeItem(TOKEN);
+  }
 }
