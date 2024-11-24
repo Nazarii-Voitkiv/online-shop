@@ -1,5 +1,6 @@
 package com.example.online_shop.entities;
 
+import com.example.online_shop.dto.CategoryDTO;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -16,4 +17,12 @@ public class Category {
 
     @Lob
     private String description;
+
+    public CategoryDTO getCategoryDTO() {
+        CategoryDTO categoryDTO = new CategoryDTO();
+        categoryDTO.setId(id);
+        categoryDTO.setName(name);
+        categoryDTO.setDescription(description);
+        return categoryDTO;
+    }
 }
