@@ -1,13 +1,16 @@
 package com.example.online_shop.controller;
 
 import com.example.online_shop.dto.CategoryDTO;
+import com.example.online_shop.dto.ProductDTO;
 import com.example.online_shop.entities.Category;
+import com.example.online_shop.entities.Product;
 import com.example.online_shop.service.admin.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -28,5 +31,11 @@ public class AdminController {
     public ResponseEntity<List<CategoryDTO>> getAllCategories() {
         List<CategoryDTO> allCategories = adminService.getAllCategories();
         return ResponseEntity.ok(allCategories);
+    }
+
+    @PostMapping("/product/{categoryId}")
+    public ResponseEntity<Product> postProduct(@PathVariable Long categoryId, @ModelAttribute ProductDTO productDTO) throws IOException {
+        Product postedProduct = adminService.postProduct(categoryId, productDTO);
+        return ResponseEntity.status(HttpStatus.CREATED).body(postedProduct);
     }
 }
