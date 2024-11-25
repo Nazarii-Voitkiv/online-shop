@@ -48,6 +48,12 @@ export class AdminService {
     });
   }
 
+  updateProduct(categoryId: number, productId: number, productDTO: any):Observable<any> {
+    return this.http.put<[]>(BASIC_URL + 'api/admin/'+categoryId+"/product/"+productId, productDTO, {
+      headers:this.createAuthorizationHeader()
+    });
+  }
+
   createAuthorizationHeader(): HttpHeaders {
     let authHeaders: HttpHeaders = new HttpHeaders();
     return authHeaders.set(

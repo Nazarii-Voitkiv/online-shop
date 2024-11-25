@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {AdminService} from "../../admin-service/admin.service";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators} from "@angular/forms";
 import {NgForOf, NgIf} from "@angular/common";
 
@@ -29,7 +29,8 @@ export class UpdateProductComponent  implements OnInit {
 
   constructor(private adminService: AdminService,
               private activated: ActivatedRoute,
-              private fb: FormBuilder,) {}
+              private fb: FormBuilder,
+              private router: Router,) {}
 
   ngOnInit() {
     this.updateProductForm = this.fb.group({
@@ -57,6 +58,22 @@ export class UpdateProductComponent  implements OnInit {
       this.updateProductForm.patchValue(res);
       // @ts-ignore
       this.updateProductForm.get("categoryId").setValue(res.categoryId.toString());
+    })
+  }
+
+  updateProduct() {
+    const productDTO: FormData = new FormData();
+    if(this.imgChanged) {
+      productDTO.append('image', this.selectedFile);
+    }
+    productDTO.append('price', this.updateProductForm.get('price')!.value);
+    productDTO.append('name', this.updateProductForm.get('name')!.value);
+    productDTO.append('description', this.updateProductForm.get('description')!.value);
+    this.adminService.updateProduct(this.updateProductForm.get('categoryId')?.value, this.id, productDTO).subscribe((res) => {
+      console.log(res);
+      if (res != null) {
+        this.router.navigateByUrl("/admin/dashboard");
+      }
     })
   }
 
