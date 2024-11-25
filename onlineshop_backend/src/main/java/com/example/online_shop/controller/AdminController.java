@@ -38,4 +38,10 @@ public class AdminController {
         Product postedProduct = adminService.postProduct(categoryId, productDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(postedProduct);
     }
+
+    @GetMapping("/products")
+    public ResponseEntity<List<ProductDTO>> getAllProducts() {
+        List<ProductDTO> productDTOList = adminService.getAllProducts();
+        return ResponseEntity.ok(productDTOList);
+    }
 }

@@ -31,7 +31,7 @@ export class PostProductComponent implements OnInit {
     this.postProductForm = this.fb.group({
       categoryId: [null, Validators.required],
       name: [null, Validators.required],
-      price: [null, Validators.required],
+      price: [null, [Validators.required, Validators.pattern('^[0-9]*$')]],
       description: [null, Validators.required]
     })
     this.getAllCategories();
@@ -64,10 +64,17 @@ export class PostProductComponent implements OnInit {
         .subscribe((res) => {
           console.log(res);
           if (res != null) {
-            this.router.navigate(['/admin/dashboard']);
+            this.router.navigateByUrl("/admin/dashboard");
           } else {
 
           }
         });
+  }
+
+  allowNumbersOnly(event: KeyboardEvent): void {
+    const charCode = event.key.charCodeAt(0);
+    if (charCode < 48 || charCode > 57) {
+      event.preventDefault();
+    }
   }
 }

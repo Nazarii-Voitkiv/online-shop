@@ -27,6 +27,8 @@
                         placeholder="Type price here"
                         class="w-full input input-bordered input-primary"
                         formControlName="price"
+                        inputmode="numeric"
+                        (keypress)="allowNumbersOnly($event)"
                 />
                 <div>
                     <span class="text-red-500 text-sm">Price is required.</span>

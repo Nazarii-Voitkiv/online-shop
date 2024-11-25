@@ -11,7 +11,9 @@ import java.util.List;
 public interface AdminService {
     Category createCategory(CategoryDTO categoryDTO);
 
-    public List<CategoryDTO> getAllCategories();
+    List<CategoryDTO> getAllCategories();
 
     Product postProduct(Long categoryId, ProductDTO productDTO) throws IOException;
+
+    List<ProductDTO> getAllProducts();
 }
