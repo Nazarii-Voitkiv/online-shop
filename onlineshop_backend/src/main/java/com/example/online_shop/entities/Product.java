@@ -22,6 +22,7 @@ public class Product {
 
     private Integer price;
 
+    @Column(columnDefinition = "longblob")
     private byte[] image;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)

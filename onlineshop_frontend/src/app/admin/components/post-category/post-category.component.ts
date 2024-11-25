@@ -1,12 +1,14 @@
 import {Component, OnInit} from '@angular/core';
 import {AdminService} from "../../admin-service/admin.service";
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-post-category',
   standalone: true,
   imports: [
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgIf
   ],
   templateUrl: './post-category.component.html',
   styleUrl: './post-category.component.scss'

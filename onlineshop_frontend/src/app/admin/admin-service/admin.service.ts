@@ -13,10 +13,9 @@ export class AdminService {
 
   constructor(private http: HttpClient) { }
 
-  postCategory(categoryDTO: any):Observable<any> {
-    return this.http.post<[]>(BASIC_URL + 'api/admin/category', categoryDTO,{
-      headers:this.createAuthorizationHeader()
-    });
+  postCategory(categoryDTO: any): Observable<any> {
+    return this.http.post(BASIC_URL+"api/admin/category", categoryDTO, {
+      headers: this.createAuthorizationHeader() });
   }
 
   getAllCategories():Observable<any> {
@@ -25,11 +24,17 @@ export class AdminService {
     });
   }
 
+  postProduct(categoryId:number, productDTO: any): Observable<any> {
+    console.log(`${BASIC_URL}api/admin/product/${categoryId}`);
+    return this.http.post(BASIC_URL+"api/admin/product/"+categoryId, productDTO, {
+      headers: this.createAuthorizationHeader() });
+  }
+
   createAuthorizationHeader(): HttpHeaders {
     let authHeaders: HttpHeaders = new HttpHeaders();
     return authHeaders.set(
-        'Authorization',
-        'Bearer ' + LocalStorageService.getToken()
+        "Authorization",
+        "Bearer " + LocalStorageService.getToken()
     );
   }
 }

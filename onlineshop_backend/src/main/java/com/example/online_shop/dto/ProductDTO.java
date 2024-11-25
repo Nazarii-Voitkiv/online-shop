@@ -16,6 +16,4 @@ public class ProductDTO {
     private Integer price;
 
     private MultipartFile image;
-
-    private Category category;
 }

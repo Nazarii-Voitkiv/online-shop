@@ -1,36 +1,50 @@
 <div class="relative flex flex-col justify-center h-screen overflow-hidden">
-    <div class="w-full p-6 m-auto bg-white rounded-md shadow-md lg:max-w-md">
-    <div></div>
-    <form id="createForm" [formGroup]="categoryForm">
-        <h1 class="text-lg font-bold">Create new category</h1>
-        <label class="form-control w-full">
-            <div class="label">
-                <span class="label-text">Name</span>
-            </div>
-            <input type="text" placeholder="Type name here" class="input input-bordered w-full"
-                   formControlName="name"/>
-            <div class="label">
-                <span class="label-text-alt text-red-600">
-                    Name is required
-                </span>
-            </div>
-        </label>
+    <div class="w-full p-6 m-auto bg-white rounded-md shadow-md lg:w-3/4">
+        <h1 class="text-3xl font-semibold text-center text-black-700">Create new category</h1>
 
-        <label class="form-control w-full">
-            <div class="label">
-                <span class="label-text">Description</span>
+        <form class="space-y-4" [formGroup]="categoryForm">
+            <!-- Поле Name -->
+            <div>
+                <label class="label">
+                    <span class="text-base label-text">Name</span>
+                </label>
+                <input
+                        type="text"
+                        placeholder="Type name here"
+                        class="w-full input input-bordered input-primary"
+                        formControlName="name"
+                />
+                <div *ngIf="categoryForm.get('name')?.invalid && categoryForm.get('name')?.touched">
+                    <span class="text-red-500 text-sm">Name is required.</span>
+                </div>
             </div>
-            <input type="text" placeholder="Type description here" class="input input-bordered w-full"
-                   formControlName="description"/>
-            <div class="label">
-                <span class="label-text-alt text-red-600">
-                    Description is required
-                </span>
+
+            <!-- Поле Description -->
+            <div>
+                <label class="label">
+                    <span class="text-base label-text">Description</span>
+                </label>
+                <input
+                        type="text"
+                        placeholder="Type description here"
+                        class="w-full input input-bordered input-primary"
+                        formControlName="description"
+                />
+                <div *ngIf="categoryForm.get('description')?.invalid && categoryForm.get('description')?.touched">
+                    <span class="text-red-500 text-sm">Description is required.</span>
+                </div>
             </div>
-        </label>
-        <button type="submit" class="btn btn-primary btn-wide" (click)="postCategory()">
-            Create category
-        </button>
-    </form>
+
+            <!-- Кнопка -->
+            <div>
+                <button
+                        class="btn btn-block btn-primary"
+                        [disabled]="categoryForm.invalid"
+                        (click)="postCategory()"
+                >
+                    Post
+                </button>
+            </div>
+        </form>
     </div>
 </div>

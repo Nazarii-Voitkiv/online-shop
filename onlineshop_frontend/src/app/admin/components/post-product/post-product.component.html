@@ -1,1 +1,88 @@
-<p>post-product works!</p>
+<div class="relative flex flex-col justify-center h-screen overflow-hidden">
+    <div class="p-6 m-auto bg-white rounded-md shadow-md lg:w-3/4">
+        <h1 class="text-3xl font-semibold text-center text-black-700">Create new product</h1>
+
+        <form class="space-y-4" [formGroup]="postProductForm">
+            <div>
+                <label class="label">
+                    <span class="text-base label-text">Name</span>
+                </label>
+                <input
+                        type="text"
+                        placeholder="Type name here"
+                        class="w-full input input-bordered input-primary"
+                        formControlName="name"
+                />
+                <div>
+                    <span class="text-red-500 text-sm">Name is required.</span>
+                </div>
+            </div>
+
+            <div>
+                <label class="label">
+                    <span class="text-base label-text">Price</span>
+                </label>
+                <input
+                        type="text"
+                        placeholder="Type price here"
+                        class="w-full input input-bordered input-primary"
+                        formControlName="price"
+                />
+                <div>
+                    <span class="text-red-500 text-sm">Price is required.</span>
+                </div>
+            </div>
+
+            <div>
+                <label class="label">
+                    <span class="text-base label-text">Description</span>
+                </label>
+                <input
+                        type="text"
+                        placeholder="Type description here"
+                        class="w-full input input-bordered input-primary"
+                        formControlName="description"
+                />
+                <div>
+                    <span class="text-red-500 text-sm">Description is required.</span>
+                </div>
+            </div>
+
+            <div>
+                <label class="label">
+                    <span class="text-base label-text">File</span>
+                </label>
+                <input
+                        type="file"
+                        class="w-full file-input file-input-ghost input-bordered input-primary"
+                        accept="image/png, image/gif, image/jpeg"
+
+                        (change)="onFileSelected($event)"
+                />
+                <div>
+                    <span class="text-red-500 text-sm">File is required.</span>
+                </div>
+            </div>
+
+            <div>
+                <label class="label">
+                    <span class="text-base label-text">Category</span>
+                </label>
+
+                <select formControlName="categoryId" class="select w-full select-primary">
+                    <option disabled selected>Category</option>
+                    <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+                </select>
+                <div>
+                    <span class="text-red-500 text-sm">Category is required.</span>
+                </div>
+            </div>
+
+            <div>
+                <button class="btn btn-block btn-primary" (click)="postProduct()">
+                    Post
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
