@@ -1,6 +1,27 @@
-<div class="relative flex flex-col justify-center min-h-screen overflow-hidden pt-32 pb-10">
-    <div class="m-auto bg-white rounded-md lg:w-3/4">
-        <div *ngFor="let product of products" class="p-6 w-full bg-white rounded-lg shadow-md mb-6">
+<div class="relative flex flex-col min-h-screen pt-32 pb-10">
+    <!-- Контейнер пошуку -->
+    <div class="bg-white rounded-md lg:w-3/4 mx-auto">
+        <form class="mt-5 flex items-center w-full space-x-4 pb-6" [formGroup]="searchForm">
+            <!-- Поле вводу -->
+            <input
+                    type="text"
+                    placeholder="Enter name to search"
+                    class="flex-1 input input-bordered input-primary"
+                    formControlName="title"
+            />
+            <!-- Кнопка -->
+            <button
+                    class="btn btn-primary"
+                    (click)="searchProduct()"
+            >
+                Search
+            </button>
+        </form>
+    </div>
+
+    <!-- Контейнер продуктів -->
+    <div class="w-full px-4">
+        <div *ngFor="let product of products" class="p-6 bg-white rounded-lg shadow-md mb-6">
             <div class="flex items-start">
                 <!-- Зображення продукту -->
                 <img

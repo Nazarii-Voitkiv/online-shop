@@ -19,4 +19,9 @@ public class CustomerServiceImpl implements CustomerService {
     public List<ProductDTO> getAllProducts() {
         return productRepository.findAll().stream().map(Product::getProductDTO).collect(Collectors.toList());
     }
+
+    @Override
+    public List<ProductDTO> searchProductsByTitle(String title) {
+        return productRepository.findAllByNameContaining(title).stream().map(Product::getProductDTO).collect(Collectors.toList());
+    }
 }

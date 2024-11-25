@@ -19,6 +19,12 @@ export class CustomerService {
     });
   }
 
+  searchProductsByTitle(title: string): Observable<any> {
+    return this.http.get<[]>(BASIC_URL + 'api/customer/product/search/'+title,{
+      headers:this.createAuthorizationHeader()
+    });
+  }
+
   createAuthorizationHeader(): HttpHeaders {
     let authHeaders: HttpHeaders = new HttpHeaders();
     return authHeaders.set(

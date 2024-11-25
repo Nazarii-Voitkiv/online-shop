@@ -7,4 +7,6 @@ import java.util.List;
 public interface CustomerService {
 
     List<ProductDTO> getAllProducts();
+
+    List<ProductDTO> searchProductsByTitle(String title);
 }

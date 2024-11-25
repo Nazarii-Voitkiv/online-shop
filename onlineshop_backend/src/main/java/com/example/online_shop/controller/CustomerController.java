@@ -5,6 +5,7 @@ import com.example.online_shop.service.customer.CustomerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,6 +21,12 @@ public class CustomerController {
     @GetMapping("/products")
     public ResponseEntity<List<ProductDTO>> getAllProducts() {
         List<ProductDTO> productDTOList = customerService.getAllProducts();
+        return ResponseEntity.ok(productDTOList);
+    }
+
+    @GetMapping("/product/search/{title}")
+    public ResponseEntity<List<ProductDTO>> searchProductByTitle(@PathVariable String title) {
+        List<ProductDTO> productDTOList = customerService.searchProductsByTitle(title);
         return ResponseEntity.ok(productDTOList);
     }
 }
