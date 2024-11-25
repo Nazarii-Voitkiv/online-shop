@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {AdminService} from "../../admin-service/admin.service";
+import {AdminService} from "../../service/admin.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators} from "@angular/forms";
 import {NgForOf, NgIf} from "@angular/common";

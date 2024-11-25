@@ -1,1 +1,27 @@
-<p>user works!</p>
+<div class="relative flex flex-col justify-center min-h-screen overflow-hidden pt-32 pb-10">
+    <div class="m-auto bg-white rounded-md lg:w-3/4">
+        <div *ngFor="let product of products" class="p-6 w-full bg-white rounded-lg shadow-md mb-6">
+            <div class="flex items-start">
+                <!-- Зображення продукту -->
+                <img
+                        class="w-48 h-40 object-cover rounded-lg"
+                        [src]="product.processedImage"
+                        alt="Product Image"
+                />
+                <div class="ml-4 flex-1">
+                    <h2 class="text-xl font-bold text-blue-600 cursor-pointer">
+                        {{ product.name }}
+                    </h2>
+                    <p class="text-gray-600 mt-2">
+                        {{ product.description }}
+                    </p>
+                    <hr class="my-2 border-gray-300">
+                    <div class="text-sm text-gray-700">
+                        <span class="font-semibold">Price:</span> ${{ product.price }}
+                        <span class="font-semibold ml-4">Category:</span> {{ product.categoryName }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

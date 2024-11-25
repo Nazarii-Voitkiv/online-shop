@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FaIconComponent} from "@fortawesome/angular-fontawesome";
-import {AdminService} from "../../admin-service/admin.service";
+import {AdminService} from "../../service/admin.service";
 import {NgForOf} from "@angular/common";
 import {RouterLink} from "@angular/router";
 

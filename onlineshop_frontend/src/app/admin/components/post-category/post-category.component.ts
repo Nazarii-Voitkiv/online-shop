@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {AdminService} from "../../admin-service/admin.service";
+import {AdminService} from "../../service/admin.service";
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {NgIf} from "@angular/common";
 
