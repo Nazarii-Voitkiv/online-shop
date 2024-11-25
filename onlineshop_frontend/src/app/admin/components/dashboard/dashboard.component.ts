@@ -25,6 +25,7 @@ export class DashboardComponent implements OnInit {
   }
 
   getAllProducts() {
+    this.products = [];
     this.adminService.getAllProducts().subscribe((res: any[]) => {
       console.log(res);
       res.forEach((element) => {
@@ -34,4 +35,11 @@ export class DashboardComponent implements OnInit {
     });
   }
 
+  deleteProduct(id: number) {
+    console.log(id);
+    this.adminService.deleteProduct(id).subscribe((res: any[]) => {
+      console.log(res);
+      this.getAllProducts();
+    })
+  }
 }

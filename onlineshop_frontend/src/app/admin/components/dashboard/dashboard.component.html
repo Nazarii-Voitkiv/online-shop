@@ -4,7 +4,7 @@
             <div class="flex items-start">
                 <!-- Зображення продукту -->
                 <img
-                        class="w-48 h-32 object-cover rounded-lg"
+                        class="w-48 h-40 object-cover rounded-lg"
                         [src]="product.processedImage"
                         alt="Product Image"
                 />
@@ -22,6 +22,9 @@
                     <div class="text-sm text-gray-700">
                         <span class="font-semibold">Price:</span> ${{ product.price }}
                         <span class="font-semibold ml-4">Category:</span> {{ product.categoryName }}
+                    </div>
+                    <div class="m-auto">
+                        <button class="btn btn-block btn-primary" (click)="deleteProduct(product.id)">Delete</button>
                     </div>
                 </div>
             </div>
