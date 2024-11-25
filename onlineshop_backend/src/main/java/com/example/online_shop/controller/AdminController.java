@@ -50,4 +50,13 @@ public class AdminController {
         adminService.deleteProduct(id);
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping("/product/{id}")
+    public ResponseEntity<ProductDTO> updateProduct(@PathVariable Long id) {
+        ProductDTO productDTO = adminService.updateProduct(id);
+        if (productDTO == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(productDTO);
+    }
 }

@@ -2,13 +2,15 @@ import {Component, OnInit} from '@angular/core';
 import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 import {AdminService} from "../../admin-service/admin.service";
 import {NgForOf} from "@angular/common";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
   imports: [
     FaIconComponent,
-    NgForOf
+    NgForOf,
+    RouterLink
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'

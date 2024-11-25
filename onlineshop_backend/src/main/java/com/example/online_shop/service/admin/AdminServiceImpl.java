@@ -64,4 +64,14 @@ public class AdminServiceImpl implements AdminService {
         }
         productRepository.deleteById(id);
     }
+
+    @Override
+    public ProductDTO updateProduct(Long id) {
+        Optional<Product> optionalProduct = productRepository.findById(id);
+        if (optionalProduct.isPresent()) {
+            Product product = optionalProduct.get();
+            return product.getProductDTO();
+        }
+        return null;
+    }
 }

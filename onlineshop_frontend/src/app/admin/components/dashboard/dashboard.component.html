@@ -23,8 +23,9 @@
                         <span class="font-semibold">Price:</span> ${{ product.price }}
                         <span class="font-semibold ml-4">Category:</span> {{ product.categoryName }}
                     </div>
-                    <div class="m-auto">
-                        <button class="btn btn-block btn-primary" (click)="deleteProduct(product.id)">Delete</button>
+                    <div class="m-auto float-end flex space-x-4">
+                        <button class="btn btn-primary" routerLink="/admin/product/{{product.id}}">Update</button>
+                        <button class="btn btn-error" (click)="deleteProduct(product.id)">Delete</button>
                     </div>
                 </div>
             </div>
