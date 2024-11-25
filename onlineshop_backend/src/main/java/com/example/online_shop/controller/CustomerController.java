@@ -1,13 +1,11 @@
 package com.example.online_shop.controller;
 
+import com.example.online_shop.dto.CartItemDTO;
 import com.example.online_shop.dto.ProductDTO;
 import com.example.online_shop.service.customer.CustomerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -28,5 +26,10 @@ public class CustomerController {
     public ResponseEntity<List<ProductDTO>> searchProductByTitle(@PathVariable String title) {
         List<ProductDTO> productDTOList = customerService.searchProductsByTitle(title);
         return ResponseEntity.ok(productDTOList);
+    }
+
+    @PostMapping("/cart")
+    public ResponseEntity<?> postProductToCart(@RequestBody CartItemDTO cartItemDTO) {
+        return customerService.addProductToCart(cartItemDTO);
     }
 }
