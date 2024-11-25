@@ -2,8 +2,11 @@ package com.example.online_shop.service.user;
 
 import com.example.online_shop.dto.SignupDTO;
 import com.example.online_shop.dto.UserDTO;
+import com.example.online_shop.entities.Order;
 import com.example.online_shop.entities.User;
+import com.example.online_shop.enums.OrderStatus;
 import com.example.online_shop.enums.UserRole;
+import com.example.online_shop.repository.OrderRepository;
 import com.example.online_shop.repository.UserRepository;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +18,9 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    private OrderRepository orderRepository;
 
     @PostConstruct
     public void createAdminAccount() {
@@ -37,6 +43,11 @@ public class UserServiceImpl implements UserService {
         user.setUserRole(UserRole.USER);
         user.setPassword(new BCryptPasswordEncoder().encode(signupDTO.getPassword()));
         User createdUser = userRepository.save(user);
+        Order order = new Order();
+        order.setPrice(0L);
+        order.setOrderStatus(OrderStatus.PENDING);
+        order.setUser(createdUser);
+        orderRepository.save(order);
         UserDTO userDTO = new UserDTO();
         userDTO.setId(createdUser.getId());
         userDTO.setName(createdUser.getName());
