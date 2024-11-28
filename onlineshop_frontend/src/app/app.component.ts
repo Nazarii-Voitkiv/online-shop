@@ -9,11 +9,12 @@ import {
   FaIconLibrary,
 } from '@fortawesome/angular-fontawesome';
 import {RegisterComponent} from './components/register/register.component';
+import {NotificationComponent} from "./components/notification/notification.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, FaIconComponent, NavbarComponent, FooterComponent, RegisterComponent],
+    imports: [RouterOutlet, RouterLink, FaIconComponent, NavbarComponent, FooterComponent, RegisterComponent, NotificationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

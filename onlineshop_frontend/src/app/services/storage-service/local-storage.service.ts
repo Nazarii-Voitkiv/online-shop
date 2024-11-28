@@ -42,8 +42,8 @@ export class LocalStorageService {
     return role ? role : '';
   }
 
-  private static getUser() {
-    return JSON.parse(<string>localStorage.getItem(USERID));
+  static getUserId(): string {
+    return <string>localStorage.getItem(USERID);
   }
 
   static isUserLoggedIn(): boolean {

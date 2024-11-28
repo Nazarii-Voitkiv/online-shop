@@ -8,7 +8,6 @@ import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 @Data
-
 public class CartItems {
 
     @Id

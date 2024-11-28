@@ -41,6 +41,14 @@
                         <span class="font-semibold">Price:</span> ${{ product.price }}
                         <span class="font-semibold ml-4">Category:</span> {{ product.categoryName }}
                     </div>
+                    <div class="flex justify-end space-x-4 mt-4">
+                        <button
+                                class="btn btn-primary"
+                                (click)="addProductToCart(product.id)"
+                                >
+                            Add to Cart
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

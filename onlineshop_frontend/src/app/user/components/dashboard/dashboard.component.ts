@@ -3,6 +3,7 @@ import {CustomerService} from "../../service/customer.service";
 import {NgForOf} from "@angular/common";
 import {RouterLink} from "@angular/router";
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
+import {NotificationService} from "../../../services/notification/notification.service";
 
 @Component({
   selector: 'app-dashboard',
@@ -21,7 +22,8 @@ export class DashboardComponent implements OnInit {
   searchForm!: FormGroup;
 
   constructor(private customerService: CustomerService,
-              private fb: FormBuilder,) { }
+              private fb: FormBuilder,
+              private notificationService: NotificationService) { }
 
   ngOnInit(): void {
     this.searchForm = this.fb.group({
@@ -50,5 +52,15 @@ export class DashboardComponent implements OnInit {
         this.products.push(element);
       });
     });
+  }
+
+  addProductToCart(productId: number) {
+    console.log(productId);
+    this.customerService.addProductToCart(productId).subscribe((res: any[]) => {
+      this.notificationService.showSuccess('Product added to cart successfully.');
+      console.log(res);
+    }, error => {
+      this.notificationService.showError(error.message);
+    })
   }
 }

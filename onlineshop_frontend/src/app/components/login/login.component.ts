@@ -50,7 +50,6 @@ export class LoginComponent implements OnInit {
         console.log("Bad crendetials")
         console.log(error.message)
       }
-
         }
     )
   }

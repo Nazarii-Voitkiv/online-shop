@@ -48,7 +48,7 @@ public class CustomerServiceImpl implements CustomerService {
         Optional<CartItems> optionalCartItem = cartItemsRepository.findByUserIdAndProductIdAndOrderId(
                 cartItemDTO.getUserId(),
                 cartItemDTO.getProductId(),
-                cartItemDTO.getOrderId());
+                pendingOrder.getId());
         if(optionalCartItem.isPresent()) {
             CartItemDTO productAlreadyExistInCart = new CartItemDTO();
             productAlreadyExistInCart.setProductId(null);

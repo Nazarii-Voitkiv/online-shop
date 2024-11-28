@@ -25,6 +25,16 @@ export class CustomerService {
     });
   }
 
+  addProductToCart(productId: number): Observable<any> {
+    let cartDTO = {
+      productId: productId,
+      userId:LocalStorageService.getUserId()
+    }
+    return this.http.post<[]>(BASIC_URL + 'api/customer/cart', cartDTO, {
+      headers:this.createAuthorizationHeader()
+    });
+  }
+
   createAuthorizationHeader(): HttpHeaders {
     let authHeaders: HttpHeaders = new HttpHeaders();
     return authHeaders.set(
