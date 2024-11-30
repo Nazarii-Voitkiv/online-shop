@@ -7,7 +7,7 @@ import {NgClass, NgIf} from '@angular/common';
   standalone: true,
   selector: 'app-notification',
   template: `
-    <div *ngIf="notification" class="notification" [ngClass]="notification?.type" [@slideInOut]="'in'">
+    <div *ngIf="notification" class="notification" [ngClass]="notification.type" [@slideInOut]="'in'">
       <span>{{ notification?.message }}</span>
       <button class="close-btn" (click)="closeNotification()">×</button>
     </div>

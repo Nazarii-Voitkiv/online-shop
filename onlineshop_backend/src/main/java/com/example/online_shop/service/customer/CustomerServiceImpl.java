@@ -1,6 +1,7 @@
 package com.example.online_shop.service.customer;
 
 import com.example.online_shop.dto.CartItemDTO;
+import com.example.online_shop.dto.OrderDTO;
 import com.example.online_shop.dto.ProductDTO;
 import com.example.online_shop.entities.CartItems;
 import com.example.online_shop.entities.Order;
@@ -12,6 +13,7 @@ import com.example.online_shop.repository.OrderRepository;
 import com.example.online_shop.repository.ProductRepository;
 import com.example.online_shop.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.aspectj.weaver.ast.Or;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -75,5 +77,49 @@ public class CustomerServiceImpl implements CustomerService {
                 return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User or product not found");
             }
         }
+    }
+
+    @Override
+    public OrderDTO getCartByUserId(Long userId) {
+        Order pendingOrder = orderRepository.findByUserIdAndOrderStatus(userId, OrderStatus.PENDING);
+        List<CartItemDTO> cartItemDTOList = pendingOrder.getCartItems().stream().map(CartItems::getCartItemDTO).toList();
+        OrderDTO orderDTO = new OrderDTO();
+        orderDTO.setCartItemDTOList(cartItemDTOList);
+        orderDTO.setAmount(pendingOrder.getPrice());
+        orderDTO.setId(pendingOrder.getId());
+        orderDTO.setOrderStatus(OrderStatus.PENDING);
+        return orderDTO;
+    }
+
+    @Override
+    public OrderDTO addMinusOnProduct(Long userId, Long productId) {
+        Order pendingOrder = orderRepository.findByUserIdAndOrderStatus(userId, OrderStatus.PENDING);
+        Optional<Product> optionalProduct = productRepository.findById(productId);
+        Optional<CartItems> optionalCartItem = cartItemsRepository.findByUserIdAndProductIdAndOrderId(userId, productId, pendingOrder.getId());
+        if(optionalProduct.isPresent() && optionalCartItem.isPresent()) {
+            CartItems cartItem = optionalCartItem.get();
+            cartItem.setQuantity(cartItem.getQuantity() - 1);
+            pendingOrder.setPrice(pendingOrder.getPrice() - optionalProduct.get().getPrice());
+            cartItemsRepository.save(cartItem);
+            orderRepository.save(pendingOrder);
+            return pendingOrder.getOrderDTO();
+        }
+        return null;
+    }
+
+    @Override
+    public OrderDTO addPlusOnProduct(Long userId, Long productId) {
+        Order pendingOrder = orderRepository.findByUserIdAndOrderStatus(userId, OrderStatus.PENDING);
+        Optional<Product> optionalProduct = productRepository.findById(productId);
+        Optional<CartItems> optionalCartItem = cartItemsRepository.findByUserIdAndProductIdAndOrderId(userId, productId, pendingOrder.getId());
+        if(optionalProduct.isPresent() && optionalCartItem.isPresent()) {
+            CartItems cartItem = optionalCartItem.get();
+            cartItem.setQuantity(cartItem.getQuantity() + 1);
+            pendingOrder.setPrice(pendingOrder.getPrice() + optionalProduct.get().getPrice());
+            cartItemsRepository.save(cartItem);
+            orderRepository.save(pendingOrder);
+            return pendingOrder.getOrderDTO();
+        }
+        return null;
     }
 }

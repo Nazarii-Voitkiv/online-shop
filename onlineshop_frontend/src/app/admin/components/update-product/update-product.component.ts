@@ -3,6 +3,7 @@ import {AdminService} from "../../service/admin.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators} from "@angular/forms";
 import {NgForOf, NgIf} from "@angular/common";
+import {NotificationService} from "../../../services/notification/notification.service";
 
 @Component({
   selector: 'app-update-product',
@@ -30,7 +31,8 @@ export class UpdateProductComponent  implements OnInit {
   constructor(private adminService: AdminService,
               private activated: ActivatedRoute,
               private fb: FormBuilder,
-              private router: Router,) {}
+              private router: Router,
+              private notificationService: NotificationService) { }
 
   ngOnInit() {
     this.updateProductForm = this.fb.group({
@@ -38,7 +40,7 @@ export class UpdateProductComponent  implements OnInit {
       name: [null, Validators.required],
       price: [null, [Validators.required, Validators.pattern('^[0-9]*$')]],
       description: [null, Validators.required]
-    })
+    });
     this.id = +this.activated.snapshot.params["id"];
     this.getProductById();
     this.getAllCategories()
@@ -73,23 +75,29 @@ export class UpdateProductComponent  implements OnInit {
       console.log(res);
       if (res != null) {
         this.router.navigateByUrl("/admin/dashboard");
+        this.notificationService.showSuccess('Product has been updated successfully!');
+      } else {
+        this.notificationService.showSuccess('Product has not been updated!');
       }
+    }, error => {
+      console.log(error.message);
+      this.notificationService.showSuccess('Product has not been updated!');
     })
   }
 
   onFileSelected(event: any) {
-    this.selectedFile = event.target.files[0]; // Отримуємо вибраний файл
-    this.previewImage(); // Викликаємо метод для перегляду зображення
-    this.imgChanged = true; // Позначаємо, що зображення було змінено
-    this.existingImage = null; // Очищаємо існуюче зображення
+    this.selectedFile = event.target.files[0];
+    this.previewImage();
+    this.imgChanged = true;
+    this.existingImage = null;
   }
 
   previewImage() {
-    const reader = new FileReader(); // Створюємо новий об'єкт FileReader
+    const reader = new FileReader();
     reader.onload = () => {
-      this.imagePreview = reader.result; // Зберігаємо URL для попереднього перегляду
+      this.imagePreview = reader.result;
     };
-    reader.readAsDataURL(this.selectedFile); // Зчитуємо файл як Data URL
+    reader.readAsDataURL(this.selectedFile);
   }
 
   allowNumbersOnly(event: KeyboardEvent): void {

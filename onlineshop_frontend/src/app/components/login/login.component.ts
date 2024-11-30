@@ -4,6 +4,7 @@ import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/
 import {Router, RouterLink} from "@angular/router";
 import {NgIf} from "@angular/common";
 import {LocalStorageService} from "../../services/storage-service/local-storage.service";
+import {NotificationService} from "../../services/notification/notification.service";
 
 @Component({
   selector: 'app-login',
@@ -22,8 +23,8 @@ export class LoginComponent implements OnInit {
 
   constructor(private authService: AuthService,
               private fb: FormBuilder,
-              private router: Router) {
-  }
+              private router: Router,
+              private notificationService: NotificationService) { }
 
   ngOnInit() {
     this.validateForm = this.fb.group({
@@ -33,9 +34,8 @@ export class LoginComponent implements OnInit {
   }
 
   login(){
-    // console.log(this.validateForm.value);
     this.authService.login(this.validateForm.get(['username'])!.value,this.validateForm.get(['password'])!.value).subscribe((res) => {
-      // console.log(res);
+      this.notificationService.showSuccess('You successfully logged in!');
       if(LocalStorageService.isAdminLoggedIn()) {
         this.router.navigateByUrl('/admin/dashboard');
       } else if(LocalStorageService.isUserLoggedIn()) {
@@ -44,13 +44,11 @@ export class LoginComponent implements OnInit {
     }, error => {
       console.log(error)
       if(error.status === 406) {
-        console.log("Account is not active")
-        console.log(error.message)
+        this.notificationService.showError('Account is not active.');
       } else {
-        console.log("Bad crendetials")
-        console.log(error.message)
+        this.notificationService.showError("Bad credentials.");
       }
-        }
+    }
     )
   }
 }

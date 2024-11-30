@@ -1,10 +1,7 @@
 <div class="relative flex flex-col justify-start h-screen overflow-hidden">
     <div class="w-full p-6 m-auto bg-white rounded-md shadow-md lg:max-w-xl">
         <h1 class="text-3xl font-semibold text-center text-black-700">Register</h1>
-
-        <!-- Форма -->
         <form class="space-y-4" [formGroup]="validateForm">
-            <!-- Поле Name -->
             <div>
                 <label class="label">
                     <span class="text-base label-text">Name</span>
@@ -19,8 +16,6 @@
                     <span class="text-red-500 text-sm">Name is required.</span>
                 </div>
             </div>
-
-            <!-- Поле Email -->
             <div>
                 <label class="label">
                     <span class="text-base label-text">Email</span>
@@ -56,8 +51,6 @@
                     <span class="text-red-500 text-sm">Password is required.</span>
                 </div>
             </div>
-
-            <!-- Поле Confirm Password -->
             <div>
                 <label class="label">
                     <span class="text-base label-text">Confirm Password</span>
@@ -77,8 +70,6 @@
           </span>
                 </div>
             </div>
-
-            <!-- Кнопка реєстрації -->
             <div>
                 <button
                         class="btn btn-block btn-primary"
@@ -88,8 +79,6 @@
                     Sign Up
                 </button>
             </div>
-
-            <!-- Посилання на вхід -->
             <span>
         Already have an account?
         <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline" routerLink="/login">Login</a>

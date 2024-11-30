@@ -16,7 +16,6 @@ export class NotificationService {
   showSuccess(message: string): void {
     this.notificationSubject.next({ message, type: 'success' });
 
-    // Автоматичне закриття через 3 секунди
     setTimeout(() => {
       this.notificationSubject.next(null);
     }, 3000);

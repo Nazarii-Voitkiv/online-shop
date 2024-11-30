@@ -3,6 +3,7 @@ import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 import {AdminService} from "../../service/admin.service";
 import {NgForOf} from "@angular/common";
 import {RouterLink} from "@angular/router";
+import {NotificationService} from "../../../services/notification/notification.service";
 
 @Component({
   selector: 'app-dashboard',
@@ -19,8 +20,8 @@ export class DashboardComponent implements OnInit {
 
   products: any[] = [];
 
-  constructor(private adminService: AdminService,) {
-  }
+  constructor(private adminService: AdminService,
+              private notificationService: NotificationService) { }
 
   ngOnInit(): void {
     this.getAllProducts();
@@ -29,7 +30,6 @@ export class DashboardComponent implements OnInit {
   getAllProducts() {
     this.products = [];
     this.adminService.getAllProducts().subscribe((res: any[]) => {
-      console.log(res);
       res.forEach((element) => {
         element.processedImage = "data:image/jpeg;base64," + element.returnedImage;
         this.products.push(element);
@@ -38,10 +38,12 @@ export class DashboardComponent implements OnInit {
   }
 
   deleteProduct(id: number) {
-    console.log(id);
     this.adminService.deleteProduct(id).subscribe((res: any[]) => {
-      console.log(res);
+      this.notificationService.showSuccess('Product has been deleted successfully!');
       this.getAllProducts();
+    }, error => {
+      console.log(error.message);
+      this.notificationService.showError('Product has not been deleted!');
     })
   }
 }

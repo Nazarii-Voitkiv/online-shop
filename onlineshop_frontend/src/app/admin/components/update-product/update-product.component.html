@@ -1,7 +1,6 @@
-<div class="relative flex flex-col justify-center min-h-screen overflow-hidden pt-40 pb-20">
-    <div class="p-6 m-auto bg-white rounded-md shadow-md lg:w-3/4">
+<div class="relative flex flex-col min-h-screen overflow-hidden pt-10 pb-10">
+    <div class="bg-white rounded-md lg:w-3/4 mx-auto">
         <h1 class="text-3xl font-semibold text-center text-black-700">Update product</h1>
-
         <form class="space-y-4" [formGroup]="updateProductForm">
             <div>
                 <label class="label">
@@ -13,11 +12,7 @@
                         class="w-full input input-bordered input-primary"
                         formControlName="name"
                 />
-                <div>
-                    <span class="text-red-500 text-sm">Name is required.</span>
-                </div>
             </div>
-
             <div>
                 <label class="label">
                     <span class="text-base label-text">Price</span>
@@ -30,11 +25,7 @@
                         inputmode="numeric"
                         (keypress)="allowNumbersOnly($event)"
                 />
-                <div>
-                    <span class="text-red-500 text-sm">Price is required.</span>
-                </div>
             </div>
-
             <div>
                 <label class="label">
                     <span class="text-base label-text">Description</span>
@@ -45,11 +36,7 @@
                         class="w-full input input-bordered input-primary"
                         formControlName="description"
                 />
-                <div>
-                    <span class="text-red-500 text-sm">Description is required.</span>
-                </div>
             </div>
-
             <div>
                 <label class="label">
                     <span class="text-base label-text">File</span>
@@ -60,18 +47,10 @@
                         accept="image/png, image/gif, image/jpeg"
                         (change)="onFileSelected($event)"
                 />
-                <div>
-                    <span class="text-red-500 text-sm">File is required.</span>
-                </div>
             </div>
-
-
             <div *ngIf="imagePreview" class="image-full">
                 <img [src]="imagePreview"/>
             </div>
-
-
-
             <div *ngIf="existingImage">
                 <img
                         class="w-48 h-40 object-cover rounded-lg"
@@ -79,24 +58,19 @@
                         alt="Product Image"
                 />
             </div>
-
-
             <div>
                 <label class="label">
                     <span class="text-base label-text">Category</span>
                 </label>
-
                 <select formControlName="categoryId" class="select w-full select-primary">
                     <option disabled selected>Category</option>
                     <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
                 </select>
-                <div>
-                    <span class="text-red-500 text-sm">Category is required.</span>
-                </div>
             </div>
-
             <div>
-                <button class="btn btn-block btn-primary" (click)="updateProduct()">
+                <button class="btn btn-block btn-primary"
+                        (click)="updateProduct()"
+                        [disabled]="!updateProductForm.valid">
                     Update
                 </button>
             </div>

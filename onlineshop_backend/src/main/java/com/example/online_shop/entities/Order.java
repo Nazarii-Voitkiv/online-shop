@@ -1,5 +1,6 @@
 package com.example.online_shop.entities;
 
+import com.example.online_shop.dto.OrderDTO;
 import com.example.online_shop.enums.OrderStatus;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -34,4 +35,10 @@ public class Order {
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "order", cascade = CascadeType.ALL)
     private List<CartItems> cartItems;
+
+    public OrderDTO getOrderDTO() {
+        OrderDTO orderDTO = new OrderDTO();
+        orderDTO.setId(id);
+        return orderDTO;
+    }
 }

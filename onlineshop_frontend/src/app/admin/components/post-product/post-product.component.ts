@@ -3,6 +3,7 @@ import {AdminService} from "../../service/admin.service";
 import {FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators} from "@angular/forms";
 import {NgForOf, NgIf} from "@angular/common";
 import {Router} from "@angular/router";
+import {NotificationService} from "../../../services/notification/notification.service";
 
 @Component({
   selector: 'app-post-product',
@@ -20,12 +21,13 @@ export class PostProductComponent implements OnInit {
 
   categories!: any[];
   postProductForm!: FormGroup;
-  selectedFile!: File | null;
+  selectedFile!: File;
+  imageLoaded = false;
 
   constructor(private adminService: AdminService,
               private fb: FormBuilder,
-              private router: Router,) {
-  }
+              private router: Router,
+              private notificationService: NotificationService) { }
 
   ngOnInit() {
     this.postProductForm = this.fb.group({
@@ -44,9 +46,12 @@ export class PostProductComponent implements OnInit {
     })
   }
 
-  onFileSelected(event:any){
+  onFileSelected(event: any) {
     this.selectedFile = event.target.files[0];
+    this.imageLoaded = false; // Зображення ще не завантажено
+    this.previewImage();
   }
+
 
   postProduct() {
     if (!this.selectedFile) {
@@ -63,11 +68,11 @@ export class PostProductComponent implements OnInit {
     this.adminService.postProduct(this.postProductForm.get("categoryId")!.value, productDTO)
         .subscribe((res) => {
           console.log(res);
-          if (res != null) {
-            this.router.navigateByUrl("/admin/dashboard");
-          } else {
-
-          }
+          this.router.navigateByUrl("/admin/dashboard");
+          this.notificationService.showSuccess('Product has been added successfully!');
+        }, error => {
+          console.log(error.message);
+          this.notificationService.showError('Product has not been added!');
         });
   }
 
@@ -76,5 +81,13 @@ export class PostProductComponent implements OnInit {
     if (charCode < 48 || charCode > 57) {
       event.preventDefault();
     }
+  }
+
+  previewImage() {
+    const reader = new FileReader();
+    reader.onload = () => {
+      this.imageLoaded = true;
+    };
+    reader.readAsDataURL(this.selectedFile);
   }
 }

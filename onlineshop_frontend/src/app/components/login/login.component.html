@@ -1,13 +1,10 @@
-<div class="relative flex flex-col justify-center h-screen overflow-hidden">
+<div class="relative flex flex-col justify-center h-screen">
     <div class="w-full p-6 m-auto bg-white rounded-md shadow-md lg:max-w-md">
         <h1 class="text-3xl font-semibold text-center text-black-700">Login</h1>
-
-        <!-- Форма -->
         <form class="space-y-4" [formGroup]="validateForm">
-            <!-- Поле Username -->
             <div>
                 <label class="label">
-                    <span class="text-base label-text">Username</span>
+                    <span class="text-base label-text">Email</span>
                 </label>
                 <input
                         type="text"
@@ -19,8 +16,6 @@
                     <span class="text-red-500 text-sm">Username is required.</span>
                 </div>
             </div>
-
-            <!-- Поле Password -->
             <div>
                 <label class="label">
                     <span class="text-base label-text">Password</span>
@@ -35,8 +30,6 @@
                     <span class="text-red-500 text-sm">Password is required.</span>
                 </div>
             </div>
-
-            <!-- Кнопка входу -->
             <div>
                 <button
                         class="btn btn-block btn-primary"
@@ -46,8 +39,6 @@
                     Login
                 </button>
             </div>
-
-            <!-- Посилання на реєстрацію -->
             <span>
         Don't have an account?
         <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline" routerLink="/register">Register</a>

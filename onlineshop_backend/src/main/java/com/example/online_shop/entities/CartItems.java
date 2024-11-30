@@ -1,5 +1,6 @@
 package com.example.online_shop.entities;
 
+import com.example.online_shop.dto.CartItemDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -33,4 +34,16 @@ public class CartItems {
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "order_id", nullable = false)
     private Order order;
+
+    public CartItemDTO getCartItemDTO() {
+        CartItemDTO cartItemDTO = new CartItemDTO();
+        cartItemDTO.setId(id);
+        cartItemDTO.setQuantity(quantity);
+        cartItemDTO.setProductId(product.getId());
+        cartItemDTO.setProductName(product.getName());
+        cartItemDTO.setReturnedImg(product.getImage());
+        cartItemDTO.setPrice(price);
+        cartItemDTO.setUserId(user.getId());
+        return cartItemDTO;
+    }
 }

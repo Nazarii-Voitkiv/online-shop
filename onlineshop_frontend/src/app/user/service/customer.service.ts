@@ -35,6 +35,12 @@ export class CustomerService {
     });
   }
 
+  getCartByUserId(): Observable<any> {
+    return this.http.get(BASIC_URL + "api/customer/cart/" + LocalStorageService.getUserId(), {
+      headers: this.createAuthorizationHeader(),
+    });
+  }
+
   createAuthorizationHeader(): HttpHeaders {
     let authHeaders: HttpHeaders = new HttpHeaders();
     return authHeaders.set(

@@ -23,5 +23,4 @@ export class NoAuthGuard implements CanActivate {
     }
     return true;
   }
-
 }

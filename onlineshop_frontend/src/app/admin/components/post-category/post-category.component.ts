@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {AdminService} from "../../service/admin.service";
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {NgIf} from "@angular/common";
+import {NotificationService} from "../../../services/notification/notification.service";
 
 @Component({
   selector: 'app-post-category',
@@ -19,8 +20,7 @@ export class PostCategoryComponent implements OnInit {
 
   constructor(private  adminService: AdminService,
               private fb: FormBuilder,
-              ) {
-  }
+              private notificationService: NotificationService) { }
 
   ngOnInit(): void {
     this.categoryForm = this.fb.group({
@@ -32,9 +32,12 @@ export class PostCategoryComponent implements OnInit {
   postCategory() {
     this.adminService.postCategory(this.categoryForm.value).subscribe((res) =>{
       console.log(res);
+      this.notificationService.showSuccess('Category has been added successfully!');
       if(res == null) {
-
+        this.notificationService.showError('Category has not been added!');
       }
+    }, error => {
+      this.notificationService.showError('Category has not been added!');
     })
   }
 }

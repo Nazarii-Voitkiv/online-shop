@@ -3,56 +3,59 @@ import { RouterLink } from '@angular/router';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import {NgIf} from "@angular/common";
 import {AuthService} from "../../services/auth-service/auth.service";
+import {NotificationService} from "../../services/notification/notification.service";
 
 @Component({
   selector: 'app-register',
   standalone: true,
   imports: [
-    RouterLink, // Для маршрутизації
+    RouterLink,
     ReactiveFormsModule,
     NgIf,
   ],
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss'] // Виправлено: styleUrl → styleUrls
+  styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
-  validateForm!: FormGroup; // Форма для валідації
 
-  // Кастомний валідатор для підтвердження пароля
+  validateForm!: FormGroup;
+
   confirmationValidator = (control: FormControl): { [s: string]: boolean } | null => {
     if (!control.value) {
-      return { required: true }; // Поле є обов'язковим
+      return { required: true };
     } else if (control.value !== this.validateForm.controls['password'].value) {
-      return { confirm: true, error: true }; // Паролі не співпадають
+      return { confirm: true, error: true };
     }
-    return null; // Валідно
+    return null;
   };
 
   constructor(private fb: FormBuilder,
-              private authService: AuthService,) {}
+              private authService: AuthService,
+              private notificationService: NotificationService) { }
 
   ngOnInit() {
     this.validateForm = this.fb.group({
-      name: [null, [Validators.required]], // Поле "name" обов'язкове
-      email: [null, [Validators.required, Validators.email]], // Email повинен бути валідним
-      password: [null, [Validators.required]], // Поле "password" обов'язкове
+      name: [null, [Validators.required]],
+      email: [null, [Validators.required, Validators.email]],
+      password: [null, [Validators.required]],
       confirmPassword: [
         null,
-        [Validators.required, this.confirmationValidator] // Поле "confirmPassword" перевіряється кастомним валідатором
+        [Validators.required, this.confirmationValidator]
       ]
     });
 
-    // Оновлення валідатора при зміні значення пароля
     this.validateForm.controls['password'].valueChanges.subscribe(() => {
       this.validateForm.controls['confirmPassword'].updateValueAndValidity();
     });
   }
 
-  // Метод для реєстрації
   register() {
     console.log(this.validateForm.value);
     this.authService.register(this.validateForm.value).subscribe((res) => {
-      console.log(res);
+      this.notificationService.showSuccess('You successfully logged in!');
+    }, error => {
+      console.log(error.message);
+      this.notificationService.showError('You failed to logged in!')
     })
   }
 }

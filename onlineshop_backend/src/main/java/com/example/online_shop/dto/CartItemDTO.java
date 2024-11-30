@@ -7,7 +7,7 @@ public class CartItemDTO {
 
     private Long id;
 
-    private Long price;
+    private Integer price;
 
     private Long quantity;
 
