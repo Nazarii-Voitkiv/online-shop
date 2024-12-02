@@ -52,7 +52,6 @@
                 <label class="label">
                     <span class="text-base label-text">Category</span>
                 </label>
-
                 <select formControlName="categoryId" class="select w-full select-primary">
                     <option disabled selected>Category</option>
                     <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>

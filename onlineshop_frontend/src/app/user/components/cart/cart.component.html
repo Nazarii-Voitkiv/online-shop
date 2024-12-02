@@ -1,0 +1,14 @@
+<div *ngIf="cartProducts">
+    <div *ngFor="let product of cartProducts">
+        <p>{{product.productName}}</p>
+        <p>{{product.price}}</p>
+        <p>{{product.quantity}}</p>
+        <button class="btn" (click)="plusProduct(product.productId)">+</button>
+        <button class="btn" (click)="minusProduct(product.productId)" [disabled]="product.quantity == 1">-</button>
+        <br>
+
+    </div>
+</div>
+
+<h1>Total bill: ${{this.totalAmount}}</h1>
+<button class="btn" routerLink="/user/place-order">Place order</button>

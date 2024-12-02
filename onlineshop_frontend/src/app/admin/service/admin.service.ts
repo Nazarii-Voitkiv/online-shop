@@ -54,6 +54,12 @@ export class AdminService {
     });
   }
 
+  getAllOrders():Observable<any> {
+    return this.http.get<[]>(BASIC_URL + 'api/admin/orders',{
+      headers:this.createAuthorizationHeader()
+    });
+  }
+
   createAuthorizationHeader(): HttpHeaders {
     let authHeaders: HttpHeaders = new HttpHeaders();
     return authHeaders.set(

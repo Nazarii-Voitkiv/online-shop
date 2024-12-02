@@ -41,6 +41,31 @@ export class CustomerService {
     });
   }
 
+  decreaseQuantityOfProduct(productId: number): Observable<any> {
+    return this.http.get(BASIC_URL + "api/customer/" + LocalStorageService.getUserId() + "/deduct/" + productId,{
+      headers: this.createAuthorizationHeader(),
+    });
+  }
+
+  increaseQuantityOfProduct(productId: number): Observable<any> {
+    return this.http.get(BASIC_URL + "api/customer/" + LocalStorageService.getUserId() + "/add/" + productId, {
+      headers: this.createAuthorizationHeader(),
+    });
+  }
+
+  placeOrder(placeOrderDTO: any): Observable<any> {
+    placeOrderDTO.userId = LocalStorageService.getUserId();
+    return this.http.post(BASIC_URL + "api/customer/placeOrder", placeOrderDTO, {
+      headers: this.createAuthorizationHeader(),
+    });
+  }
+
+  getOrdersByUserId(): Observable<any> {
+    return this.http.get(BASIC_URL + "api/customer/orders/" + LocalStorageService.getUserId(), {
+      headers: this.createAuthorizationHeader(),
+    });
+  }
+
   createAuthorizationHeader(): HttpHeaders {
     let authHeaders: HttpHeaders = new HttpHeaders();
     return authHeaders.set(

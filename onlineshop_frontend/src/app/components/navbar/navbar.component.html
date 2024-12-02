@@ -30,6 +30,7 @@
                         <li><a routerLink="/admin/dashboard">Dashboard</a></li>
                         <li><a routerLink="/admin/category">Category</a></li>
                         <li><a routerLink="/admin/product">Product</a></li>
+                        <li><a routerLink="/admin/orders">Orders</a></li>
                     </ul>
                 </details>
             </li>
@@ -57,6 +58,13 @@
                             routerLink="/register"
                     >
                         Register
+                    </button>
+                    <button
+                            *ngIf="isUserLoggedIn"
+                            class="link"
+                            routerLink="/user/my-orders"
+                    >
+                        My orders
                     </button>
                     <button
                             *ngIf="isUserLoggedIn || isAdminLoggedIn"
