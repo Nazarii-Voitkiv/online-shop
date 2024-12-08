@@ -48,8 +48,10 @@
                         (change)="onFileSelected($event)"
                 />
             </div>
-            <div *ngIf="imagePreview" class="image-full">
-                <img [src]="imagePreview"/>
+            <div *ngIf="imagePreview" class="flex justify-center items-center">
+                <div class="justify-center">
+                    <img [src]="imagePreview" class="max-w-full max-h-[300px] object-contain"/>
+                </div>
             </div>
             <div *ngIf="existingImage">
                 <img

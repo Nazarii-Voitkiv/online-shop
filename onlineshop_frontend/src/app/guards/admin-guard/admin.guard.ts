@@ -1,13 +1,15 @@
 import {ActivatedRouteSnapshot, CanActivate, CanActivateFn, Router, RouterStateSnapshot} from '@angular/router';
 import {Injectable} from "@angular/core";
 import {LocalStorageService} from "../../services/storage-service/local-storage.service";
+import {NotificationService} from "../../services/notification/notification.service";
 
 @Injectable({
   providedIn: 'root'
 })
 export class AdminGuard implements CanActivate {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,
+              private notificationService: NotificationService) {}
 
   canActivate(
       route: ActivatedRouteSnapshot,
@@ -15,12 +17,12 @@ export class AdminGuard implements CanActivate {
   ): boolean {
     if(LocalStorageService.isUserLoggedIn()) {
       this.router.navigateByUrl("/user/dashboard")
-      console.log("You dont have access of this page");
+      this.notificationService.showError("You dont have access of this page");
       return false
     } else if(!LocalStorageService.hasToken()) {
       LocalStorageService.signOut();
       this.router.navigateByUrl("/login");
-      console.log("You are not logged in");
+      this.notificationService.showError("You are not logged in");
       return false;
     }
     return true;
