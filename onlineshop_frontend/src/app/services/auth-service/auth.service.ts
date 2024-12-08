@@ -16,9 +16,22 @@ export class AuthService {
               private storageService: LocalStorageService) {
   }
 
-  register(signupDTO:any):Observable<any> {
-    return this.http.post(BASIC_URL + 'sign-up', signupDTO);
-  }
+    register(signupDTO: any): Observable<any> {
+        return this.http.post(BASIC_URL + 'sign-up', signupDTO, { observe: 'response' })
+            .pipe(
+                tap(_ => this.log("User Registration")),
+                map((res: HttpResponse<any>) => {
+                    const tokenLength = res.headers.get(AUTH_HEADER)?.length;
+                    const bearerToken = res.headers.get(AUTH_HEADER)?.substring(7, tokenLength);
+
+                    this.storageService.saveUserId(res.body.userId);
+                    this.storageService.saveUserRole(res.body.userRole);
+                    this.storageService.saveToken(bearerToken);
+
+                    return res;
+                })
+            );
+    }
 
   login(username:string,password:string):Observable<any> {
     return this.http.post<[]>(BASIC_URL + 'authenticate',

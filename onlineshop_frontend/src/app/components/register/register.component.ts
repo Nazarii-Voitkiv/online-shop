@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import {Router, RouterLink} from '@angular/router';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import {NgIf} from "@angular/common";
 import {AuthService} from "../../services/auth-service/auth.service";
 import {NotificationService} from "../../services/notification/notification.service";
+import {LocalStorageService} from "../../services/storage-service/local-storage.service";
 
 @Component({
   selector: 'app-register',
@@ -31,7 +32,8 @@ export class RegisterComponent implements OnInit {
 
   constructor(private fb: FormBuilder,
               private authService: AuthService,
-              private notificationService: NotificationService) { }
+              private notificationService: NotificationService,
+              private router: Router,) { }
 
   ngOnInit() {
     this.validateForm = this.fb.group({
@@ -50,12 +52,16 @@ export class RegisterComponent implements OnInit {
   }
 
   register() {
-    console.log(this.validateForm.value);
     this.authService.register(this.validateForm.value).subscribe((res) => {
-      this.notificationService.showSuccess('You successfully logged in!');
+      this.notificationService.showSuccess('You successfully registered!');
+      if (LocalStorageService.isAdminLoggedIn()) {
+        this.router.navigateByUrl('/admin/dashboard');
+      } else if (LocalStorageService.isUserLoggedIn()) {
+        this.router.navigateByUrl('/user/dashboard');
+      }
     }, error => {
       console.log(error.message);
-      this.notificationService.showError('You failed to logged in!')
-    })
+      this.notificationService.showError('Registration failed!');
+    });
   }
 }
