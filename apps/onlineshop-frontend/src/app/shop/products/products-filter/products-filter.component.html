@@ -1,0 +1,35 @@
+<form [formGroup]="formFilterProducts">
+  <div class="font-bold text-lg mb-2">Category</div>
+  <ng-container [formGroup]="getCategoryFormGroup()">
+    <label
+      *ngFor="let category of categories"
+      class="cursor-pointer label justify-start items-center"
+    >
+      <input
+        type="checkbox"
+        class="radio radio-primary"
+        formControlName="{{ category.publicId }}"
+        (change)="onCheckboxChange(category.publicId)"
+      />
+      <span class="label-text ms-3">{{ category.name }}</span>
+    </label>
+  </ng-container>
+
+  <div class="font-bold text-lg mb-2">Size</div>
+  <ng-container [formGroup]="getSizeFormGroup()">
+    <label *ngFor="let size of sizes" class="cursor-pointer label justify-start items-center">
+      <input type="checkbox" checked="checked" class="checkbox checkbox-primary checkbox-md" formControlName="{{size}}" />
+      <span class="label-text ms-3">{{size}}</span>
+    </label>
+  </ng-container>
+
+  <div class="font-bold text-lg mt-5 mb-2">Sorted By</div>
+  <label class="cursor-pointer label justify-start items-center">
+    <input type="radio" name="sort" value="asc" class="radio radio-primary" formControlName="sort" />
+    <span class="label-text ms-3">Oldest</span>
+  </label>
+  <label class="cursor-pointer label justify-start items-center">
+    <input type="radio" name="sort" value="desc" class="radio radio-primary" formControlName="sort" />
+    <span class="label-text ms-3">Newest</span>
+  </label>
+</form>

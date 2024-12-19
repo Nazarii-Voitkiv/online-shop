@@ -33,3 +33,5 @@ build/
 .vscode/
 .DS_Store
 onlineshop_frontend/.angular/cache/18.2.12/onlineshop_frontend/.tsbuildinfo
+apps/onlineshop-backend/.env
+/node_modules

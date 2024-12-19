@@ -1,0 +1,86 @@
+logging:
+  level:
+    ROOT: INFO
+    org.hibernate.SQL: INFO
+    com.example.onlineshopbackend: INFO
+
+spring:
+  application:
+    name: Onlineshop Backend
+  threads:
+    virtual:
+      enabled: true
+  datasource:
+    hikari:
+      poolName: Hikari
+      auto-commit: false
+    driver-class-name: org.postgresql.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+  data:
+    jpa:
+      repositories:
+        bootstrap-mode: deferred
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+          batch_size: 25
+        query:
+          fail_on_pagination_over_collection_fetch: true
+          in_clause_parameter_padding: true
+        generate_statistics: false
+        order_updates: true
+        connection:
+          provider_disables_autocommit: true
+        order_inserts: true
+        default_schema: onlineshop_schema
+    hibernate:
+      ddl-auto: validate
+      naming:
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+        physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+    open-in-view: false
+  liquibase:
+    change-log: classpath:db/changelog/master.xml
+    default-schema: onlineshop_schema
+    contexts: dev
+  #    drop-first: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://nazariivoitkiv.kinde.com
+          jwk-set-uri: https://nazariivoitkiv.kinde.com/.well-known/jwks
+          audiences: http://localhost:8080/api
+  devtools:
+    restart:
+      enabled: false
+    livereload:
+      enabled: false
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+server:
+  port: 8080
+
+application:
+  client-base-url: http://localhost:4200
+  cors:
+    allowed-origins: http://localhost:4200
+    allowed-methods: "*"
+    allowed-headers: "*"
+    exposed-headers: "*"
+    allow-credentials: false
+    max-age: 300
+  kinde:
+    api: https://nazariivoitkiv.kinde.com
+    client-id: 83d835c5e48c41489c0e8d956fd67724
+    client-secret: N0MzApC1b7D4GwWOSbIv605SbBghEfz4sg59eZwy9aKpyJQV8
+    audience: https://nazariivoitkiv.kinde.com/api
+  stripe:
+    api-key: sk_test_51QWYlU1RQa1nYFoIsLSMCfEKCunLFN5cx3upnB0EXkHJP8uTLQ0rUGhFZNjYevyimSwuQPM6c9UNqqqjNITVx2aq00PD3QQqRx
+    webhook-secret: whsec_37b1599298d2d3fb88a956cb6807e2b82aae6c60a2582519d7066244650d07b1

@@ -1,0 +1,33 @@
+.menu-icon {
+  font-size: 1.8rem;
+}
+
+.grid-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  z-index: 30;
+}
+
+.grid-categories li {
+  list-style: none;
+}
+
+.grid-categories li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.grid-categories li a:hover {
+  background-color: #f0f0f0;
+}
