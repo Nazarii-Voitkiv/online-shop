@@ -53,48 +53,43 @@ export class ProductsComponent {
   }
 
   filteredProductsQuery = injectQuery(() => ({
-    queryKey: ['products', this.filterProducts],
+    queryKey: ['products', this.filterProducts.category, this.filterProducts.size, this.filterProducts.sort, this.filterProducts.name],
     queryFn: () =>
-      lastValueFrom(
-        this.productService.filter(this.pageRequest, this.filterProducts)
-      ),
+        lastValueFrom(this.productService.filter(this.pageRequest, this.filterProducts)),
   }));
 
   onFilterChange(filterProducts: ProductFilter) {
-    const currentCategory =
-      filterProducts.category && filterProducts.category.trim() !== ''
-        ? filterProducts.category
-        : ''; // Очищаємо значення, якщо категорія знята
+    const currentCategory = filterProducts.category?.trim() || '';
+    const currentSize = filterProducts.size?.trim() || '';
 
-    const currentSize =
-      filterProducts.size && filterProducts.size.trim() !== ''
-        ? filterProducts.size
-        : ''; // Перевіряємо розмір
+    // Зберігаємо поточне значення name із this.filterProducts, якщо воно було
+    const currentName = this.filterProducts.name?.trim() || '';
 
     this.filterProducts = {
-      category: currentCategory, // Використовуємо очищене значення
+      category: currentCategory,
       size: currentSize,
-      sort: filterProducts.sort && filterProducts.sort.length
-        ? filterProducts.sort
-        : ['createdDate,desc'], // Сортування за замовчуванням
+      sort: (filterProducts.sort && filterProducts.sort.length)
+          ? filterProducts.sort
+          : ['createdDate,desc'],
+      name: currentName // додаємо name назад до фільтрів
     };
 
     this.pageRequest.sort = this.filterProducts.sort;
 
-    console.log('Updated filterProducts:', this.filterProducts);
-
     const queryParams: any = { ...this.filterProducts };
 
+    // Якщо деяких параметрів немає – видаляємо їх з queryParams
     if (!currentCategory) {
       delete queryParams.category;
     }
     if (!currentSize) {
       delete queryParams.size;
     }
+    if (!currentName) {
+      delete queryParams.name;
+    }
 
-    this.router.navigate(['/products'], {
-      queryParams,
-    });
+    this.router.navigate(['/products'], { queryParams });
     this.filteredProductsQuery.refetch();
   }
 
@@ -114,6 +109,7 @@ export class ProductsComponent {
           category: this.category(),
           size: this.size() ? this.size()! : '',
           sort: [this.sort() ? this.sort()! : ''],
+          name: this.filterProducts.name // зберігаємо поточне значення name
         };
         this.filteredProductsQuery.refetch();
       }
