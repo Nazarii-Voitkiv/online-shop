@@ -1,0 +1,9 @@
+
+/apps/onlineshop-backend/.idea
+/apps/onlineshop-backend/target
+apps/onlineshop-frontend/.DS_Store
+apps/onlineshop-backend/.env
+apps/.DS_Store
+/.idea
+.DS_Store
+/node_modules
