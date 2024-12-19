@@ -2,7 +2,7 @@ import { Component, effect, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductsFilterComponent } from './products-filter/products-filter.component';
 import { injectQueryParams } from 'ngxtension/inject-query-params';
-import { ProductFilter } from '../../admin/model/product.model';
+import {Product, ProductFilter} from '../../admin/model/product.model';
 import { UserProductService } from '../../shared/service/user-product.service';
 import { Router } from '@angular/router';
 import { ToastService } from '../../shared/toast/toast.service';
@@ -58,6 +58,10 @@ export class ProductsComponent {
         lastValueFrom(this.productService.filter(this.pageRequest, this.filterProducts)),
   }));
 
+  trackByPublicId(index: number, product: Product) {
+    return product.publicId;
+  }
+
   onFilterChange(filterProducts: ProductFilter) {
     const currentCategory = filterProducts.category?.trim() || '';
     const currentSize = filterProducts.size?.trim() || '';
@@ -103,6 +107,11 @@ export class ProductsComponent {
   }
 
   private handleParametersChange() {
+    const currentName = this.name() || '';
+    if (this.filterProducts.name !== currentName) {
+      this.filterProducts.name = currentName;
+      this.filteredProductsQuery.refetch();
+    }
     if (this.category()) {
       if (this.lastCategory != this.category() && this.lastCategory !== '') {
         this.filterProducts = {

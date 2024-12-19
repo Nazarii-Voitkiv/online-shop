@@ -111,8 +111,6 @@ export class ProductsFilterComponent implements OnChanges {
         .map(([categoryId]) => categoryId);
       filterProduct.category = selectedCategories.join(',');
     }
-
-    console.log('Updated filterProduct:', filterProduct); // Для діагностики
     this.productFilter.emit(filterProduct);
   }
 
