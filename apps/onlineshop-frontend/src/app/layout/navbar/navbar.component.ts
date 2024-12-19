@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { RouterLink, Router } from '@angular/router';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { Oauth2Service } from '../../auth/oauth2.service';
 import { ClickOutside } from 'ngxtension/click-outside';
@@ -8,11 +8,12 @@ import { UserProductService } from '../../shared/service/user-product.service';
 import { injectQuery } from '@tanstack/angular-query-experimental';
 import { lastValueFrom } from 'rxjs';
 import { CartService } from '../../shop/cart.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, RouterLink, FaIconComponent, ClickOutside],
+  imports: [CommonModule, RouterLink, FaIconComponent, ClickOutside, CommonModule, FormsModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
@@ -20,6 +21,10 @@ export class NavbarComponent implements OnInit {
   oauth2Service = inject(Oauth2Service);
   productService = inject(UserProductService);
   cartService = inject(CartService);
+
+  constructor(private router: Router) {}
+
+  searchTerm: string = '';
 
   nbItemsInCart = 0;
 
@@ -69,5 +74,11 @@ export class NavbarComponent implements OnInit {
         0
       );
     });
+  }
+
+  searchProducts(event: Event) {
+    event.preventDefault();
+    // При сабміті форми перенаправляємо на /products з параметром name
+    this.router.navigate(['/products'], { queryParams: { name: this.searchTerm } });
   }
 }

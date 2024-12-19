@@ -108,4 +108,27 @@ public class SpringDataProductRepository implements ProductRepository {
     return jpaProductRepository.findBySizesIn(pageable, sizes)
       .map(ProductEntity::to);
   }
+
+  @Override
+  public Page<Product> findByNameContainingIgnoreCase(String name, Pageable pageable) {
+    return jpaProductRepository.findByNameContainingIgnoreCase(name, pageable).map(ProductEntity::to);
+  }
+
+  @Override
+  public Page<Product> findByNameAndCategory(Pageable pageable, String name, PublicId categoryId) {
+    return jpaProductRepository.findByCategoryPublicIdAndNameContainingIgnoreCase(categoryId.value(), name, pageable)
+            .map(ProductEntity::to);
+  }
+
+  @Override
+  public Page<Product> findByNameAndSizes(Pageable pageable, String name, List<ProductSize> sizes) {
+    return jpaProductRepository.findByNameContainingIgnoreCaseAndSizeIn(name, sizes, pageable)
+            .map(ProductEntity::to);
+  }
+
+  @Override
+  public Page<Product> findByNameCategoryAndSizes(Pageable pageable, String name, PublicId categoryId, List<ProductSize> sizes) {
+    return jpaProductRepository.findByCategoryPublicIdAndNameContainingIgnoreCaseAndSizeIn(categoryId.value(), name, sizes, pageable)
+            .map(ProductEntity::to);
+  }
 }

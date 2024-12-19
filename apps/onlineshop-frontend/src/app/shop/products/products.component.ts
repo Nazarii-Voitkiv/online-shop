@@ -22,6 +22,7 @@ export class ProductsComponent {
   category = injectQueryParams('category');
   size = injectQueryParams('size');
   sort = injectQueryParams('sort');
+  name = injectQueryParams('name');
   productService = inject(UserProductService);
   router = inject(Router);
   toastService = inject(ToastService);
@@ -41,6 +42,7 @@ export class ProductsComponent {
     category: this.category() ? this.category()! : '',
     size: this.size() ? this.size()! : '',
     sort: [this.sort() ? this.sort()! : ''],
+    name: this.name() ? this.name()! : '' // новий параметр
   };
 
   lastCategory = '';

@@ -68,7 +68,8 @@ public class ProductsShopResource {
   @GetMapping("/filter")
   public ResponseEntity<Page<RestProduct>> filter(Pageable pageable,
                                                   @RequestParam(value = "categoryId", required = false) UUID categoryId,
-                                                  @RequestParam(value = "productSizes", required = false) List<ProductSize> productSizes) {
+                                                  @RequestParam(value = "productSizes", required = false) List<ProductSize> productSizes,
+                                                  @RequestParam(value = "name", required = false) String name) {
     FilterQueryBuilder filterQueryBuilder = FilterQueryBuilder.filterQuery();
 
     if (categoryId != null) {
@@ -79,11 +80,15 @@ public class ProductsShopResource {
       filterQueryBuilder.sizes(productSizes);
     }
 
+    if (name != null && !name.isBlank()) {
+      filterQueryBuilder.name(name);
+    }
+
     Page<Product> products = productsApplicationService.filter(pageable, filterQueryBuilder.build());
     PageImpl<RestProduct> restProducts = new PageImpl<>(
-      products.getContent().stream().map(RestProduct::fromDomain).toList(),
-      pageable,
-      products.getTotalElements()
+            products.getContent().stream().map(RestProduct::fromDomain).toList(),
+            pageable,
+            products.getTotalElements()
     );
     return ResponseEntity.ok(restProducts);
   }

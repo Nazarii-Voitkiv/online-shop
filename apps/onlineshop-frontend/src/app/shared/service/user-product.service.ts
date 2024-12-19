@@ -53,33 +53,32 @@ export class UserProductService {
   }
 
   filter(
-    pageRequest: Pagination,
-    productFilter: ProductFilter
+      pageRequest: Pagination,
+      productFilter: ProductFilter
   ): Observable<Page<Product>> {
-    // Створення параметрів пагінації
     let params = createPaginationOption(pageRequest);
 
-    // Додаємо ID категорії
     if (productFilter.category) {
       params = params.append('categoryId', productFilter.category);
     }
 
-    // Додаємо розміри продукту
     if (productFilter.size) {
       params = params.append('productSizes', productFilter.size);
     }
 
-    // Додаємо сортування
+    if (productFilter.name && productFilter.name.trim() !== '') {
+      params = params.append('name', productFilter.name.trim());
+    }
+
     if (pageRequest.sort && pageRequest.sort.length > 0) {
       pageRequest.sort.forEach((sort) => {
         params = params.append('sort', sort);
       });
     }
 
-    // Запит на сервер
     return this.http.get<Page<Product>>(
-      `${environment.apiUrl}/products-shop/filter`,
-      { params }
+        `${environment.apiUrl}/products-shop/filter`,
+        { params }
     );
   }
 }
