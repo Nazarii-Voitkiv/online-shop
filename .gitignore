@@ -10,3 +10,4 @@ apps/.DS_Store
 /.angular
 /.nx
 /apps/onlineshop-frontend/.idea
+/apps/onlineshop-frontend/node_modules
