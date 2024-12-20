@@ -57,6 +57,16 @@
           </details>
         </li>
       }
+        <form class="flex items-center ms-4" (submit)="searchProducts($event)">
+            <input
+                    type="text"
+                    class="input input-bordered"
+                    [(ngModel)]="searchTerm"
+                    name="searchTerm"
+                    placeholder="Search products..."
+            />
+            <button type="submit" class="btn btn-primary ms-2">Search</button>
+        </form>
     </div>
   </div>
   <div class="navbar-end pe-4 flex align-items-center">

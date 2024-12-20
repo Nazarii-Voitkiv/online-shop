@@ -37,4 +37,19 @@ public interface JpaProductRepository  extends JpaRepository<ProductEntity, Long
 
   @Query("SELECT p FROM ProductEntity p WHERE p.size IN :sizes")
   Page<ProductEntity> findBySizesIn(Pageable pageable, @Param("sizes") List<ProductSize> sizes);
+
+  Page<ProductEntity> findByNameContainingIgnoreCase(String name, Pageable pageable);
+
+  @Query("SELECT p FROM ProductEntity p WHERE p.category.publicId = :categoryPublicId AND LOWER(p.name) LIKE LOWER(CONCAT('%', :name, '%'))")
+  Page<ProductEntity> findByCategoryPublicIdAndNameContainingIgnoreCase(@Param("categoryPublicId") UUID categoryPublicId, @Param("name") String name, Pageable pageable);
+
+  @Query("SELECT p FROM ProductEntity p WHERE LOWER(p.name) LIKE LOWER(CONCAT('%', :name, '%')) AND p.size IN :sizes")
+  Page<ProductEntity> findByNameContainingIgnoreCaseAndSizeIn(@Param("name") String name, @Param("sizes") List<ProductSize> sizes, Pageable pageable);
+
+  @Query("SELECT p FROM ProductEntity p WHERE p.category.publicId = :categoryPublicId " +
+          "AND LOWER(p.name) LIKE LOWER(CONCAT('%', :name, '%')) AND p.size IN :sizes")
+  Page<ProductEntity> findByCategoryPublicIdAndNameContainingIgnoreCaseAndSizeIn(@Param("categoryPublicId") UUID categoryPublicId,
+                                                                                 @Param("name") String name,
+                                                                                 @Param("sizes") List<ProductSize> sizes,
+                                                                                 Pageable pageable);
 }

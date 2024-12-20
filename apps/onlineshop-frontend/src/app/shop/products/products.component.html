@@ -8,11 +8,12 @@
     </app-products-filter>
   </div>
   @if(filteredProductsQuery.isSuccess() && filteredProductsQuery.data().content.length !== 0) {
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      @for(product of filteredProductsQuery.data().content; track product.publicId) {
-        <app-product-card [product]="product"></app-product-card>
-      }
-    </div>
+      <div class="grid grid-cols-1 grid-rows-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 auto-rows-[300px]">
+          <app-product-card
+                  *ngFor="let product of filteredProductsQuery.data()?.content; trackBy: trackByPublicId"
+                  [product]="product">
+          </app-product-card>
+      </div>
   } @else if (filteredProductsQuery.isFetching()) {
     <div class="flex w-full justify-center">
       <span class="loading loading-spinner loading-lg"></span>

@@ -32,4 +32,12 @@ public interface ProductRepository {
   void updateQuantity(ProductPublicId productPublicId, long quantity);
 
   Page<Product> findBySizes(Pageable pageable, List<ProductSize> sizes);
+
+  Page<Product> findByNameContainingIgnoreCase(String name, Pageable pageable);
+
+  Page<Product> findByNameAndCategory(Pageable pageable, String name, PublicId categoryId);
+
+  Page<Product> findByNameAndSizes(Pageable pageable, String name, List<ProductSize> sizes);
+
+  Page<Product> findByNameCategoryAndSizes(Pageable pageable, String name, PublicId categoryId, List<ProductSize> sizes);
 }
