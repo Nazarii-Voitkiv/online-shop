@@ -1,7 +1,5 @@
 package com.example.onlineshopbackend.shared.error.domain;
 
-import java.util.Map;
-
 public final class NumberValueTooHighException extends AssertionException {
 
   private final String max;
@@ -62,8 +60,4 @@ public final class NumberValueTooHighException extends AssertionException {
     return AssertionErrorType.NUMBER_VALUE_TOO_HIGH;
   }
 
-  @Override
-  public Map<String, String> parameters() {
-    return Map.of("max", max, "value", value);
-  }
 }

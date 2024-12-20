@@ -1,7 +1,5 @@
 package com.example.onlineshopbackend.shared.error.domain;
 
-import java.util.Map;
-
 public final class NumberValueTooLowException extends AssertionException {
 
   private final String min;
@@ -62,8 +60,4 @@ public final class NumberValueTooLowException extends AssertionException {
     return AssertionErrorType.NUMBER_VALUE_TOO_LOW;
   }
 
-  @Override
-  public Map<String, String> parameters() {
-    return Map.of("min", min, "value", value);
-  }
 }

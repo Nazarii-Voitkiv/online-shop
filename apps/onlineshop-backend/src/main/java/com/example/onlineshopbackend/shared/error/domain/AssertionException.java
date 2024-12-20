@@ -1,7 +1,5 @@
 package com.example.onlineshopbackend.shared.error.domain;
 
-import java.util.Map;
-
 public abstract class AssertionException extends RuntimeException {
 
   private final String field;
@@ -15,9 +13,5 @@ public abstract class AssertionException extends RuntimeException {
 
   public String field() {
     return field;
-  }
-
-  public Map<String, String> parameters() {
-    return Map.of();
   }
 }

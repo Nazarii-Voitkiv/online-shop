@@ -108,16 +108,8 @@ public class OrderEntity extends AbstractAuditingEntity<Long> {
     return stripeSessionId;
   }
 
-  public void setStripeSessionId(String stripeSessionId) {
-    this.stripeSessionId = stripeSessionId;
-  }
-
   public Set<OrderedProductEntity> getOrderedProducts() {
     return orderedProducts;
-  }
-
-  public void setOrderedProducts(Set<OrderedProductEntity> orderedProducts) {
-    this.orderedProducts = orderedProducts;
   }
 
   public UserEntity getUser() {

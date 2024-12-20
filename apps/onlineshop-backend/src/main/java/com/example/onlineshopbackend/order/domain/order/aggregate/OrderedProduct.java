@@ -49,5 +49,4 @@ public class OrderedProduct {
       .productPublicId(new ProductPublicId(product.getPublicId().value()))
       .build();
   }
-
 }

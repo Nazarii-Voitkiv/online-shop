@@ -27,9 +27,6 @@ public class CustomSession {
       return address;
     }
 
-    public void setAddress(Address address) {
-      this.address = address;
-    }
   }
 
   // Вкладений клас Address
@@ -50,36 +47,20 @@ public class CustomSession {
       return line1;
     }
 
-    public void setLine1(String line1) {
-      this.line1 = line1;
-    }
-
     public String getCity() {
       return city;
-    }
-
-    public void setCity(String city) {
-      this.city = city;
     }
 
     public String getCountry() {
       return country;
     }
 
-    public void setCountry(String country) {
-      this.country = country;
-    }
-
     public String getPostalCode() {
       return postalCode;
     }
 
-    public void setPostalCode(String postalCode) {
-      this.postalCode = postalCode;
-    }
   }
 
-  // Гетери та сетери для основних полів
   public String getId() {
     return id;
   }
@@ -92,23 +73,12 @@ public class CustomSession {
     return paymentIntent;
   }
 
-  public void setPaymentIntent(String paymentIntent) {
-    this.paymentIntent = paymentIntent;
-  }
-
   public CustomerDetails getCustomerDetails() {
     return customerDetails;
-  }
-
-  public void setCustomerDetails(CustomerDetails customerDetails) {
-    this.customerDetails = customerDetails;
   }
 
   public Map<String, String> getMetadata() {
     return metadata;
   }
 
-  public void setMetadata(Map<String, String> metadata) {
-    this.metadata = metadata;
-  }
 }

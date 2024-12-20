@@ -96,10 +96,6 @@ public class OrderedProductEntity {
     return productName;
   }
 
-  public void setProductName(String productName) {
-    this.productName = productName;
-  }
-
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;

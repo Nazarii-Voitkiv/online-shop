@@ -128,24 +128,12 @@ public class ProductEntity extends AbstractAuditingEntity<Long> {
     return brand;
   }
 
-  public void setBrand(String brand) {
-    this.brand = brand;
-  }
-
   public String getColor() {
     return color;
   }
 
-  public void setColor(String color) {
-    this.color = color;
-  }
-
   public String getDescription() {
     return description;
-  }
-
-  public void setDescription(String description) {
-    this.description = description;
   }
 
   public String getName() {
@@ -168,10 +156,6 @@ public class ProductEntity extends AbstractAuditingEntity<Long> {
     return featured;
   }
 
-  public void setFeatured(boolean featured) {
-    this.featured = featured;
-  }
-
   public ProductSize getSize() {
     return size;
   }
@@ -192,16 +176,8 @@ public class ProductEntity extends AbstractAuditingEntity<Long> {
     return nbInStock;
   }
 
-  public void setNbInStock(int nbInStock) {
-    this.nbInStock = nbInStock;
-  }
-
   public Set<PictureEntity> getPictures() {
     return pictures;
-  }
-
-  public void setPictures(Set<PictureEntity> pictures) {
-    this.pictures = pictures;
   }
 
   public CategoryEntity getCategory() {

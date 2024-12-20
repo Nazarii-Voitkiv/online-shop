@@ -11,7 +11,6 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import org.jilt.Builder;
 
-import java.io.Serializable;
 import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;

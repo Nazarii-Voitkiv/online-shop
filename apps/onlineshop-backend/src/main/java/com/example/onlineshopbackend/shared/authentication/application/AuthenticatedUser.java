@@ -1,11 +1,8 @@
 package com.example.onlineshopbackend.shared.authentication.application;
 
-import com.example.onlineshopbackend.shared.authentication.domain.Role;
-import com.example.onlineshopbackend.shared.authentication.domain.Roles;
 import com.example.onlineshopbackend.shared.authentication.domain.Username;
 import com.example.onlineshopbackend.shared.error.domain.Assert;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.oauth2.core.oidc.user.DefaultOidcUser;
@@ -15,7 +12,6 @@ import org.springframework.security.oauth2.server.resource.authentication.JwtAut
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public final class AuthenticatedUser {
@@ -50,28 +46,6 @@ public final class AuthenticatedUser {
 
     if (authentication.getPrincipal() instanceof String principal) {
       return principal;
-    }
-
-    throw new UnknownAuthenticationException();
-  }
-
-  public static Roles roles() {
-    return authentication().map(toRoles()).orElse(Roles.EMPTY);
-  }
-
-  private static Function<Authentication, Roles> toRoles() {
-    return authentication ->
-      new Roles(authentication.getAuthorities().stream()
-        .map(GrantedAuthority::getAuthority)
-        .map(Role::from)
-        .collect(Collectors.toSet()));
-  }
-
-  public static Map<String, Object> attributes() {
-    Authentication token = authentication().orElseThrow(NotAuthenticatedUserException::new);
-
-    if (token instanceof JwtAuthenticationToken jwtAuthenticationToken) {
-      return jwtAuthenticationToken.getTokenAttributes();
     }
 
     throw new UnknownAuthenticationException();

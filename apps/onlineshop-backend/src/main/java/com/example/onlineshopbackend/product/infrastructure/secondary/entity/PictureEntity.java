@@ -86,10 +86,6 @@ public class PictureEntity extends AbstractAuditingEntity<Long> {
     return mimeType;
   }
 
-  public void setMimeType(String mimeType) {
-    this.mimeType = mimeType;
-  }
-
   public ProductEntity getProduct() {
     return product;
   }

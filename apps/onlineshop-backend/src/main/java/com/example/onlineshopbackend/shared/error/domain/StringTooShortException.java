@@ -1,7 +1,5 @@
 package com.example.onlineshopbackend.shared.error.domain;
 
-import java.util.Map;
-
 public final class StringTooShortException extends AssertionException {
 
   private final String minLength;
@@ -57,8 +55,4 @@ public final class StringTooShortException extends AssertionException {
     return AssertionErrorType.STRING_TOO_SHORT;
   }
 
-  @Override
-  public Map<String, String> parameters() {
-    return Map.of("minLength", minLength, "currentLength", currentLength);
-  }
 }

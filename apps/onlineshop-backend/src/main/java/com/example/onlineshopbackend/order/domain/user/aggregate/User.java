@@ -1,7 +1,6 @@
 package com.example.onlineshopbackend.order.domain.user.aggregate;
 
 import com.example.onlineshopbackend.order.domain.user.vo.*;
-import com.example.onlineshopbackend.shared.error.domain.Assert;
 import org.jilt.Builder;
 
 import java.time.Instant;
@@ -48,13 +47,6 @@ public class User {
     this.dbId = dbId;
     this.userAddress = userAddress;
     this.lastSeen = lastSeen;
-  }
-
-  private void assertMandatoryFields() {
-    Assert.notNull("lastname", lastname);
-    Assert.notNull("firstname", firstname);
-    Assert.notNull("email", email);
-    Assert.notNull("authorities", authorities);
   }
 
   public void updateFromUser(User user) {
@@ -123,10 +115,6 @@ public class User {
 
   public Instant getLastModifiedDate() {
     return lastModifiedDate;
-  }
-
-  public Instant getCreatedDate() {
-    return createdDate;
   }
 
   public Set<Authority> getAuthorities() {

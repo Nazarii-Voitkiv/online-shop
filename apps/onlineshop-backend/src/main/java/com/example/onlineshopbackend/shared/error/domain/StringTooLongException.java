@@ -1,7 +1,5 @@
 package com.example.onlineshopbackend.shared.error.domain;
 
-import java.util.Map;
-
 public final class StringTooLongException extends AssertionException {
 
   private final String maxLength;
@@ -57,8 +55,4 @@ public final class StringTooLongException extends AssertionException {
     return AssertionErrorType.STRING_TOO_LONG;
   }
 
-  @Override
-  public Map<String, String> parameters() {
-    return Map.of("maxLength", maxLength, "currentLength", currentLength);
-  }
 }

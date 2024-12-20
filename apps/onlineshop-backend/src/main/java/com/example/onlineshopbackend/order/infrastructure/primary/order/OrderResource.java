@@ -1,13 +1,9 @@
 package com.example.onlineshopbackend.order.infrastructure.primary.order;
 
 import com.example.onlineshopbackend.order.infrastructure.secondary.service.stripe.CustomSession;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.stripe.exception.SignatureVerificationException;
-import com.stripe.model.Address;
 import com.stripe.model.Event;
-import com.stripe.model.StripeObject;
-import com.stripe.model.checkout.Session;
 import com.stripe.net.Webhook;
 import com.example.onlineshopbackend.order.application.OrderApplicationService;
 import com.example.onlineshopbackend.order.domain.order.CartPaymentException;
@@ -25,7 +21,6 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 import static com.example.onlineshopbackend.product.infrastructure.primary.ProductsAdminResource.ROLE_ADMIN;

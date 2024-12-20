@@ -88,14 +88,6 @@ public class CategoryEntity extends AbstractAuditingEntity<Long> {
     this.publicId = publicId;
   }
 
-  public Set<ProductEntity> getProducts() {
-    return products;
-  }
-
-  public void setProducts(Set<ProductEntity> products) {
-    this.products = products;
-  }
-
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;

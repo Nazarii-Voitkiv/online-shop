@@ -20,9 +20,6 @@ public class ProductCart {
 
   private PublicId publicId;
 
-  public ProductCart() {
-  }
-
   public ProductCart(ProductName name, ProductPrice price, ProductBrand brand,
                      Picture picture, PublicId publicId) {
     assertFields(name, price, brand, picture, publicId);

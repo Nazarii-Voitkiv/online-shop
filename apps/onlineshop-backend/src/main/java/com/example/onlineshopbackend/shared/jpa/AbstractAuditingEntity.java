@@ -28,15 +28,7 @@ public abstract class AbstractAuditingEntity<T> implements Serializable {
     return createdDate;
   }
 
-  public void setCreatedDate(Instant createdDate) {
-    this.createdDate = createdDate;
-  }
-
   public Instant getLastModifiedDate() {
     return lastModifiedDate;
-  }
-
-  public void setLastModifiedDate(Instant lastModifiedDate) {
-    this.lastModifiedDate = lastModifiedDate;
   }
 }

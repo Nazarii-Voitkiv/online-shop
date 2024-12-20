@@ -143,9 +143,7 @@ public class UserEntity extends AbstractAuditingEntity<Long> {
       .build();
   }
 
-  public static Set<UserEntity> from(List<User> users) {
-    return users.stream().map(UserEntity::from).collect(Collectors.toSet());
-  }
+
 
   public static Set<User> toDomain(List<UserEntity> users) {
     return users.stream().map(UserEntity::toDomain).collect(Collectors.toSet());

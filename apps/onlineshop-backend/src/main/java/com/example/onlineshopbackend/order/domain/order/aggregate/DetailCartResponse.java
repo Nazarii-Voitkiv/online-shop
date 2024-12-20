@@ -18,7 +18,4 @@ public class DetailCartResponse {
     return products;
   }
 
-  public void setProducts(List<ProductCart> products) {
-    this.products = products;
-  }
 }

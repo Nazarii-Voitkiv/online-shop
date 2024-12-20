@@ -1,7 +1,5 @@
 package com.example.onlineshopbackend.shared.error.domain;
 
-import java.util.Map;
-
 public class TooManyElementsException extends AssertionException {
 
   private final String maxSize;
@@ -62,8 +60,4 @@ public class TooManyElementsException extends AssertionException {
     return AssertionErrorType.TOO_MANY_ELEMENTS;
   }
 
-  @Override
-  public Map<String, String> parameters() {
-    return Map.of("maxSize", maxSize, "currentSize", currentSize);
-  }
 }

@@ -90,24 +90,12 @@ public class RestProduct {
     return brand;
   }
 
-  public void setBrand(String brand) {
-    this.brand = brand;
-  }
-
   public String getColor() {
     return color;
   }
 
-  public void setColor(String color) {
-    this.color = color;
-  }
-
   public String getDescription() {
     return description;
-  }
-
-  public void setDescription(String description) {
-    this.description = description;
   }
 
   public String getName() {
@@ -146,16 +134,8 @@ public class RestProduct {
     return featured;
   }
 
-  public void setFeatured(boolean featured) {
-    this.featured = featured;
-  }
-
   public List<RestPicture> getPictures() {
     return pictures;
-  }
-
-  public void setPictures(List<RestPicture> pictures) {
-    this.pictures = pictures;
   }
 
   public UUID getPublicId() {
@@ -170,7 +150,4 @@ public class RestProduct {
     return nbInStock;
   }
 
-  public void setNbInStock(int nbInStock) {
-    this.nbInStock = nbInStock;
-  }
 }
