@@ -1,15 +1,42 @@
 <div class="navbar bg-base-100">
   <div class="navbar-start">
-    <div class="dropdown">
+      <div class="dropdown lg:hidden z-50">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+          </label>
+          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a class="hover:link" href="/">Home</a></li>
+              <li>
+                  <details>
+                      <summary>Products</summary>
+                      <ul class="p-2">
+                          <li><a class="hover:link" [routerLink]="['/products']">All products</a></li>
+                          @if (categoryQuery.isSuccess() && categoryQuery.data()) {
+                              @for (category of categoryQuery.data().content; track category.publicId) {
+                                  <li class="hover:link">
+                                      <a [routerLink]="['/products']" [queryParams]="{category: category.publicId}">
+                                          {{ category.name }}
+                                      </a>
+                                  </li>
+                              }
+                          }
+                      </ul>
+                  </details>
+              </li>
+          </ul>
+      </div>
+
+      <img src="logo.png" alt="AllYouNeed Logo" class="lg:ps-12 min-h-16 max-h-16 p-2 object-contain" routerLink="/" />
       <a class="btn btn-ghost text-xl">
-        <div class="border-1 bg-secondary logo p-2 rounded-xl" routerLink="/">AllYouNeed</div>
+          <div class="border-1 bg-secondary logo p-2 rounded-xl hidden 2xl:flex" routerLink="/">AllYouNeed</div>
       </a>
-    </div>
   </div>
-  <div class="navbar-center flex">
+  <div class="navbar-center">
     <div class="menu menu-sm sm:menu-lg menu-horizontal px-1">
-      <li><a href="/">Home</a></li>
-      <li>
+      <li><a class="hidden lg:flex" href="/">Home</a></li>
+      <li class="hidden lg:flex">
         <details #productsMenu>
           <summary>Products</summary>
           <ul class="z-30 grid-categories">
@@ -35,41 +62,27 @@
           </ul>
         </details>
       </li>
-      @if (connectedUserQuery?.status() === "success"
-      && oauth2Service.hasAnyAuthorities(connectedUserQuery?.data()!, "ROLE_ADMIN")) {
-        <li>
-          <details #adminMenu>
-            <summary>Admin</summary>
-            <ul class="z-30">
-              <li>
-                <a routerLink="admin/categories/list"
-                   (click)="closeMenu(adminMenu)" (clickOutside)="closeMenu(adminMenu)">Categories</a>
-              </li>
-              <li>
-                <a routerLink="admin/products/list"
-                   (click)="closeMenu(adminMenu)" (clickOutside)="closeMenu(adminMenu)">Products</a>
-              </li>
-              <li>
-                <a routerLink="admin/orders/list"
-                   (click)="closeMenu(adminMenu)" (clickOutside)="closeMenu(adminMenu)">Orders</a>
-              </li>
-            </ul>
-          </details>
-        </li>
-      }
-        <form class="flex items-center ms-4" (submit)="searchProducts($event)">
+        <form
+                class="flex items-center ms-4"
+                (submit)="searchProducts($event)"
+        >
             <input
                     type="text"
-                    class="input input-bordered"
+                    class="input input-bordered w-24 sm:w-40 md:w-40 lg:w-96"
                     [(ngModel)]="searchTerm"
                     name="searchTerm"
-                    placeholder="Search products..."
+                    placeholder="Search..."
             />
-            <button type="submit" class="btn btn-primary ms-2">Search</button>
+            <button
+                    type="submit"
+                    class="btn btn-primary ms-2 hidden sm:flex"
+            >
+                Search
+            </button>
         </form>
     </div>
   </div>
-  <div class="navbar-end pe-4 flex align-items-center">
+  <div class="navbar-end pe-4 flex align-items-center z-30">
     <div class="dropdown dropdown-end pe-4">
       <div tabindex="0" role="button">
         @if (this.isConnected() && connectedUserQuery?.data()?.imageUrl !== null) {
@@ -82,14 +95,56 @@
         }
       </div>
       @if (this.isConnected()) {
-        <ul class="dropdown-content menu menu-lg bg-base-100 rounded-box z-10 w-52 p-2 shadow">
-          <li>
-            <button class="link" (click)="closeDropDownMenu()" routerLink="/users/orders">My Orders</button>
-          </li>
-          <li>
-            <button class="link" (click)="logout()">Logout</button>
-          </li>
-        </ul>
+          <ul class="dropdown-content menu p-4 shadow bg-base-100 rounded-box w-64 space-y-2">
+              <li>
+                  <button
+                          class="text-lg hover:link"
+                          (click)="closeDropDownMenu()"
+                          routerLink="/users/orders">
+                      My Orders
+                  </button>
+              </li>
+              <li>
+                  <button
+                          class="text-lg hover:link"
+                          (click)="logout()">
+                      Logout
+                  </button>
+              </li>
+              @if (connectedUserQuery?.status() === "success"
+              && oauth2Service.hasAnyAuthorities(connectedUserQuery?.data()!, "ROLE_ADMIN")) {
+                  <li>
+                      <details>
+                          <summary class="text-lg hover:link cursor-pointer">
+                              Admin
+                          </summary>
+                          <ul class="p-2 space-y-1">
+                              <li>
+                                  <a
+                                          class="text-lg hover:link"
+                                          routerLink="admin/categories/list">
+                                      Categories
+                                  </a>
+                              </li>
+                              <li>
+                                  <a
+                                          class="text-lg hover:link"
+                                          routerLink="admin/products/list">
+                                      Products
+                                  </a>
+                              </li>
+                              <li>
+                                  <a
+                                          class="text-lg hover:link"
+                                          routerLink="admin/orders/list">
+                                      Orders
+                                  </a>
+                              </li>
+                          </ul>
+                      </details>
+                  </li>
+              }
+          </ul>
       } @else {
         <ul class="dropdown-content menu menu-lg bg-base-100 rounded-box z-10 w-52 p-2 shadow">
           <li>

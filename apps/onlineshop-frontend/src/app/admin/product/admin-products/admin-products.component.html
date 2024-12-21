@@ -3,14 +3,9 @@
     <h1 class="text-2xl font-bold">Products</h1>
     <div>Add and delete products</div>
   </div>
-  <div>
-    <button class="btn btn-primary me-5" routerLink="/admin/products/create">
+    <button class="btn btn-primary" routerLink="/admin/products/create">
       Create products
     </button>
-    <button class="btn btn-primary" routerLink="/admin/categories/create">
-      Create categories
-    </button>
-  </div>
 </div>
 <div class="border-t w-full border-solid border-gray-300 mt-3 mb-5"></div>
 @if (productsQuery.isSuccess() && productsQuery.data()!.content.length !== 0) {

@@ -18,7 +18,7 @@ export class FeaturedComponent {
 
   pageRequest: Pagination = {
     page: 0,
-    size: 20,
+    size: 999,
     sort: [],
   };
 
