@@ -1,4 +1,4 @@
-# Fullstack project Spring boot 3, Angular 18, Tailwind CSS, PostgreSQL, Kinde, Stripe
+# Fullstack project Spring boot 3, Angular 19, Tailwind CSS, PostgreSQL, Kinde, Stripe
 
 Monorepo Online Shop.
 
