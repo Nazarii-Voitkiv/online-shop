@@ -104,13 +104,6 @@
                       My Orders
                   </button>
               </li>
-              <li>
-                  <button
-                          class="text-lg hover:link"
-                          (click)="logout()">
-                      Logout
-                  </button>
-              </li>
               @if (connectedUserQuery?.status() === "success"
               && oauth2Service.hasAnyAuthorities(connectedUserQuery?.data()!, "ROLE_ADMIN")) {
                   <li>
@@ -144,11 +137,18 @@
                       </details>
                   </li>
               }
+              <li>
+                  <button
+                          class="text-lg hover:link"
+                          (click)="logout()">
+                      Logout
+                  </button>
+              </li>
           </ul>
       } @else {
-        <ul class="dropdown-content menu menu-lg bg-base-100 rounded-box z-10 w-52 p-2 shadow">
+        <ul class="dropdown-content menu p-4 shadow bg-base-100 rounded-box w-64 space-y-2">
           <li>
-            <button class="link" (click)="login()">Login</button>
+            <button class="text-lg hover:link" (click)="login()">Login</button>
           </li>
         </ul>
       }

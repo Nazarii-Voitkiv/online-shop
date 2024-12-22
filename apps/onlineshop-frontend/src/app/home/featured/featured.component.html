@@ -2,7 +2,7 @@
     <div class="flex gap-8 px-6 py-4 sm:px-8 sm:py-6">
         @if(featuredProductQuery.isSuccess()) {
             @for (product of featuredProductQuery.data().content; track product.publicId) {
-                <app-product-card [product]="product"></app-product-card>
+                <app-product-card class="w-[18rem]" [product]="product"></app-product-card>
             }
         }
     </div>

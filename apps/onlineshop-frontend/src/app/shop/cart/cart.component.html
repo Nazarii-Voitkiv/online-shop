@@ -14,21 +14,21 @@
               <div class="font-bold">{{ item.price | currency }}</div>
             </div>
           </div>
-          <div class="flex">
-            <div class="w-32 flex justify-around items-center">
-              <button class="btn btn-sm btn-outline-primary"
-                      (click)="removeQuantityToCart(item.publicId, item.quantity)">-
-              </button>
-              <div>{{ item.quantity }}</div>
-              <button class="btn btn-sm btn-outline-primary"
-                      (click)="addQuantityToCart(item.publicId)">+
-              </button>
+            <div class="flex flex-col sm:flex-row items-center">
+                <div class="w-32 flex justify-around items-center">
+                    <button class="btn btn-sm btn-outline-primary"
+                            (click)="removeQuantityToCart(item.publicId, item.quantity)">-
+                    </button>
+                    <div>{{ item.quantity }}</div>
+                    <button class="btn btn-sm btn-outline-primary"
+                            (click)="addQuantityToCart(item.publicId)">+
+                    </button>
+                </div>
+                <div class="ms-0 mt-4 sm:ms-5 sm:mt-0 btn btn-error btn-outline"
+                     (click)="removeItem(item.publicId)">
+                    Remove
+                </div>
             </div>
-            <div class="ms-5 btn btn-error btn-outline"
-                 (click)="removeItem(item.publicId)">
-              Remove
-            </div>
-          </div>
         </div>
       }
     } @else if (cartQuery.isPending()) {
