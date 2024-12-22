@@ -1,4 +1,3 @@
-
 /apps/onlineshop-backend/.idea
 /apps/onlineshop-backend/target
 apps/onlineshop-frontend/.DS_Store
@@ -11,3 +10,4 @@ apps/.DS_Store
 /.nx
 /apps/onlineshop-frontend/.idea
 /apps/onlineshop-frontend/node_modules
+apps/onlineshop-frontend/.env
