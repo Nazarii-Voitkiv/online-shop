@@ -21,7 +21,7 @@ export class HomeComponent implements AfterViewInit {
             }
           });
         },
-        { threshold: 0.1 } // Тільки 10% елемента у зоні видимості
+        { threshold: 0.1 }
     );
 
     const elements = document.querySelectorAll('.fade-in');

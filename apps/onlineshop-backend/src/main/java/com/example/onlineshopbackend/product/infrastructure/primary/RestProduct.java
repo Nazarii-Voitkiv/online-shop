@@ -149,5 +149,4 @@ public class RestProduct {
   public int getNbInStock() {
     return nbInStock;
   }
-
 }

@@ -59,5 +59,4 @@ public class TooManyElementsException extends AssertionException {
   public AssertionErrorType type() {
     return AssertionErrorType.TOO_MANY_ELEMENTS;
   }
-
 }

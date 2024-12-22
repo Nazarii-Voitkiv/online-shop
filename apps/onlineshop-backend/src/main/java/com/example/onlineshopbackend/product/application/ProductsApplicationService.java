@@ -85,50 +85,38 @@ public class ProductsApplicationService {
     boolean hasSizes = query.sizes() != null && !query.sizes().isEmpty();
     boolean hasName = query.name() != null && !query.name().isBlank();
 
-    // Якщо нічого не задано, повертаємо всі продукти
     if (!hasCategory && !hasSizes && !hasName) {
       return productCRUD.findAll(pageable);
     }
 
-    // Якщо задано тільки name
     if (hasName && !hasCategory && !hasSizes) {
       return productShop.filterByName(pageable, query.name());
     }
 
-    // Якщо задано category і name, але не sizes
     if (hasName && hasCategory && !hasSizes) {
       return productShop.filterByNameAndCategory(pageable, query.name(), query.categoryId());
     }
 
-    // Якщо задано sizes і name, але не category
     if (hasName && hasSizes && !hasCategory) {
       return productShop.filterByNameAndSizes(pageable, query.name(), query.sizes());
     }
 
-    // Якщо задано category, sizes і name
     if (hasName && hasCategory && hasSizes) {
       return productShop.filterByNameCategoryAndSizes(pageable, query.name(), query.categoryId(), query.sizes());
     }
 
-    // Якщо задано тільки category
     if (hasCategory && !hasSizes && !hasName) {
       return productShop.filter(pageable, query);
     }
 
-    // Якщо задано тільки sizes
     if (hasSizes && !hasCategory && !hasName) {
       return productShop.filterBySizesOnly(pageable, query);
     }
 
-    // Якщо задано category і sizes, але не name
     if (hasCategory && hasSizes && !hasName) {
       return productShop.filter(pageable, query);
     }
 
-    // Тут можна додати додаткові комбінації, якщо вони потрібні
-    // або уніфікувати логіку в один метод з динамічною побудовою запиту.
-
-    // За замовчуванням:
     return Page.empty();
   }
 

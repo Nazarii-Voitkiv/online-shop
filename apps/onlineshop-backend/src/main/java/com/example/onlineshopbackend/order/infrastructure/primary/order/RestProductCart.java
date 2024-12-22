@@ -28,5 +28,4 @@ public record RestProductCart(String name,
   public static List<RestProductCart> from(List<ProductCart> productCarts) {
     return productCarts.stream().map(RestProductCart::from).toList();
   }
-
 }

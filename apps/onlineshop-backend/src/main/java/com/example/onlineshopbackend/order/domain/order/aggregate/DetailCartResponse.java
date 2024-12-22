@@ -17,5 +17,4 @@ public class DetailCartResponse {
   public List<ProductCart> getProducts() {
     return products;
   }
-
 }

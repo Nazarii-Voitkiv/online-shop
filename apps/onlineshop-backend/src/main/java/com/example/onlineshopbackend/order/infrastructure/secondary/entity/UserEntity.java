@@ -185,10 +185,6 @@ public class UserEntity extends AbstractAuditingEntity<Long> {
     return imageURL;
   }
 
-  public void setImageURL(String imageURL) {
-    this.imageURL = imageURL;
-  }
-
   public UUID getPublicId() {
     return publicId;
   }
@@ -201,48 +197,20 @@ public class UserEntity extends AbstractAuditingEntity<Long> {
     return addressStreet;
   }
 
-  public void setAddressStreet(String addressStreet) {
-    this.addressStreet = addressStreet;
-  }
-
   public String getAddressCity() {
     return addressCity;
-  }
-
-  public void setAddressCity(String addressCity) {
-    this.addressCity = addressCity;
   }
 
   public String getAddressZipCode() {
     return addressZipCode;
   }
 
-  public void setAddressZipCode(String addressZipCode) {
-    this.addressZipCode = addressZipCode;
-  }
-
   public String getAddressCountry() {
     return addressCountry;
   }
 
-  public void setAddressCountry(String addressCountry) {
-    this.addressCountry = addressCountry;
-  }
-
-  public Instant getLastSeen() {
-    return lastSeen;
-  }
-
-  public void setLastSeen(Instant lastSeen) {
-    this.lastSeen = lastSeen;
-  }
-
   public Set<AuthorityEntity> getAuthorities() {
     return authorities;
-  }
-
-  public void setAuthorities(Set<AuthorityEntity> authorities) {
-    this.authorities = authorities;
   }
 
   @Override

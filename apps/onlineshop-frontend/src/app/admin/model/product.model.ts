@@ -51,7 +51,7 @@ export interface ProductFilter {
   size?: string;
   category?: string | null;
   sort: string[];
-  name?: string; // додали поле для назви
+  name?: string;
 }
 
 export type FilterProductsFormContent = {

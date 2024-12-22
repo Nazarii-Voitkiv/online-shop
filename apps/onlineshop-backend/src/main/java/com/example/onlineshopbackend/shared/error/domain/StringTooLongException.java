@@ -54,5 +54,4 @@ public final class StringTooLongException extends AssertionException {
   public AssertionErrorType type() {
     return AssertionErrorType.STRING_TOO_LONG;
   }
-
 }

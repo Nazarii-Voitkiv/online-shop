@@ -59,5 +59,4 @@ public final class NumberValueTooLowException extends AssertionException {
   public AssertionErrorType type() {
     return AssertionErrorType.NUMBER_VALUE_TOO_LOW;
   }
-
 }

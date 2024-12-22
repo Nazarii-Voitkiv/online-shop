@@ -21,5 +21,4 @@ public record RestOrderedItemRead(long quantity,
   public static List<RestOrderedItemRead> from(List<OrderedProduct> orderedProducts) {
     return orderedProducts.stream().map(RestOrderedItemRead::from).toList();
   }
-
 }

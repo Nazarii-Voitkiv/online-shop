@@ -36,19 +36,11 @@ public class ProductShop {
     }
   }
 
-  /**
-   * Існуючий метод, який фільтрує за категорією та розміром.
-   */
   public Page<Product> filter(Pageable pageable, FilterQuery query) {
     return productRepository.findByCategoryAndSize(pageable, query);
   }
 
-  /**
-   * Новий метод, який фільтрує продукти без категорії.
-   * Наприклад, фільтрація лише за розміром (якщо query містить розміри).
-   */
   public Page<Product> filterBySizesOnly(Pageable pageable, FilterQuery query) {
-    // Тут викликаємо новий метод репозиторію, який повертає продукти за розміром без категорії.
     return productRepository.findBySizes(pageable, query.sizes());
   }
 

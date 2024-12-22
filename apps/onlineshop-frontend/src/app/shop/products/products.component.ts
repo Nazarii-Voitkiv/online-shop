@@ -42,7 +42,7 @@ export class ProductsComponent {
     category: this.category() ? this.category()! : '',
     size: this.size() ? this.size()! : '',
     sort: [this.sort() ? this.sort()! : ''],
-    name: this.name() ? this.name()! : '' // новий параметр
+    name: this.name() ? this.name()! : ''
   };
 
   lastCategory = '';
@@ -66,7 +66,6 @@ export class ProductsComponent {
     const currentCategory = filterProducts.category?.trim() || '';
     const currentSize = filterProducts.size?.trim() || '';
 
-    // Зберігаємо поточне значення name із this.filterProducts, якщо воно було
     const currentName = this.filterProducts.name?.trim() || '';
 
     this.filterProducts = {
@@ -75,14 +74,14 @@ export class ProductsComponent {
       sort: (filterProducts.sort && filterProducts.sort.length)
           ? filterProducts.sort
           : ['createdDate,desc'],
-      name: currentName // додаємо name назад до фільтрів
+      name: currentName
     };
 
     this.pageRequest.sort = this.filterProducts.sort;
 
     const queryParams: any = { ...this.filterProducts };
 
-    // Якщо деяких параметрів немає – видаляємо їх з queryParams
+
     if (!currentCategory) {
       delete queryParams.category;
     }
@@ -118,7 +117,7 @@ export class ProductsComponent {
           category: this.category(),
           size: this.size() ? this.size()! : '',
           sort: [this.sort() ? this.sort()! : ''],
-          name: this.filterProducts.name // зберігаємо поточне значення name
+          name: this.filterProducts.name
         };
         this.filteredProductsQuery.refetch();
       }

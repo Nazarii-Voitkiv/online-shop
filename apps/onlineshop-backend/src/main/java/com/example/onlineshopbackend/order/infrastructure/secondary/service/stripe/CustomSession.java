@@ -18,7 +18,6 @@ public class CustomSession {
   @SerializedName("metadata")
   private Map<String, String> metadata;
 
-  // Вкладений клас CustomerDetails
   public static class CustomerDetails {
     @SerializedName("address")
     private Address address;
@@ -29,7 +28,6 @@ public class CustomSession {
 
   }
 
-  // Вкладений клас Address
   public static class Address {
     @SerializedName("line1")
     private String line1;
@@ -80,5 +78,4 @@ public class CustomSession {
   public Map<String, String> getMetadata() {
     return metadata;
   }
-
 }

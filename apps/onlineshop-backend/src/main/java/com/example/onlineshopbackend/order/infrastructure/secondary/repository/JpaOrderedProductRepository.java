@@ -5,5 +5,4 @@ import com.example.onlineshopbackend.order.infrastructure.secondary.entity.Order
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface JpaOrderedProductRepository extends JpaRepository<OrderedProductEntity, OrderedProductEntityPk> {
-
 }

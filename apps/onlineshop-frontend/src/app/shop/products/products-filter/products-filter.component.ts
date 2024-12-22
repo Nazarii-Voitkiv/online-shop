@@ -25,7 +25,7 @@ import {
 export class ProductsFilterComponent implements OnChanges {
   sort = input<string>('createdDate,asc');
   size = input<string>();
-  @Input() categories: ProductCategory[] = []; // Список категорій передається через Input
+  @Input() categories: ProductCategory[] = [];
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['categories'] && this.categories) {
@@ -58,7 +58,7 @@ export class ProductsFilterComponent implements OnChanges {
         validators: [Validators.required],
       }),
       size: this.buildSizeFormControl(),
-      category: this.buildCategoryFormControl(), // Виправлено
+      category: this.buildCategoryFormControl(),
     });
 
   private buildCategoryFormControl(): FormRecord<FormControl<boolean>> {
@@ -94,7 +94,6 @@ export class ProductsFilterComponent implements OnChanges {
       category: '',
     };
 
-    // Обробка розмірів
     if (filter.size) {
       const sizes = Object.entries(filter.size);
       for (const [sizeKey, sizeValue] of sizes) {
@@ -104,7 +103,6 @@ export class ProductsFilterComponent implements OnChanges {
       }
     }
 
-    // Обробка категорій
     if (filter.category) {
       const selectedCategories = Object.entries(filter.category)
         .filter(([_, isSelected]) => isSelected)
@@ -140,26 +138,21 @@ export class ProductsFilterComponent implements OnChanges {
 
   protected onCheckboxChange(selectedKey: string | undefined) {
     if (!selectedKey) {
-      return; // Якщо ключ не визначений, просто виходимо з функції
+      return;
     }
 
-    // Отримуємо групу чекбоксів категорій
     const categoryGroup = this.getCategoryFormGroup();
 
-    // Перевіряємо поточний стан обраного чекбокса
     const isChecked = categoryGroup.get(selectedKey)?.value;
 
-    // Якщо обраний чекбокс вже активний, знімаємо вибір
     if (isChecked) {
       Object.keys(categoryGroup.controls).forEach(key => {
         categoryGroup.get(key)?.setValue(key === selectedKey, { emitEvent: false });
       });
     } else {
-      // Якщо чекбокс знімається, то просто очищаємо всі
       categoryGroup.get(selectedKey)?.setValue(false, { emitEvent: false });
     }
 
-    // Тригеримо обробник змін
     this.onFilterChange(this.formFilterProducts.getRawValue());
   }
 

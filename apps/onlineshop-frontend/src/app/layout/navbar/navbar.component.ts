@@ -78,7 +78,6 @@ export class NavbarComponent implements OnInit {
 
   searchProducts(event: Event) {
     event.preventDefault();
-    // При сабміті форми перенаправляємо на /products з параметром name
     this.router.navigate(['/products'], { queryParams: { name: this.searchTerm } });
   }
 }
