@@ -1,0 +1,13 @@
+# Test configuration
+spring:
+  liquibase:
+    enabled: false  # Disable Liquibase for tests
+  datasource:
+    url: jdbc:h2:mem:testdb  # Use in-memory H2 database for tests
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
