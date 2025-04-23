@@ -24,11 +24,7 @@
         ],
         "styles": ["apps/onlineshop-frontend/src/styles.scss"],
         "scripts": [],
-        "server": "apps/onlineshop-frontend/src/main.server.ts",
-        "ssr": {
-          "entry": "apps/onlineshop-frontend/src/server.ts"
-        },
-        "outputMode": "server"
+        "ssr": false
       },
       "configurations": {
         "production": {

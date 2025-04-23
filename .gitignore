@@ -11,3 +11,4 @@ apps/.DS_Store
 /apps/onlineshop-frontend/.idea
 /apps/onlineshop-frontend/node_modules
 apps/onlineshop-frontend/.env
+dist
